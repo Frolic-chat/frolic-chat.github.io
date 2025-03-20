@@ -1,35 +1,47 @@
 ---
 title: Home
-layout: home
+layout: default
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# 🌺 Come Frolic!
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+**Frolic** is an extended version of the now-defunct F-Chat Rising which itself was an extended version of the [original F-Chat 3.0 client](https://wiki.f-list.net/F-Chat_3.0). Frolic's primary goal is to extend the existing feature set of F-Chat Rising with touch-ups and bug fixes to keep it functional far into the future.
 
-More specifically, the created site:
+You'll connect with the same F-List, same players, and same channels you're already used to.
+You'll just do it with style!
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+Scroll down to see a [feature summary](#link-previews), or take a look at a more [detailed list of features](https://github.com/Frolic-chat/Frolic/blob/master/README.md#key-differences).
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+To install, download the application from the links above and then refer to the [original installation instructions](https://wiki.f-list.net/F-Chat_3.0/Installation).
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
 
-To get started with creating a site, simply:
+## Features
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+### Link Previews
+Hover your mouse on any link to see a preview image.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+![Link Previews](assets/images/link-preview.gif)
 
-----
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+### Smarter Ads
+Characters who match your preferences get highlighted ads.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+![Smarter Ads](assets/images/smarter-ads.png)
+
+
+### Improved Search
+See immediately who is a good match for you.
+
+![Improved Search](assets/images/improved-search.png)
+
+
+### UI Tweaks
+Dozens of useful improvements all around!
+
+![UI Tweaks](assets/images/ui-tweaks.png)
+
+
+### Character Previews
+See how characters match up with you.
+
+![Character Previews](assets/images/character-preview.png)

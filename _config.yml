@@ -1,8 +1,45 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+title: Frolic!
+description: A modern client for F-list's F-Chat
+theme: jekyll-theme-dinky
+## I have no idea how this is supposed to work.
+#theme: _sass/jekyll-theme-frolic-pastel.scss
+#theme: jekyll-theme-frolic-pastel
 
-url: https://just-the-docs.github.io
+google_analytics: false
+github:
+  is_user_page: false
+  is_project_page: false
+  repository_url: https://github.com/Frolic-chat/Frolic
+show_downloads: true
+latest_release: https://github.com/Frolic-chat/Frolic/releases/tag/0.6.0
+all_releases: https://github.com/Frolic-chat/Frolic/releases/
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+#### UNSURE
+## Do I actually need any of these:
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # specific to the theme website:
+  - bin/
+  - lib/
+  - "*.gemspec"
+  - "*.gem"
+  - LICENSE.txt
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - docker-compose.yml
+  - Dockerfile
+  # theme test code
+  - fixtures/
