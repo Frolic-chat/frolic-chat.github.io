@@ -1,7 +1,6 @@
 ---
 title: Home
 layout: default
-permalink: /frolic
 ---
 
 # 🌺 Come Frolic!
