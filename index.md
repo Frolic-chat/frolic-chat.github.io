@@ -5,10 +5,9 @@ layout: default
 
 # 🌺 Come Frolic!
 
-**Frolic** is an extended version of the now-defunct F-Chat Rising which itself was an extended version of the [original F-Chat 3.0 client](https://wiki.f-list.net/F-Chat_3.0). Frolic's primary goal is to extend the existing feature set of F-Chat Rising with touch-ups and bug fixes to keep it functional far into the future.
+**Frolic** is an extended version of the now-defunct F-Chat Rising which itself was an extended version of the [original F-Chat 3.0 client](https://wiki.f-list.net/F-Chat_3.0). Frolic's primary goal is to extend the existing feature set of F-Chat Rising with touch-ups and bug fixes to keep it functional far into the future. With hope, we can refine the extra features that Rising introduced into a more-realized form.
 
-You'll connect with the same F-List, same players, and same channels you're already used to.
-You'll just do it with style!
+You'll connect with the same F-List, same players, and same channels you're already used to. You'll just do it with style!
 
 Scroll down to see a [feature summary](#link-previews), or take a look at a more [detailed list of features](https://github.com/Frolic-chat/Frolic/blob/master/README.md#key-differences).
 

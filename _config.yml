@@ -1,9 +1,15 @@
-title: Frolic!
+title: 🌺 Frolic!
 description: A modern client for F-list's F-Chat
 theme: jekyll-theme-dinky
 ## I have no idea how this is supposed to work.
 #theme: _sass/jekyll-theme-frolic-pastel.scss
 #theme: jekyll-theme-frolic-pastel
+
+latest_release: 0.6.0
+
+side_nav:
+  wiki: /wiki.html
+  issues: https://github.com/Frolic-chat/Frolic/issues
 
 google_analytics: false
 github:
@@ -11,7 +17,6 @@ github:
   is_project_page: false
   repository_url: https://github.com/Frolic-chat/Frolic
 show_downloads: true
-latest_release: https://github.com/Frolic-chat/Frolic/releases/tag/0.6.0
 all_releases: https://github.com/Frolic-chat/Frolic/releases/
 
 #### UNSURE

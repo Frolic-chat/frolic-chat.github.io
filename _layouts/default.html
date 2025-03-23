@@ -16,15 +16,21 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+        <h1 class="header"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
         <ul>
           {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.latest_release }}">Latest Release</a></li>
+            <li class="download"><a class="buttons" href="https://github.com/Frolic-chat/Frolic/releases/tag/{{ site.latest_release }}">Latest Release</a></li>
             <li class="download"><a class="buttons" href="{{ site.all_releases }}">All Releases</a></li>
           {% endif %}
-          <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          <li class="github"><a class="buttons" href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          {% if site.side_nav.wiki %}
+            <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}">Wiki</a></li>
+          {% endif %}
+          {% if site.side_nav.issues %}
+            <li class="site_nav"><a class="buttons" href="{{ site.side_nav.issues }}">Issue Tracker</a></li>
+          {% endif %}
         </ul>
 
         {% if site.github.is_project_page %}
@@ -42,9 +48,10 @@
         {{ content }}
       </section>
 
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+      <footer><p><small>
+        <a href="./wiki/LICENSE.html">License</a>
+        <a href="./wiki/PRIVACY.html">Privacy</a>
+      </small></p></footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>

@@ -1,5 +1,4 @@
 ---
-title: theme
 ---
 // @use/@import {{ site.theme }}
 @use 'sass:list';
@@ -76,12 +75,10 @@ $color-text-code: #000;
 $color-text-th: #FDFEFB;
 $color-bg: #FBFAF7;
 $color-link: #C30000;
-$color-header-underline: #ccc;
-$color-hr-bg: #ccc;
 $color-img-border: #ccc;
 $color-table-border: #ccc;
 $color-th-bg: #232323;
-$color-td-bg: #ccc;
+$color-td-bg: #232323;
 $color-definition: #444;
 $color-pre-bg: #FDFEFB;
 $color-pre-border: #D7D8C8;
@@ -99,6 +96,7 @@ $color-header-li-bg-webkit-grad1-hover: #f8f8f8;
 $color-header-li-bg-webkit-grad2-hover: #dddddd;
 $color-buttons-text-hover: #fff;
 
+$index: 1;
 $random-color: #000;
 @function random-color-from($group) {
   $index: random(list.length($group)) !global;
@@ -106,8 +104,6 @@ $random-color: #000;
   @return $random-color;
 }
 
-
-$index: 1;
 $sequence-color: random-color-from($primary-colors);
 @function next-in-sequence($group) {
   @if $index >= list.length($group) {
@@ -146,12 +142,11 @@ body {
   padding:10px 50px 0 0;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	color: text-color-contrasting($color-dark-neutral);
-	background-color: $color-dark-neutral;
+	color: text-color-contrasting($color-light-neutral);
+	background-color: $color-light-neutral;
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -226,13 +221,13 @@ h6 {
 
 a {
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px text-shadow-contrasting($sequence-color);
-  font-weight:200;
-  text-decoration:none;
-}
+  text-shadow: 0px 0px 3px color.adjust(opposite-hue($sequence-color), $lightness: -20%, $space: oklch), 1px 1px 2px color.adjust(opposite-hue($sequence-color), $lightness: -20%, $space: oklch);
+  font-weight: 700;
+  text-decoration: none;
 
-a:hover {
-	text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 a small {
@@ -285,7 +280,7 @@ dl p {
 
 hr {
   border:0;
-  background: next-in-sequence($primary-colors);
+  background-color: next-in-sequence($primary-colors);
   height:1px;
   margin:0 0 24px;
 }
@@ -315,15 +310,20 @@ p img, .emoji {
 
 code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color:$color-text-code;
-  font-size:14px;
+  font-size: 14px;
+  border:1px solid random-color-from($primary-colors);
+}
+
+code {
+  background-color: white;
+  color: black;
 }
 
 pre {
 	padding: 4px 12px;
-  background: $color-pre-bg;
   border-radius:4px;
-  border:1px solid $color-pre-border;
+  background-color: random-color-from($primary-colors);
+  color: color.change(opposite-hue($random-color), $lightness: 30%, $space: oklch);
   overflow: auto;
   overflow-y: hidden;
 	margin-bottom: 32px;
@@ -334,9 +334,6 @@ pre {
 
 table {
   width:100%;
-}
-
-table {
   border: 1px solid next-in-sequence($primary-colors);
   margin-bottom: 32px;
   text-align: left;
@@ -347,15 +344,24 @@ th {
 	font-size: 18px;
 	font-weight: normal;
   padding: 10px;
-  background: $color-th-bg;
+  background-color: $color-th-bg;
   color: $color-text-th;
  }
 
 td {
   padding: 10px;
-	background: $color-td-bg;
+	background-color: $color-td-bg;
  }
 
+ table.wikilinks {
+  td {
+    background-color: random-color-from($primary-colors);
+    a {
+      display: block;
+      color: color.adjust($random-color, $lightness: -20%, $hue: 180deg, $space: oklch)
+    }
+  }
+ }
 
 /* Wrapper */
 .wrapper {
@@ -364,28 +370,37 @@ td {
 
 
 /* Header */
-$header-bg-color:       next-in-sequence($primary-colors);
+$header-bg-color:       random-color-from($primary-colors);
 $header-border-color:   color.adjust($header-bg-color, $lightness: -7.4%, $space: oklch);
-$header-title-color:    opposite-hue($header-bg-color);
+$header-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
 $header-text-color:     text-color-contrasting($header-bg-color);
 
-$button-color:            random-color-from($primary-colors);
-$button-color-grad:       color.adjust($button-color, $lightness: -14%, $space: oklch);
+$button-color:            next-in-sequence($primary-colors);
+$button-color-grad:       color.adjust($button-color, $lightness: -20%, $space: oklch);
 $button-text-color:       text-color-contrasting($button-color);
-$button-text-shadow-color: color.adjust($button-color, $lightness: -12%, $space: oklch);
+$button-text-shadow-color: color.adjust($button-color, $lightness: -22%, $space: oklch);
 $button-boxshadow-color:  color.adjust($button-color, $lightness: 11%, $chroma: 0.055, $space: oklch);
 $button-text-color-hover: color.adjust($button-text-color, $lightness: 8%, $space: oklch);
 $button-color-hover:      color.adjust($button-color, $lightness: 8%, $space: oklch);
 $button-color-grad-hover: color.adjust($button-color-grad, $lightness: 8%, $space: oklch);
 
 $dl-button-color:           next-in-sequence($primary-colors);
-$dl-button-color-grad:      color.adjust($dl-button-color, $lightness: -14%, $space: oklch);
+$dl-button-color-grad:      color.adjust($dl-button-color, $lightness: -20%, $space: oklch);
 $dl-button-text-color:      text-color-contrasting($dl-button-color);
-$dl-button-text-shadow-color: color.adjust($dl-button-color, $lightness: -12%, $space: oklch);
+$dl-button-text-shadow-color: color.adjust($dl-button-color, $lightness: -22%, $space: oklch);
 $dl-button-boxshadow-color: color.adjust($dl-button-color, $lightness: 11%, $chroma: 0.055, $space: oklch);
 $dl-button-text-color-hover: color.adjust($dl-button-text-color, $lightness: 8%, $space: oklch);
 $dl-button-color-hover:     color.adjust($dl-button-color, $lightness: 8%, $space: oklch);
 $dl-button-color-grad-hover: color.adjust($dl-button-color-grad, $lightness: 8%, $space: oklch);
+
+$nav-button-color:           next-in-sequence($primary-colors);
+$nav-button-color-grad:      color.adjust($nav-button-color, $lightness: -20%, $space: oklch);
+$nav-button-text-color:      text-color-contrasting($nav-button-color);
+$nav-button-text-shadow-color: color.adjust($nav-button-color, $lightness: -22%, $space: oklch);
+$nav-button-boxshadow-color: color.adjust($nav-button-color, $lightness: 11%, $chroma: 0.055, $space: oklch);
+$nav-button-text-color-hover: color.adjust($nav-button-text-color, $lightness: 8%, $space: oklch);
+$nav-button-color-hover:     color.adjust($nav-button-color, $lightness: 8%, $space: oklch);
+$nav-button-color-grad-hover: color.adjust($nav-button-color-grad, $lightness: 8%, $space: oklch);
 
 header {
 	background-color: $header-bg-color;
@@ -435,47 +450,11 @@ header ul {
   padding:0;
 }
 
-header li.download {
-  background: $dl-button-color;
-	background: -moz-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-  background: -o-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-  background: -ms-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-  background: linear-gradient(to top, $dl-button-color 0%, $dl-button-color-grad 100%);
-
-	border-radius:5px;
-  border:1px solid $dl-button-text-shadow-color;
-
-	-webkit-box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
-	box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
-
-  a {
-    color: $dl-button-text-color;
-  }
-}
-
-header li.download:hover {
-	background: $dl-button-color-hover;
-	background: -moz-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-  background: -o-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-  background: -ms-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-  background: linear-gradient(to top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-
-  a {
-    color: $dl-button-text-color-hover;
-  }
-}
-
 header li {
-	list-style-type: none;
-  width:132px;
-  height:15px;
+  list-style-type: none;
+  max-width: 200px;
 	margin-bottom: 12px;
 	line-height: 1em;
-	padding: 6px 6px 6px 7px;
 
 	background: $button-color;
 	background: -moz-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
@@ -491,47 +470,103 @@ header li {
 	-webkit-box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
 	box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
 
-  a {
-    color: $button-text-color;
+  &:hover {
+    background: $button-color-hover;
+    background: -moz-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+    background: -o-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+    background: -ms-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+    background: linear-gradient(to top, $button-color-hover 0%, $button-color-grad-hover 100%);
   }
-}
 
-header li:hover {
-	background: $button-color-hover;
-	background: -moz-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-  background: -o-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-  background: -ms-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-  background: linear-gradient(to top, $button-color-hover 0%, $button-color-grad-hover 100%);
+  &.download {
+    background: $dl-button-color;
+    background: -moz-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+    background: -o-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+    background: -ms-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+    background: linear-gradient(to top, $dl-button-color 0%, $dl-button-color-grad 100%);
+
+    border-radius:5px;
+    border:1px solid $dl-button-text-shadow-color;
+
+    -webkit-box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
+    box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
+
+    &:hover {
+      background: $dl-button-color-hover;
+      background: -moz-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+      background: -webkit-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+      background: -o-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+      background: -ms-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+      background: linear-gradient(to top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+    }
+  }
+
+  &.site_nav {
+    background: $nav-button-color;
+    background: -moz-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+    background: -webkit-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+    background: -o-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+    background: -ms-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+    background: linear-gradient(to top, $nav-button-color 0%, $nav-button-color-grad 100%);
+
+    border-radius:5px;
+    border:1px solid $nav-button-text-shadow-color;
+
+    -webkit-box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
+    box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
+
+    &:hover {
+      background: $nav-button-color-hover;
+      background: -moz-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+      background: -webkit-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+      background: -o-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+      background: -ms-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+      background: linear-gradient(to top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+    }
+  }
 
   a {
-    color: $button-text-color-hover;
+    display: block;
+
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    padding: 8px 8px 8px 29px;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
-}
 
-li.download a.buttons {
-  text-shadow: 1px 0px 0 $dl-button-text-shadow-color, 0px -1px 0 $dl-button-text-shadow-color, 1px -1px 0 $dl-button-text-shadow-color;
-}
+  &.download {
+    a {
+      color: $dl-button-text-color;
+      text-shadow: 1px 0px 0 $dl-button-text-shadow-color;
+      background: url(../images/arrow-down.png) no-repeat 9px;
+    }
+  }
 
-li a.buttons {
-  text-shadow: 1px 0px 0 $button-text-shadow-color, 0px -1px 0 $button-text-shadow-color, 1px -1px 0 $button-text-shadow-color;
-}
+  &.github {
+    a {
+      color: $button-text-color;
+      text-shadow: 1px 0px 0 $button-text-shadow-color;
+      background: url(../images/octocat-small.png) no-repeat 8px;
+    }
+  }
 
-a.buttons {
-	-webkit-font-smoothing: antialiased;
-	background: url(../images/arrow-down.png) no-repeat;
-	font-weight: normal;
-	padding: 2px 2px 2px 22px;
-	height: 30px;
-}
-
-a.github {
-	background: url(../images/octocat-small.png) no-repeat 1px;
-}
-
-a.buttons:hover {
-	text-decoration: none;
+  &.site_nav {
+    a {
+      color: $nav-button-text-color;
+      text-shadow: 1px 0px 0 $nav-button-text-shadow-color;
+      background-image: none;
+    }
+  }
 }
 
 
