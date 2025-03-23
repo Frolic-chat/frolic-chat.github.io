@@ -1,6 +1,7 @@
 ---
 title: Changelog
 layout: default
+excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 

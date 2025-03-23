@@ -1,6 +1,7 @@
 ---
 title: Privacy
 layout: default
+excerpt: How does Frolic use your data?
 ---
 # Security & Privacy
 

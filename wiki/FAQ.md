@@ -1,6 +1,7 @@
 ---
-title: FAQ
+title: FAQ!
 layout: default
+excerpt: How can I report issues? What freatures do you offer? What happened to...?
 ---
 # FAQ
 
@@ -11,11 +12,11 @@ On the [issue tracker!](https://github.com/Frolic-chat/Frolic/issues)
 No one knows. What we do know is that the maintainer was absent from the Rising repository for over 6 months prior to it unexpectedly going offline. Additionally, the f-list profile of the maintainer's bot was updated sometime around February 8, 2025, and was subsequently blocked from viewing due to a "shocking and harmful content violation". As of March 17, the owner has not edited the profile to lift the block. Speculating on what's going on with real people is rude and unprofessional, so we won't go any further than the facts.
 
 ## What features does Frolic offer over the old F-Chat Rising client?
-We have a full changelog [available here!]({{}})
+We have a full changelog [available here!](wiki/CHANGELOG.html)
 For a brief overview:
 * More options to be notified when your friends/bookmarks are active
-* The adblocker for the image viewer popup actually works now
-* The broken youtube proxy is removed, although the replacement doesn't currently play sound so you still have to open youtube videos like normal
+* The adblocker for the image preview actually works now
+* The broken youtube proxy is removed, although the replacement doesn't currently play sound
 * Removal of the old maintainer's AI chatbot
 * Kemonomimi species identification
 * Support for more anthro species

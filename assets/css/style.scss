@@ -96,20 +96,28 @@ $color-header-li-bg-webkit-grad1-hover: #f8f8f8;
 $color-header-li-bg-webkit-grad2-hover: #dddddd;
 $color-buttons-text-hover: #fff;
 
+@function opposite-hue($color) {
+  @return color.adjust($color, $hue: 180deg, $space: oklch);
+}
+
 $index: 1;
-$random-color: #000;
+$random-color: #001;
+$random-opposite: opposite-hue($random-color);
 @function random-color-from($group) {
-  $index: random(list.length($group)) !global;
+  $index: math.random(list.length($group)) !global;
   $random-color: list.nth($group, $index) !global;
+  $random-opposite: opposite-hue($random-color) !global;
   @return $random-color;
 }
 
 $sequence-color: random-color-from($primary-colors);
+$sequence-opposite: opposite-hue($sequence-color);
 @function next-in-sequence($group) {
-  @if $index >= list.length($group) {
+  @if ($index >= list.length($group)) {
     $index: 1 !global;
   }
   $sequence-color: list.nth($group, $index) !global;
+  $sequence-opposite: opposite-hue($sequence-color) !global;
   $index: calc($index + 1) !global;
   @return $sequence-color;
 }
@@ -132,10 +140,6 @@ $color-light-neutral: oklch(95.6% 0.0177 250.21);
   }
 }
 
-@function opposite-hue($color) {
-  @return color.adjust($color, $hue: 180deg, $space: oklch);
-}
-
 /* Base text styles */
 
 body {
@@ -150,7 +154,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kalam', Arvo, Monaco, serif;
   margin:36px 0 10px;
+  font-weight: normal;
 }
 
 p, ul, ol, table, dl {
@@ -158,76 +164,76 @@ p, ul, ol, table, dl {
 }
 
 h1, h2, h3 {
-	font-family: 'Kalam', Arvo, Monaco, serif;
-  line-height:1.3;
-	font-weight: normal;
-}
-
-h1, h2, h3 {
 	display: block;
+  line-height:1.3;
 	border-bottom: 2px solid;
 	padding-bottom: 5px;
 }
 
-h4, h5, h6 {
-	font-family: 'Kalam', Arvo, Monaco, serif;
-	font-weight: 400;
-}
-
 h1 {
+  font-size: 30px;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px text-shadow-contrasting($sequence-color);
-	font-size: 30px;
+  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px text-shadow-contrasting($sequence-color);
+  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h2 {
+  font-size: 24px;
+  padding: 0 1rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px text-shadow-contrasting($sequence-color);
-	font-size: 24px;
+  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px text-shadow-contrasting($sequence-color);
+  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h3 {
+  font-size: 18px;
+  padding: 0 2rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px text-shadow-contrasting($sequence-color);
-	font-size: 18px;
+  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px text-shadow-contrasting($sequence-color);
+  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h4 {
+  padding: 0 3rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px text-shadow-contrasting($sequence-color);
+  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px text-shadow-contrasting($sequence-color);
+  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h5 {
+  padding: 0 4rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px text-shadow-contrasting($sequence-color);
+  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px text-shadow-contrasting($sequence-color);
+  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h6 {
+  padding: 0 5rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px text-shadow-contrasting($sequence-color);
+  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px text-shadow-contrasting($sequence-color);
+  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
-a {
-  color: next-in-sequence($primary-colors);
-  text-shadow: 0px 0px 3px color.adjust(opposite-hue($sequence-color), $lightness: -20%, $space: oklch), 1px 1px 2px color.adjust(opposite-hue($sequence-color), $lightness: -20%, $space: oklch);
+$text-shadow: next-in-sequence($primary-colors);
+$text-color: color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+section a {
+  text-shadow: -1px -1px 1px $text-shadow, 1px 1px 2px $text-shadow;
+  color: $text-color;
   font-weight: 700;
-  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 a small {
@@ -322,8 +328,8 @@ code {
 pre {
 	padding: 4px 12px;
   border-radius:4px;
-  background-color: random-color-from($primary-colors);
-  color: color.change(opposite-hue($random-color), $lightness: 30%, $space: oklch);
+  color: random-color-from($primary-colors);
+  background-color: color.change(opposite-hue($random-color), $lightness: 30%, $space: oklch);
   overflow: auto;
   overflow-y: hidden;
 	margin-bottom: 32px;
@@ -344,24 +350,25 @@ th {
 	font-size: 18px;
 	font-weight: normal;
   padding: 10px;
-  background-color: $color-th-bg;
-  color: $color-text-th;
+  color: random-color-from($primary-colors);
+  background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
  }
 
 td {
   padding: 10px;
 	background-color: $color-td-bg;
- }
+}
 
  table.wikilinks {
   td {
-    background-color: random-color-from($primary-colors);
     a {
       display: block;
-      color: color.adjust($random-color, $lightness: -20%, $hue: 180deg, $space: oklch)
+      color: random-color-from($primary-colors);
     }
+    color: $random-color;
+    background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
   }
- }
+}
 
 /* Wrapper */
 .wrapper {
@@ -375,7 +382,7 @@ $header-border-color:   color.adjust($header-bg-color, $lightness: -7.4%, $space
 $header-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
 $header-text-color:     text-color-contrasting($header-bg-color);
 
-$button-color:            next-in-sequence($primary-colors);
+$button-color:            random-color-from($primary-colors);
 $button-color-grad:       color.adjust($button-color, $lightness: -20%, $space: oklch);
 $button-text-color:       text-color-contrasting($button-color);
 $button-text-shadow-color: color.adjust($button-color, $lightness: -22%, $space: oklch);
@@ -384,7 +391,7 @@ $button-text-color-hover: color.adjust($button-text-color, $lightness: 8%, $spac
 $button-color-hover:      color.adjust($button-color, $lightness: 8%, $space: oklch);
 $button-color-grad-hover: color.adjust($button-color-grad, $lightness: 8%, $space: oklch);
 
-$dl-button-color:           next-in-sequence($primary-colors);
+$dl-button-color:           random-color-from($primary-colors);
 $dl-button-color-grad:      color.adjust($dl-button-color, $lightness: -20%, $space: oklch);
 $dl-button-text-color:      text-color-contrasting($dl-button-color);
 $dl-button-text-shadow-color: color.adjust($dl-button-color, $lightness: -22%, $space: oklch);
@@ -393,7 +400,7 @@ $dl-button-text-color-hover: color.adjust($dl-button-text-color, $lightness: 8%,
 $dl-button-color-hover:     color.adjust($dl-button-color, $lightness: 8%, $space: oklch);
 $dl-button-color-grad-hover: color.adjust($dl-button-color-grad, $lightness: 8%, $space: oklch);
 
-$nav-button-color:           next-in-sequence($primary-colors);
+$nav-button-color:           random-color-from($primary-colors);
 $nav-button-color-grad:      color.adjust($nav-button-color, $lightness: -20%, $space: oklch);
 $nav-button-text-color:      text-color-contrasting($nav-button-color);
 $nav-button-text-shadow-color: color.adjust($nav-button-color, $lightness: -22%, $space: oklch);
@@ -418,36 +425,29 @@ header {
 	padding: 34px 25px 22px 50px;
 	margin: 30px 25px 0 0;
 	-webkit-font-smoothing: antialiased;
-}
 
-p.header {
-	font-size: 16px;
-}
+  h1.header {
+    font-family: 'Kalam', Arvo, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3em;
+    border-bottom: none;
+    margin-top: 0;
 
-h1.header {
-	font-family: 'Kalam', Arvo, sans-serif;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 1.3em;
-	border-bottom: none;
-	margin-top: 0;
-}
+    a {
+      color: $header-title-color;
+      letter-spacing: 0.1em;
+    }
+  }
 
-h1.header, a.header, a.name, header a {
-	color: $header-title-color;
-}
+  p.header {
+    font-size: 16px;
+  }
 
-a.header {
-	text-decoration: underline;
-}
-
-a.name {
-	white-space: nowrap;
-}
-
-header ul {
-  list-style:none;
-  padding:0;
+  ul {
+    list-style:none;
+    padding:0;
+  }
 }
 
 header li {
@@ -538,6 +538,10 @@ header li {
     -webkit-font-smoothing: antialiased;
     font-weight: normal;
     padding: 8px 8px 8px 29px;
+
+    &.name {
+      white-space: nowrap;
+    }
 
     &:hover {
       text-decoration: none;

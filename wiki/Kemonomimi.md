@@ -1,6 +1,7 @@
 ---
 title: Kemonomimi matching
 layout: default
+excerpt: Details on the Kemonomimi update
 ---
 # 0.5.0 The Great Catgirl Remix
 This update adds the necessary architecture to support kemonomimi in Furry Pairing matching.
