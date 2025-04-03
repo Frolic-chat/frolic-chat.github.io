@@ -14,6 +14,6 @@ The [Dinky](https://github.com/pages-themes/dinky) jekyll theme is used under th
 ## Lotuses by Gostay
 The [Lotus flowers](https://opengameart.org/content/lotus-flowers) on this site are used under a Creative Commons ["CC0" license](https://creativecommons.org/publicdomain/zero/1.0/). Thank you Gostay for releasing your beauty to the world. No, they're not AI generated. Yes, they are _procedurally_ generated.
 
-All amendments and modifications to the CC0 content are copyright their respective owner. All rights reserved.
+All amendments and modifications to the CC0 content are copyright their respective owner and used with permission. All rights reserved.
 
-All other content is copyright its respective owner. All rights reserved.
+All other content is copyright its respective owner and used with permission. All rights reserved.

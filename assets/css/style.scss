@@ -359,7 +359,7 @@ td {
 	background-color: $color-td-bg;
 }
 
-$text-color: color.adjust(random-color-from($primary-colors), $lightness: -50%, $space: oklch);
+$text-color: color.adjust(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
  table.wikilinks {
   td {
     a {
@@ -367,7 +367,7 @@ $text-color: color.adjust(random-color-from($primary-colors), $lightness: -50%, 
       color: $text-color;
     }
     color: $text-color;
-    background-color: color.adjust($random-opposite, $lightness: 50%, $space: oklch);
+    background-color: color.adjust($random-opposite, $lightness: 30%, $space: oklch);
   }
 }
 
