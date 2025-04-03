@@ -15,7 +15,7 @@ permalink: wiki
   {% for file in site.html_pages %}
     {% if file.url contains '/wiki/' %}
       <tr>
-        <td>{{ file.dir | remove: '/wiki/' | remove_last: '/'  }}</td>
+        <td>{{ file.dir | remove: '/wiki/' | slice: 0, -1 | capitalize }}</td>
         <td><a href="{{ file.url | relative_url }}">
           {{ file.title }}
         </a></td>
