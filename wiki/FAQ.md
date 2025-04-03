@@ -9,7 +9,7 @@ excerpt: How can I report issues? What freatures do you offer? What happened to.
 On the [issue tracker!](https://github.com/Frolic-chat/Frolic/issues)
 
 ## What happened to F-Chat Rising?
-No one knows. What we do know is that the maintainer was absent from the Rising repository for over 6 months prior to it unexpectedly going offline. Additionally, the f-list profile of the maintainer's bot was updated sometime around February 8, 2025, and was subsequently blocked from viewing due to a "shocking and harmful content violation". As of March 17, the owner has not edited the profile to lift the block. Speculating on what's going on with real people is rude and unprofessional, so we won't go any further than the facts.
+No one knows. What we do know is that the maintainer was absent from the Rising repository for over 6 months prior to it unexpectedly going offline. Additionally, the f-list profile of the maintainer's bot was updated sometime around February 8, 2025, and was subsequently blocked from viewing due to a "shocking and harmful content violation". As of April 3, the owner has not edited the profile to lift the block. Speculating on what's going on with real people is rude and unprofessional, so we won't go any further than the facts.
 
 ## What features does Frolic offer over the old F-Chat Rising client?
 We have a full changelog [available here!](wiki/CHANGELOG.html)
@@ -56,7 +56,7 @@ It's likely that Frolic and Horizon will maintain feature parity for an extended
 
 ###
 Ultimately, both projects operate with different standards and move towards different goals from the same starting point. If you need a concise way to think about it, consider them sister projects - similar but distinct.
-# 
+#
 
 ## How can I help improve Frolic?
 There are two ways to help out:
