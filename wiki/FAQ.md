@@ -31,7 +31,7 @@ Sure, I have a lot of things I'd like to get done.
 * Maybe some day... a way of relaying interest without the baggage of a "first message"
 
 ## Any relation to the Horizon client?
-Both Frolic and Horizon are derivatives of the same defunct F-Chat Rising client, which itself is developed from the official F-Chat desktop client. Horizon was forked from Frolic, as we were the only up-to-date F-Chat Rising fork anyone could find at the time. Both projects are available under the Expat License (commonly called the "MIT License").
+Both Frolic and Horizon are derivatives of the same defunct F-Chat Rising client, which itself is developed from the official F-Chat desktop client. Horizon was forked from an early version of Frolic, as we were the only up-to-date F-Chat Rising fork anyone could find at the time. Both projects are available under the Expat License (commonly called the "MIT License").
 
 The lead developer of Frolic regularly participates in discussion and code review on Horizon and submits code improvements where appropriate. Meanwhile, Frolic also pulls relevant improvements from Horizon to keep our client up-to-date.
 

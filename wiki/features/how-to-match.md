@@ -4,6 +4,8 @@ layout: default
 excerpt: Some details about how to return positive results
 ---
 # Character Matching
+A computer cannot provide judgment accurate to human standards. It's important to understand this limitation when thinking about how the Rising-based match-maker works.
+
 This page describes some details about how to return positive results using the character matching.
 
 ## How to match with other characters.
@@ -22,9 +24,9 @@ This page describes some details about how to return positive results using the 
    <small>This is not the most ideal way to match gender preferences, and alternative methods are being considered.</small>
 3. Use the 'underage characters' kink is used to filter underage characters.
 4. 'Older characters' and 'younger characters' kinks are interpreted as age difference of 20% of your character's age or greater. So a 20 year old with an age difference kink will match 4+ years. A 50 year old will match "younger characters" 40 and below and "older characters" 60 and above.
-5. If you have a species-fluid character (e.g. you play both your character as both a human and an anthro), you can indicate this by setting your **species** in your character profile in the following ways. Frolic will then score you against the best fitting type. 
+5. If you have a species-fluid character (e.g. you play both your character as both a human and an anthro), you can indicate this by setting your **species** in your character profile in the following ways. Frolic will then score you against the best fitting type.
     * Human or tiger
-    * Human, tiger, or dragon 
+    * Human, tiger, or dragon
     * Anthro (Horse or Tiger)
     * Dragon (Dwarf, Elf, or Human)
     * Elf (optionally vampire or dwarf)
