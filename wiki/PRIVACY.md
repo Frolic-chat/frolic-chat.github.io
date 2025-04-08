@@ -8,7 +8,7 @@ excerpt: How does Frolic use your data?
 ## General
 Frolic does not collect any personal information about you, your computer, or anything else, other than what is necessary to connect you to F-Chat.
 
-No data about your sessions, chats, characters, passwords, et cetera, is shared with the Frolic developers.
+**The Frolic app does not send any of your data to its developers.** We are not interested in who your fursona is. Or who you talk to on the grown-up writing website. Or how many gigacats of RAM your hard drive can display. If you want to give us something (such as feature requests or bug reports) visit the [issues page](https://github.com/Frolic-chat/Frolic/issues) of our github.
 
 ## Connectivity
 Frolic connects to the following hosts:

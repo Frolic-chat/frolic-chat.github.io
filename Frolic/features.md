@@ -3,7 +3,7 @@ title: Features
 layout: default
 ---
 # New Features
-These are major features, for all changes, see the [changelog](wiki/CHANGELOG.md)
+These are major features, for all changes, see the [changelog](wiki/development/CHANGELOG.md)
 
 ### Interaction
 * Receive desktop notifications when friends or bookmarks log in.

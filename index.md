@@ -22,7 +22,7 @@ Refer to the [original installation instructions](https://wiki.f-list.net/F-Chat
 
 
 ## Features
-For a detailed list of changes, see the [changelog](wiki/CHANGELOG.html) or [legacy changelog](wiki/CHANGELOG-legacy.md)
+For a detailed list of changes, see the [changelog](wiki/development/CHANGELOG.html) or [legacy changelog](wiki/development/CHANGELOG-legacy.md)
 
 ## Key Differences from the original F-Chat client
 

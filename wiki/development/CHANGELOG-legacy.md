@@ -5,7 +5,7 @@ excerpt: Release notes for F-Chat Rising, Frolic's predecessor
 ---
 # Legacy Changelog
 
-Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic continues to support many of these features, but these releases may become outdated over time. See Frolic's [actual changelog](wiki/CHANGELOG.html) for recent release notes. These release notes have been preserved for posterity.
+Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic continues to support many of these features, but these releases may become outdated over time. See Frolic's [actual changelog](wiki/development/CHANGELOG.html) for recent release notes. These release notes have been preserved for posterity.
 
 ## 1.27.1 & 1.27.2 & 1.27.3
 * Build fixes
@@ -22,7 +22,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 * Fixed a few cases where high-quality portraits were not displayed
 
 ## 1.26.1
-* Added [high-quality portrait guide](https://github.com/hearmeneigh/fchat-rising/wiki/High%E2%80%90Quality-Portraits)
+* Added high-quality portrait guide
 * Added high-quality portrait check to Profile Helper
 * Added option for disabling high-quality portraits
 * Added cleaner `[quote][/quote]` style for profiles
@@ -30,7 +30,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 
 ## 1.26.0
 * High-quality portraits
-  * Override the default 100x100px portrait with a high-resolution image 
+  * Override the default 100x100px portrait with a high-resolution image
   * Add the following anywhere in your character's profile to enable high-quality portrait:
     * `[url=https://some.domain.ext/path/to/image.png]Rising Portrait[/url]`
     * Replace `https://some.domain.ext/path/to/image.png` with the URL to your portrait.
@@ -71,7 +71,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 * Added ARM64 builds for Linux and Windows
 * Fixed a bug that prevented the client from occasionally recognizing gender preferences
 * Fixed more random freezes
-* Abandoned Keytar in favor of [Electron safeStorage](https://www.electronjs.org/docs/latest/api/safe-storage) -- you will need to re-enter your password 
+* Abandoned Keytar in favor of [Electron safeStorage](https://www.electronjs.org/docs/latest/api/safe-storage) -- you will need to re-enter your password
 * New URL: https://hearmeneigh.github.io/fchat-rising/
 
 ## 1.23.5
@@ -79,7 +79,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 
 ## 1.23.4
 * Hotfix to address slowdown issues
-* Fixed Profile Helper failing to detect stock kinks grouped inside custom kinks 
+* Fixed Profile Helper failing to detect stock kinks grouped inside custom kinks
 
 ## 1.23.3
 * Hotfix to fix color picker not disappearing
@@ -116,7 +116,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 * Fixed a bug that skipped resolving profiles from channel ads
 * Non-binary genders are now considered mismatches against straight, gay, and bi orientations
     * To override this, you can add kinks such as 'transgenders' to your favorite kinks
-* Smart Filter automatically marks matches as red if 'penalize matches' is selected 
+* Smart Filter automatically marks matches as red if 'penalize matches' is selected
 
 ## 1.21.0
 * Added clearer broadcast messages
@@ -137,7 +137,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
     * Central ad editor for all ads
     * Button near 'Console' in the Sidebar
 * Added Post Ads:
-    * Select ads based on your mood, preference, etc. 
+    * Select ads based on your mood, preference, etc.
     * Launch ads on multiple channels
     * Button near 'Console' in the Sidebar
 
@@ -151,7 +151,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 
 ## 1.19.1
 * Performance improvement for players who connect multiple characters at the same time
-* Limit max height of the status message banner on character profile 
+* Limit max height of the status message banner on character profile
 
 ## 1.19.0
 * Fixed formatting for body type comparison
@@ -172,7 +172,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 * Filtered messages are now accessible in the conversation history
 * Rejection messages are now also sent to filtered characters whose profiles have not been scored at the time they message you
 * Slightly relaxed filter scoring
-* Character preview now shows last messages from conversation history 
+* Character preview now shows last messages from conversation history
 
 ## 1.17.1
 * Fixes to smart filters
@@ -246,7 +246,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 ## 1.9.0
 *   Right click any word and select 'Look up...' to see its dictionary definition
 *   Skip button for auto-post ads
-*   Image tab on the character profile view now loads up faster 
+*   Image tab on the character profile view now loads up faster
 *   Search results view is now more responsive while scoring profiles
 *   Fixed 'unicorn match' badge color
 
@@ -343,7 +343,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 *   Link Previews
     *    Hover cursor over any `[url]` to see a preview of it
     *    Middle click any `[url]` to turn the preview into a sticky / interactive mode
-    *    Link preview has an ad-blocker to minimize page load times and protect against unfriendly scripts 
+    *    Link preview has an ad-blocker to minimize page load times and protect against unfriendly scripts
 *   Profile
     *    Kinks are auto-compared when viewing character profile
     *    Custom kink explanations can be expanded inline
@@ -355,7 +355,7 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
     *    Less informative side bar details (views, contact) are separated and shown in a less prominent way
     *    Cleaner guestbook view
     *    Profiles, images, guestbook posts, and groups are cached for faster view
-    *    Character view tabs (overview, images, etc.) stick to the top 
+    *    Character view tabs (overview, images, etc.) stick to the top
 *   Character Search
     *    Search results are sorted based on match scores
     *    Display match score in search results
@@ -373,4 +373,4 @@ Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic cont
 *   Technical Details for Nerds
     *    Upgraded to Electron 9.x
     *    Replaced `node-spellchecker` with the built-in spellchecker that ships with Electron 8+
-    *    Multi-language support for spell checking (Windows only – language is autodetected on MacOS) 
+    *    Multi-language support for spell checking (Windows only – language is autodetected on MacOS)
