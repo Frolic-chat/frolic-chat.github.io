@@ -8,8 +8,8 @@ Frolic lets you know when your friends or bookmarks are active in your rooms. Yo
 
 ## Global Setting
 You can enable this option globally in the primary settings menu:
-<div class="centered">![Global Friend Message Setting](friend-msg-notifications/friend-msg.webp)</div>
+<div class="centered">![Global Friend Message Setting](./friend-msg-notifications/friend-msg.webp)</div>
 
 ## Per-room Setting
 You may also enable (or disable) this setting for a single room, so you don't need to get constantly pinged when they're active in a particular room you don't want to pay attention to:
-<div class="centered">![Channel Friend Message Setting](friend-msg-notifications/friend-msg-channel.webp)</div>
+<div class="centered">![Channel Friend Message Setting](./friend-msg-notifications/friend-msg-channel.webp)</div>
