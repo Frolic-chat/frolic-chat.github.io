@@ -285,10 +285,10 @@ dl p {
 }
 
 hr {
-  border:0;
+  border: 0;
   background-color: next-in-sequence($primary-colors);
-  height:1px;
-  margin:0 0 24px;
+  height: 1px;
+  margin: 0 0 24px;
 }
 
 /* Images */
@@ -297,18 +297,18 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 650px;
-  padding: 5px;
-  margin: 10px 0 32px 0;
+  padding:  5px;
+  margin:  10px 0 32px 0;
   border: 1px solid;
   border-color: next-in-sequence($primary-colors);
 }
 
 p img, .emoji {
   display: inline;
-  margin: 0;
+  margin:  0;
   padding: 0;
   vertical-align: middle;
-  text-align: center;
+  text-align:     center;
   border: none;
 }
 
@@ -318,6 +318,9 @@ code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
   border:1px solid random-color-from($primary-colors);
+  padding-top:   0.3em;
+  padding-left:  0.5em;
+  padding-right: 0.5em;
 }
 
 code {

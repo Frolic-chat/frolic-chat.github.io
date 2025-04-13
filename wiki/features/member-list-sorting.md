@@ -18,6 +18,6 @@ Additionally, the icon has been changed to one that makes more sense for its fun
 
 
 ## Caveats
-Sorting when two genders are equally desired (such as having both "males" and "females" in your favorites) is determined by localized alphabetic ordering of the American English gender names. The english sorting for a pansexual with no gender kinks is: `C > F > H > M > Mh > None > S > T`
+Sorting when two genders are equally desired (such as having both "males" and "females" in your favorites) is determined by localized alphabetic ordering of the American English gender names. The english sorting for a pansexual with no gender kinks is purely alphabetical: ` C > F > H > M > Mh > None > S > T `
 
 Your character's gender preferences are only detected when you login. If you update your character's preferences and want to see a new sort-order, log out and back in.
