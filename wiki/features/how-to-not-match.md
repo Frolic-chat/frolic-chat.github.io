@@ -7,7 +7,7 @@ excerpt: Getting the least out of the match-maker
 A computer cannot provide judgment accurate to human standards. It's important to understand this limitation when thinking about how the Rising-based match-maker works.
 
 ## Computer Matching
-1. Computers can only process information they've given**
+1. **Computers can only process information they're given**
 
    Having an empty profile or leaving fields blank will lead to worse matching results.
 
