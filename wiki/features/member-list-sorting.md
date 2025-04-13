@@ -8,9 +8,7 @@ excerpt: Sorting the member list by gender accounts for your character's prefere
 # Member List Sorting
 Did you know you can sort the member list of a channel by clicking the dual-triangles next to the member count? I didn't either!
 
-<div class="centered" markdown="1">
 ![Dual Triangles that Sort](member-sorting/250411-154812%20Selection.webp)
-</div>
 
 
 ## Improved Functionality
