@@ -1,7 +1,7 @@
 ---
 title: Kemonomimi matching
 layout: default
-excerpt: Details on the Kemonomimi update
+excerpt: How to ensure you're perceived as kemonomimi
 ---
 # 0.5.0 The Great Catgirl Remix
 This update adds the necessary architecture to support kemonomimi in Furry Pairing matching.
@@ -19,4 +19,4 @@ In many cases, a pairing preference simply won't show up as part of the matching
 
 *Remember:* It is not possible for an automated machine to make decisions for you, but hopefully this change will make your partner selection easier by showing you potential partners with caveats.
 
-<sub>While it would certainly be better to just have a checkbox, the chat client cannot send arbitrary data across the F-List network, therefore there'd be no way for other chatters to detect what you've set. Therefore, some manner of transferable information needs to be used. This is the best we have for now.</sub>
+<small>While it would certainly be better to just have a checkbox, the chat client cannot send arbitrary data across the F-List network, therefore there'd be no way for other chatters to detect what you've set. Therefore, some manner of transferable information needs to be used. This is the best we have for now.</small>
