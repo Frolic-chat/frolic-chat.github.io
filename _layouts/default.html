@@ -49,8 +49,10 @@
       </section>
 
       <footer><p><small>
-        <a href="/wiki/LICENSE.html">License</a>
-        <br/>
+        {% if file.url contains '/wiki/' %}
+          {% include wiki-footer.html %}
+        {% endif %}
+        <a href="/wiki/LICENSE.html">License</a><br/>
         <a href="/wiki/PRIVACY.html">Privacy</a>
       </small></p></footer>
     </div>

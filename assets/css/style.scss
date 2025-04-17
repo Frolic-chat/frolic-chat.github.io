@@ -224,8 +224,7 @@ $text-shadow: next-in-sequence($primary-colors);
 $text-color: color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 section a {
   color: $text-color;
-  text-decoration-color: $text-shadow;
-  text-decoration: underline;
+  text-decoration: underline $text-shadow;
   font-weight: 700;
 
   &:hover {
@@ -233,7 +232,7 @@ section a {
   }
 
   &:visited {
-    color: color.change($text-color, $lightness: 40%, $space: oklch);
+    color: color.adjust(color.change($text-color, $lightness: 40%, $space: oklch), $hue: 4%, $space: oklch);
   }
 }
 
