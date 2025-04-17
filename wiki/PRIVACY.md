@@ -33,11 +33,11 @@ When the 'Link Preview' feature is used, Frolic will connect to the URL being pr
 ## High-Quality Portraits
 When 'High-Quality Portraits' feature is used, Frolic may connect to the following additional domains:
 
-* iili.io
-* e621.net
-* imgur.com
-* freeimage.host
-* redgifs.com
+* `iili.io`
+* `e621.net`
+* `imgur.com`
+* `freeimage.host`
+* `redgifs.com`
 
 If you are concerned about your security or privacy, consider disabling the high quality portraits feature in Frolic settings.
 
