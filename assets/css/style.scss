@@ -232,7 +232,7 @@ section a {
   }
 
   &:visited {
-    color: color.adjust(color.change($text-color, $lightness: 40%, $space: oklch), $hue: 4%, $space: oklch);
+    color: color.adjust(color.change($text-color, $lightness: 40%, $space: oklch), $hue: 4, $space: oklch);
   }
 }
 

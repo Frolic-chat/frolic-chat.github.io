@@ -30,6 +30,11 @@ Sure, I have a lot of things I'd like to get done.
 * Match-making display improvements to better portray how you overlap with other players.
 * Maybe some day... a way of relaying interest without the baggage of a "first message"
 
+## How can I help improve Frolic?
+There are two ways to help out:
+* Submit an idea to the [issue tracker](https://github.com/Frolic-chat/Frolic/issues). Include how ever many or few details as you want. Ideas that fit the general theme of "enhanced chat client" will get attention. Ideas that are simple and unobtrusive will also get attention. And if you include an offer to do the bulk of the code-work yourself, it's _even more likely_ to get attention. :)
+* **Alternatively:** Fork the project, make some commits, and submit a pull request with an explanation of what your changes accomplish. Simple bug fixes, logic improvements and code improvements are mostly likely to be accepted quickly. If your code is in line with project goals, it will be merged into a new branch for further development.
+
 ## Any relation to the Horizon client?
 Both Frolic and Horizon are derivatives of the same defunct F-Chat Rising client, which itself is developed from the official F-Chat desktop client. Horizon was forked from an early version of Frolic, as we were the only up-to-date F-Chat Rising fork anyone could find at the time. Both projects are available under the Expat License (commonly called the "MIT License").
 
@@ -37,7 +42,7 @@ The lead developer of Frolic regularly participates in discussion and code revie
 
 There is no hostility between these projects; We're happy Horizon exists, and we're sure they're thankful for our contributions.
 
-## What makes Frolic different from Horizon?
+### What makes Frolic different from Horizon?
 It's likely that Frolic and Horizon will maintain feature parity for an extended period of time.
 
 * In terms of end-user experience, there may never be much difference. Frolic seeks to establish sane, helpful, and unobtrusive defaults so you can run the application as-is. The intent of Frolic is to enhance the original client with features that stay out of the way and let the user control their own experience.
@@ -54,11 +59,4 @@ It's likely that Frolic and Horizon will maintain feature parity for an extended
 
     Both projects accept issue reports, feature requests, and code contributions from the general public. It's yet to be seen how either project address low-quality code submissions, as nothing of note has happened this early in these project's lives.
 
-###
 Ultimately, both projects operate with different standards and move towards different goals from the same starting point. If you need a concise way to think about it, consider them sister projects - similar but distinct.
-#
-
-## How can I help improve Frolic?
-There are two ways to help out:
-* Submit an idea to the [issue tracker](https://github.com/Frolic-chat/Frolic/issues). Include how ever many or few details as you want. Ideas that fit the general theme of "enhanced chat client" will get attention. Ideas that are simple and unobtrusive will also get attention. And if you include an offer to do the bulk of the code-work yourself, it's _even more likely_ to get attention. :)
-* **Alternatively:** Fork the project, make some commits, and submit a pull request with an explanation of what your changes accomplish. Simple bug fixes, logic improvements and code improvements are mostly likely to be accepted quickly. If your code is in line with project goals, it will be merged into a new branch for further development.
