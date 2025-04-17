@@ -7,7 +7,7 @@ excerpt: How to set up a development environment to help with testing and runnin
 This page describes how to set up a development environment to help with testing and running unreleased versions of Frolic.
 
 ## Code of Conduct
-Read our [Code of Conduct](wiki/development/CODE_OF_CONDUCT.html) to see if your development goals align with Frolic's.
+Read our [Code of Conduct](CODE_OF_CONDUCT.html) to see if your development goals align with Frolic's.
 
 ## Development
 Frolic uses NodeJS `16.x` and may not work on newer versions. Having a system node of a higher version probably won't hurt anything. The lead developer uses version 22. Use [`nvm`](https://github.com/nvm-sh/nvm) or [`nvm-windows`](https://github.com/coreybutler/nvm-windows) to simplify your life.

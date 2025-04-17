@@ -173,7 +173,7 @@ h1, h2, h3 {
 h1 {
   font-size: 30px;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
   box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -182,7 +182,7 @@ h2 {
   font-size: 24px;
   padding: 0 1rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
   box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -191,7 +191,7 @@ h3 {
   font-size: 18px;
   padding: 0 2rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
   box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -199,7 +199,7 @@ h3 {
 h4 {
   padding: 0 3rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
   box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -207,7 +207,7 @@ h4 {
 h5 {
   padding: 0 4rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
   box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -215,7 +215,7 @@ h5 {
 h6 {
   padding: 0 5rem;
   color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 2px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
   border-color: next-in-sequence($primary-colors);
   box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
