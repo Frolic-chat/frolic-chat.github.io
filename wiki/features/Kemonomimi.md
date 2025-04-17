@@ -6,6 +6,8 @@ excerpt: How to ensure you're perceived as kemonomimi
 # 0.5.0 The Great Catgirl Remix
 This update adds the necessary architecture to support kemonomimi in Furry Pairing matching.
 
+<small>A _kemonomimi_ is a humanoid character with animal ears, and possibly a tail or other obvious animal feature (like a shell for a turtle-person). The matchmaker figures out if your character is a kemonomimi by looking for an obvious kemonomimi species in your "species" field or by checking that you have an animal species and a "human" body type. If your furry character is incorrectly being detected as a kemonomimi instead of an anthro, change your body type to "anthro".</small>
+
 Catgirls are frequently considered human-ish by furries and furry by humans. The issue is most obvious in the "Furry preference" selector which only lets you select humans or furries (or both) as a prefered partner.
 
 Does this mean cute beetleboys should only be marked compatible with players who put "furries and/or humans" as their preference? We have a better solution: Let every doggirl herself decide whether she should be read as human or furry. By default, kemonomimi will be considered furry. However, by choosing certain options on their profile the character matcher will consider them as human.
