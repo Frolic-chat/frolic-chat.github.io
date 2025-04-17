@@ -26,7 +26,7 @@ Refer to the [original installation instructions](https://wiki.f-list.net/F-Chat
 1. **Caching** speeds up profile loads and other actions.
 1. **Smart filters** let you choose what kind of ads and posts you see in the chat.
 * [Full list of legacy differences from vanilla](https://frolic-chat.github.io/wiki/features/features-legacy.html) (implemented by Rising)
-* [Full list of changes since Rising](https://frolic-chat.github.io/wiki/development/CHANGELOG.html).
+* [Full list of changes since Rising](https://frolic-chat.github.io/wiki/development/CHANGELOG.html)
 
 To learn more about Frolic, here are some pages you might want to visit:
 * [How does character matching work?](https://frolic-chat.github.io/wiki/features/how-to-match.html)
