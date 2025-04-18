@@ -1,9 +1,10 @@
 ---
 title: Features
 layout: default
+excerpt: A quick list of major features introduced in Frolic
 ---
 # New Features
-These are major features, for all changes, see the [changelog](wiki/development/CHANGELOG.md)
+These are major features, for all changes, see the [changelog](development/CHANGELOG.md)
 
 ### Interaction
 * Receive desktop notifications when friends or bookmarks log in.

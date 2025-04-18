@@ -6,11 +6,21 @@ excerpt: All release notes in one easy to find place.
 # Changelog
 
 ## Next?
-* Sensible UI simplification to prevent sensory overload and let you focus on your friends and their terrible memes.
+* Sensible UI adjustment to reduce sensory overload and let you focus on your friends and their terrible memes.
 * Remove broadcasts from logs; At least don't ping all convos (the noise!!!)
-* Better way to display points of interest between characters. Less "yes/no" and more "Here's where you overlap, here's where there might be contention"
+* Eidols. . .
 
-## Release 0.6
+## Release 0.7.0
+* Orientation matching improvements for nonbinary genders, with further experimental improvements locked behind a toggle in the options
+* Updated the room member list sorting button so people realize they can sort the room member list
+* Member list gender sorting now uses your character orientation to put your prefered genders on top, instead of using a predefined order
+* Updated the eicon pages to remove dead icons and include a wider variety of icons
+* Significant updates to species lists, including adding "exotic species"
+* Moved documentation to [its own repo](https://frolic-chat.github.io/)
+* Improvements to notifications for friend logins.
+* Large localization update.
+
+## Release 0.6.0
 * Added setting to receive notifications when friends/bookmarks log in
 * Added setting to receive notifications when friends/bookmarks send a message in a channel (configurable per-channel!)
 * Notification settings with similar purpose have been grouped together. Further adjustments are still needed to the overall settings layout.

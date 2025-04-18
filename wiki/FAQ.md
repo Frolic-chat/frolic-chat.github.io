@@ -12,7 +12,7 @@ On the [issue tracker!](https://github.com/Frolic-chat/Frolic/issues)
 No one knows. What we do know is that the maintainer was absent from the Rising repository for over 6 months prior to it unexpectedly going offline. Additionally, the f-list profile of the maintainer's bot was updated sometime around February 8, 2025, and was subsequently blocked from viewing due to a "shocking and harmful content violation". As of April 3, the owner has not edited the profile to lift the block. Speculating on what's going on with real people is rude and unprofessional, so we won't go any further than the facts.
 
 ## What features does Frolic offer over the old F-Chat Rising client?
-We have a full changelog [available here!](wiki/development/CHANGELOG.html)
+We have a full changelog [available here!](development/CHANGELOG.html)
 For a brief overview:
 * More options to be notified when your friends/bookmarks are active
 * The adblocker for the image preview actually works now
@@ -33,6 +33,7 @@ Sure, I have a lot of things I'd like to get done.
 ## How can I help improve Frolic?
 There are two ways to help out:
 * Submit an idea to the [issue tracker](https://github.com/Frolic-chat/Frolic/issues). Include how ever many or few details as you want. Ideas that fit the general theme of "enhanced chat client" will get attention. Ideas that are simple and unobtrusive will also get attention. And if you include an offer to do the bulk of the code-work yourself, it's _even more likely_ to get attention. :)
+   Alternatively, discussing the way you use Frolic can give the developers hints on where to focus their efforts.
 * **Alternatively:** Fork the project, make some commits, and submit a pull request with an explanation of what your changes accomplish. Simple bug fixes, logic improvements and code improvements are mostly likely to be accepted quickly. If your code is in line with project goals, it will be merged into a new branch for further development.
 
 ## Any relation to the Horizon client?

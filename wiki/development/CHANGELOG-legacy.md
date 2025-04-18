@@ -5,7 +5,7 @@ excerpt: Release notes for F-Chat Rising, Frolic's predecessor
 ---
 # Legacy Changelog
 
-Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic continues to support many of these features, but these releases may become outdated over time. See Frolic's [actual changelog](wiki/development/CHANGELOG.html) for recent release notes. These release notes have been preserved for posterity.
+Below are the release notes for F-Chat Rising, Frolic's predecessor. Frolic continues to support many of these features, but these releases may become outdated over time. See Frolic's [current changelog](CHANGELOG.html) for recent release notes. These release notes have been preserved for posterity.
 
 ## 1.27.1 & 1.27.2 & 1.27.3
 * Build fixes

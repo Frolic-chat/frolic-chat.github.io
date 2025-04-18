@@ -20,7 +20,7 @@ This page describes some details about how to return positive results using the 
    *   Non-custom kinks
    *   Species
 
-2. Matching for non-binary genders relies primarily on kinks. Where ever it appears obvious, an orientation match is made, but not all orientations can be cleanly applied to the whole gender spectrum. See the [details page](https://frolic-chat.github.io/wiki/features/orientation.html) for, well, details.
+2. Matching for non-binary genders relies primarily on kinks. Where ever it appears obvious, an orientation match is made, but not all orientations can be cleanly applied to the whole gender spectrum. See the [details page](orientation.html) for, well, details.
 
 3. Use the 'underage characters' kink to filter underage characters.
 
@@ -32,4 +32,4 @@ This page describes some details about how to return positive results using the 
 
    If you set an animal species but your body type is human, you may be accidentally picked up as a kemonomimi (catgirl). To avoid this, don't set your body type on a character that can vary between human/anthro.
 
-   The [species matching details](https://frolic-chat.github.io/wiki/features/species-matching.html) page has in-depth information on species matching.
+   The [species matching details](species-matching.html) page has in-depth information on species matching.
