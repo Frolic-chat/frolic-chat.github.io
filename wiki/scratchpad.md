@@ -32,6 +32,7 @@ StrangeStorage:
 		When someone starts typing at you you get a message, can we send something innocuous back to figure out if we should start protocol communication? Is there any other non-intrusive player-to-player communication to piggyback off of?
 	Investigate storage options:
 		EIcon???
+		[bbcode]?
 		Inline image data (steganography)
 		Profile image data (steganography or caption?)
 		Contact info?
@@ -46,14 +47,22 @@ StrangeStorage:
 
 Better use for side bar in PM than showing profile?
 
+sticky image popup to different parts of screen.
+	not covering user menu or member list
+
 smart filter for blank/mostly empty profiles
 	- empty avatar detection?
 	- empty profile body?
 	- lacking common/meaningful info?
 	- lacking any customs
 
-v - smart filter for hubs
---> receive feedback
+Match single species in faves as species of speciesless?
+
+Smart filters:
+	hubs
+	poke/digi/moogles smart filter 	  	 --> canon species
+	obesity/weight gain/eating disorders --> weight play
+	new 								 --> nonbinary genders
 
 prune long option lists
 
@@ -119,9 +128,6 @@ extend friend/bm message notify to PMs; ie verify notify isn't singular controll
 Significantly redo notification settings for ✨ clarity ✨
 	move to own settings window (when settings redo)
 
-Dim characters who aren't friends of this character.
-BM remembered by who you were on when you BMed them?
-
 Manually tag players based on your interest in them
 
 Reminders to add memos to players?
@@ -174,17 +180,6 @@ Show f/m pref in character popup.
 
 lighten(), darken(), saturate() adjust-color()
 
-nyehe, nuttoohard to expressions
-
-Species:
-	add "Room" to hub profiles
-	add "shape changer" "Doppelganger" to shape shifter
-	add "machinery .*"
-	add 'shep' to dog
-	add "varies" to ???
-	"Felis Catus, American Bombay" is showing up as a canine
-	"American Opossoum"
-
 can upgrade sass now
 
 three columns of pictures at wide screens
@@ -225,57 +220,86 @@ new ffxiv species kink match
 
 eidol shortcut for "people who are into me" (ie pairing pref to match me, etc)
 
-reexamine how species determination is done
-	specifically, do/should we use .* in species names, or doe that break comma separating?
+move log location file should also allow moving configuration files?? (for portable build)
+	CHECK OUT: const baseDir = app.getPath('userData');
+		it can accept 'exe'
+		https://www.electronjs.org/docs/latest/api/app
+	similar to "set default browser"
+	settings in electron/common.ts for system wide
+		also check ./interfaces.ts
+	Commandline flag to run portable.
+	SAVE SETTING WITH APP(?)
+		also include a warning about password saving still being dependent on your OS/being saved with OS. Refrain from using Save Password (disable it?)
+	Need fallback directory,
+		advise user that not having a directory to save settings may result in unexpected behavior.
+		The backup directory should be on the local directory, almost certainly the primary drive.
+		Notify prominently in main app if alternate directory is specified but unreachable.
+	Recommend turning off ad logging and channel logging to reduce writes.
 
-Commandline flag to run portable.
-	Save/load settings to a selected directory.
 
 
-Cuntboys kink is broken
-	None gender kink is broken
-
-"exotic species" kink match
-
-orientation matcher only works for cis genders...
-	Pansexual: return neutral
-	f/m pref return early if they're f/m, even before checking your own gender
+None gender kink is broken
 
 Add code to private messages to allow pinging for various things.
 	Allow unread for chats
 
-Custom theme for frolic
-
 allow disabling pinged by bbcode
 
 read eicons and stuff from text file
+	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
 
-change gender sort to character preference.
-
-columns of image should scale with app width
+move updating and external urls to a text file so people can edit it without updating
 
 MOVE SIDEBAR INTO CONSOLE
 	Console top bar size adjustment
-
-Webpage features? Fix it up.
 
 Setting "Show high quality ("Rising") portraits text explanation.
 
 SettingsView exclamation mark errors.
 UserView silly type errors.
 
+columns of image should scale with app width
+
+de-duplicate recon messages
+
+Custom theme for frolic
+
+Dim characters who aren't friends of this character.
+	or highlight characters who are
+BM remembered by who you were on when you BMed them?
 
 
 
 
-move updating and external urls to a text file so people can edit it without updating
 
-move log location file should also allow moving configuration files?? (for portable build)
-	similar to "set default browser"
-	settings in common.ts for system wide
-		also check ./interfaces.ts
-	SAVE SETTING WITH APP(?)
-		also include a warning about password saving still being dependent on your OS/being saved with OS. Refrain from using Save Password (disable it?)
-	Need fallback directory,
-		and to notify user prominently if alternate directory is specified but unreachable.
+
+
+
+
+Predator/Prey species
+Were/lycanthrope? 	445
+Move undead into undead 556
+
+Fix double gender recommendation (kink + orientation) in matchmaker display
+
+queue fs read/writing so it can be made concurrent
+https://stackoverflow.com/questions/31978347/fs-writefile-in-a-promise-asynchronous-synchronous-stuff
+
+
+
+close irrelevant chat messages
+	"There are too many search results. please narrow your search."
+	"There were no search results."
+
+// to mean OOC - provide a uniform output - grey text in double parenthesis??
+
+eicon
+	tap the sign
+
+TEST ICON DISAPPEARING RIGHT AFTER STARTUP ON WINDOWS
+
+check how a user can find their version
+
+There's a Vue version of Sortable.js (Vue.Draggable)
+that seems to fix this but this is a not-terrible workaround for now.
 ```
