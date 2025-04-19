@@ -16,7 +16,7 @@ excerpt: All release notes in one easy to find place.
 * Member list gender sorting now uses your character orientation to put your prefered genders on top, instead of using a predefined order
 * Updated the eicon pages to remove dead icons and include a wider variety of icons
 * Significant updates to species lists, including adding "exotic species"
-* Moved documentation to [its own repo](https://frolic-chat.github.io/)
+* Moved documentation to [its own site](https://frolic-chat.github.io/)
 * Improvements to notifications for friend logins.
 * Large localization update.
 

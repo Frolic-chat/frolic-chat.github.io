@@ -7,6 +7,7 @@
 @use 'sass:map';
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 $color-scheme: "frolic-pastel";
 
@@ -154,9 +155,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Kalam', Arvo, Monaco, serif;
   margin:36px 0 10px;
   font-weight: normal;
+}
+
+h1 {
+  font-family: 'Kalam', Arvo, Monaco, serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Winky Sans", Arvo, Monaco, serif;
 }
 
 p, ul, ol, table, dl {
