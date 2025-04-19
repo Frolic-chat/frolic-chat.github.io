@@ -326,12 +326,12 @@ p img, .emoji {
 
 /* Code blocks */
 
-$code-color:    color.change(random-color-from($primary-colors), $lightness: -25%, $space, oklch);
+$code-color:    color.change(random-color-from($primary-colors), $lightness: -25%, $space: oklch);
 $code-bg-color: color.change(opposite-hue($random-color),        $lightness:  25%, $space: oklch);
 code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  background-color: $code-color;
-  color: $code-bg-color;
+  color: $code-color;
+  background-color: $code-bg-color;
   font-size: 14px;
   border:1px solid random-color-from($primary-colors);
   padding-top:   0.3em;
