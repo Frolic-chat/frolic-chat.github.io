@@ -335,16 +335,18 @@ code, pre {
   padding-right: 0.5em;
 }
 
+$code-color: random-color-from($primary-colors);
+$code-bg-color: color.change(opposite-hue($random-color), $lightness: 30%, $space: oklch);
 code {
-  background-color: white;
-  color: black;
+  background-color: $code-color;
+  color: $code-bg-color;
 }
 
 pre {
 	padding: 4px 12px;
   border-radius:4px;
-  color: random-color-from($primary-colors);
-  background-color: color.change(opposite-hue($random-color), $lightness: 30%, $space: oklch);
+  color: $code-color;
+  background-color: $code-bg-color;
   overflow: auto;
   overflow-y: hidden;
 	margin-bottom: 32px;

@@ -24,6 +24,7 @@ StrangeStorage:
 	Send Love function (👍/👎)
 		How to manage sharing without storage server?
 	Trans F/M state
+	Femboy
 	Pronouns/perception for H/S?
 	HQ portrait
 	Safe Word feature from april 1 post
@@ -36,7 +37,8 @@ StrangeStorage:
 		Inline image data (steganography)
 		Profile image data (steganography or caption?)
 		Contact info?
-			rule: Only use completely irrelevant/dead
+			Rule: Only use completely irrelevant/dead
+			Even so, appearance is intrusive, so does not solve the issue.
 			AIM: aim:goim?screenname=<DATA>
 			skype: skype:<DATA>?chat
 			yahoo: ymsgr:sendIM?<DATA>
@@ -103,19 +105,9 @@ Safe image hosts:
 shorten list of options above chats,
 OR MOVE THE OPTIONS TO THE BOTTOM
 
-Don't play noise for broadcast except in console
-
-Chat window just for broadcast?
-
 Recommendations on blank pm/button on pm
 	- things to talk about when msging people
 	- reminder to check their profile...?
-
-PROFILE RECOMMENDATIONS:
-	"use small/big instead of sub/sup in profiles"
-	"SHORTEN YOUR DESCRTIPTION!"/use collapses
-	keywords? A checklist a user can go through.
-	invalid [color=] tags. - silver, grey, capitals - anything not a normal color
 
 Build the "new notes" pop-up into the user list, since it's going to cover the bottom part of it anyways. Might as well allow users to scroll to the bottom of their user list without having to X the note pup-up.
 
@@ -218,7 +210,7 @@ new ffxiv species kink match
 
 "invalid ticket" means tooltip is stuck on loading forever.
 
-eidol shortcut for "people who are into me" (ie pairing pref to match me, etc)
+eidol shortcut for "people who are into me" (ie pairing pref to match me, etc) - show passive search box
 
 move log location file should also allow moving configuration files?? (for portable build)
 	CHECK OUT: const baseDir = app.getPath('userData');
@@ -236,70 +228,92 @@ move log location file should also allow moving configuration files?? (for porta
 		Notify prominently in main app if alternate directory is specified but unreachable.
 	Recommend turning off ad logging and channel logging to reduce writes.
 
-
-
-None gender kink is broken
-
-Add code to private messages to allow pinging for various things.
-	Allow unread for chats
-
-allow disabling pinged by bbcode
-
-read eicons and stuff from text file
-	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
-
-move updating and external urls to a text file so people can edit it without updating
-
-MOVE SIDEBAR INTO CONSOLE
-	Console top bar size adjustment
-
-Setting "Show high quality ("Rising") portraits text explanation.
-
-SettingsView exclamation mark errors.
-UserView silly type errors.
-
-columns of image should scale with app width
-
-de-duplicate recon messages
-
-Custom theme for frolic
-
-Dim characters who aren't friends of this character.
-	or highlight characters who are
-BM remembered by who you were on when you BMed them?
-
-
-
-
-
-
-
-
-
-Predator/Prey species
-Were/lycanthrope? 	445
-Move undead into undead 556
-
-Fix double gender recommendation (kink + orientation) in matchmaker display
-
-queue fs read/writing so it can be made concurrent
-https://stackoverflow.com/questions/31978347/fs-writefile-in-a-promise-asynchronous-synchronous-stuff
-
-
-
 close irrelevant chat messages
 	"There are too many search results. please narrow your search."
 	"There were no search results."
 
-// to mean OOC - provide a uniform output - grey text in double parenthesis??
-
-eicon
-	tap the sign
+queue fs read/writing so it can be made concurrent
+https://stackoverflow.com/questions/31978347/fs-writefile-in-a-promise-asynchronous-synchronous-stuff
 
 TEST ICON DISAPPEARING RIGHT AFTER STARTUP ON WINDOWS
 
-check how a user can find their version
+read eicons and stuff from text file
+	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
 
-There's a Vue version of Sortable.js (Vue.Draggable)
-that seems to fix this but this is a not-terrible workaround for now.
+
+
+??? ? ??
+Add code to private messages to allow pinging for various things.
+	Allow unread for chats
+
+
+Big features:
+	Custom theme for frolic
+	// to mean OOC - provide a uniform output
+		grey text in double parenthesis??
+	move updating and external urls to a text file so people can edit it without updating
+	MOVE SIDEBAR INTO CONSOLE
+		Console top bar size adjustment
+	Settings groups:
+		Notifications
+		Serenity
+			- Broadcast in: Console | Console+CurrentConvo | Console+Current+Channels | Everywhere
+			- Sound from broadcast only once
+			- Do not log broadcasts
+**			-- Remove BROADCAST TYPE from LOGGING
+**			-- Do not play sound in normal chat msg if msg is BROADCAST TYPE
+**			-- User option to NOT SHOW BROADCASTS IN PMS
+	PROFILE RECOMMENDATIONS:
+		"use small/big instead of sub/sup in profiles"
+		"SHORTEN YOUR DESCRTIPTION!"/use collapses
+		keywords? A checklist a user can go through.
+		invalid [color=] tags. - silver, grey, capitals - anything not a normal color
+
+Small features:
+	Warning on start if your log level is debug or worse
+	Setting "Show high quality ("Rising") portraits text explanation.
+	columns of image should scale with app width
+	Highlight characters in friends list who are friends of **this** character
+		BM remembered by who you were on when you BMed them?
+	Species matching:
+		Predator/Prey species ????
+		Were/lycanthrope? 	445
+		Move undead into undead 556
+
+Bug fixes:
+	None gender kink is broken
+	allow disabling pinged by bbcode
+	de-duplicate recon messages
+	SettingsView exclamation mark errors
+	UserView silly type errors
+	"Open conversation" window text box should hijack the keyboard
+	Fix double gender recommendation (kink + orientation) in matchmaker display
+	Autofocus input box when opening "Open Conversation" modal
+
+Don't play noise for broadcast except in console
+Chat window just for broadcast?
+
+Misc:
+	flower integration
+	website themeing
+
+eicon
+	soft			dogdoin
+	soft			dogewut
+	soft			catnapping
+	soft			blobfoxbongo
+	memes			nct1
+	memes			dogcited
+	memes			tap the sign
+	expressions		robotsmug
+	expressions		fsquint
+	expressions		howembarrassing
+	sexual			brainmelt
+
+	yappers 		-> expressions
+	bottomfingers 	-> expressions
+
+	remove -> collaredpet
+	remove -> wolfknot2
+	remove -> ballsworship3
 ```
