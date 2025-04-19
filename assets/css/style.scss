@@ -327,7 +327,7 @@ p img, .emoji {
 /* Code blocks */
 
 $code-color:    color.adjust(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
-$code-bg-color: color.adjust($random-opposite, $lightness:  50%, $space: oklch);
+$code-bg-color: color.adjust($random-opposite, $lightness: 50%, $chroma: -50%, $space: oklch);
 code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $code-color;
