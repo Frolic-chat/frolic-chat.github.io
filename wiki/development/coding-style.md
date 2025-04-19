@@ -8,7 +8,7 @@ _Remember that this is a group project; you're not alone and you don't to be per
 
 _This is a conceptual document and nothing in here is a hard rule. It really does not matter what you code looks like - the real test is: Does people _besides you_ understand it? If so, you're good._ 👍
 
-Frolic does not have an enforced coding style. However, there are things you can do to make everyone's life easier. And by everyone I mean, "**you** when you come back to fix something in a month and can't remember anything about what you did."
+Frolic does not have an enforced coding style. However, there are things you can do to make everyone's life easier. And by _everyone's life_ I mean, "_your life_ when you come back to fix something in a month and can't remember why you did what you did."
 
 ---
 In no particular order:

@@ -326,14 +326,13 @@ p img, .emoji {
 
 /* Code blocks */
 
-$code-color:    color.change(random-color-from($primary-colors), $lightness: -25%, $space: oklch);
-$code-bg-color: color.change(opposite-hue($random-color),        $lightness:  25%, $space: oklch);
+$code-color:    color.change(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
+$code-bg-color: color.change(opposite-hue($random-color),        $lightness:  40%, $space: oklch);
 code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $code-color;
   background-color: $code-bg-color;
   font-size: 14px;
-  border:1px solid random-color-from($primary-colors);
   padding-top:   0.3em;
   padding-left:  0.5em;
   padding-right: 0.5em;
@@ -341,7 +340,8 @@ code, pre {
 
 pre {
 	padding: 4px 12px;
-  border-radius:4px;
+  border-radius: 4px;
+  border: 1px solid random-color-from($primary-colors);
   overflow: auto;
   overflow-y: hidden;
 	margin-bottom: 32px;
