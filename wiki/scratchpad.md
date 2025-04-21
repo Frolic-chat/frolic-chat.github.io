@@ -5,7 +5,7 @@ excerpt: A scratchpad of notes from the lead dev
 ---
 
 ## About
-This is a periodically-updated scratchpad for the primary developer. It's not automatically updated, it's just here to give a share vague concepts that have been considered.
+This is a periodically-updated scratchpad for the primary developer. It's not automatically updated, it's just here to give an idea of concepts that were thought of and may need to be looked into further to decide if they're a good fit for Frolic.
 
 # Disclaimer
 **This is not a list of features to implement**, it exists to keep track of ideas to _research_. If anything listed below sounds like something that should get more attention, please make a feature request on the [Issues page](https://github.com/Frolic-chat/Frolic/issues)
