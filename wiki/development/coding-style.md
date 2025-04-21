@@ -264,13 +264,26 @@ example showing if statement super deep, then breaking it up.
 ## Complexity
 You will never make an in-statement that checks 6 million values look simple. That's because it's not. However, you can make simple code look simple, so that when you encounter complex code, you recognize it's complexity.
 
-Here's an example of simple code:
 ```ts
-// Apparent complexity due to line length
+// Apparent complexity on first glance due to line length
 return (invalid.length > 0) ? invalid.join(', ') : null;
 
-// But it's actually just a basic if-statement.
+// But it's actually just a basic boolean check.
 return (invalid.length > 0)
     ? invalid.join(', ')
     : null;
+
+
+// Actual complexity; simiplification would actually just be obfuscation:
+```
+
+## Comments
+There's no reason not to leave comments in the doc itself. Leaving a comment on another platform but not inline just increases the work someone else has to do to re-discover your discovery.
+```ts
+/**
+ * Color regexes are available in CoreBBCodeParser in bbcode/core.ts.
+ * In fact, there's probably a way to reuse those.
+ */
+const validColors = ['red', 'blue', 'white', 'yellow', 'pink', 'gray', 'green', 'orange', 'purple', 'black', 'brown', 'cyan'];
+const invalid: string[] = [];
 ```
