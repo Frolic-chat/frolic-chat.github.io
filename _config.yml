@@ -5,7 +5,7 @@ theme: jekyll-theme-dinky
 #theme: _sass/jekyll-theme-frolic-pastel.scss
 #theme: jekyll-theme-frolic-pastel
 
-latest_release: 0.6.0
+latest_release: 0.7.0
 
 side_nav:
   wiki: /wiki.html
