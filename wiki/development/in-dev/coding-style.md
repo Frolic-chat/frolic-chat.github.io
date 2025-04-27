@@ -3,6 +3,8 @@ title: Coding Style
 layout: default
 excerpt: Examples of what the lead dev considers good code.
 ---
+{:toc}
+
 # The Great Code Style Debate
 When some people get old and curmudgeony, they get even more bitter and set in their ways. Now that I'm old and curmudgeony, I've stopped caring about opinion-based argument.
 
