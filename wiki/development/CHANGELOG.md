@@ -7,8 +7,12 @@ excerpt: All release notes in one easy to find place.
 
 ## Next?
 * Sensible UI adjustment to reduce sensory overload and let you focus on your friends and their terrible memes.
-* Remove broadcasts from logs; At least don't ping all convos (the noise!!!)
 * Eidols. . .
+
+## Release 0.7.1
+* Internal debug tool set.
+* Remove broadcasts from private messages as a deault, with an option to add it back.
+* Bugfix: Don't play broadcast noise for all open PMs!!!!! I'm serious!!!!!!!!!!
 
 ## Release 0.7.0
 * Orientation matching improvements for nonbinary genders, with further experimental improvements locked behind a toggle in the options

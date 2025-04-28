@@ -3,8 +3,6 @@ title: Decision Making in Design
 layout: default
 excerpt: How are Frolic's design decisions made?
 ---
-{:toc}
-
 # Personal Decisions
 
 ## Abstract

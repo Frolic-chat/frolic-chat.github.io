@@ -1,62 +1,69 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+<script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{% include head-custom.html %}
+</head>
+<body>
+<div class="wrapper">
+    <header>
+    <h1 class="header"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
+    <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
-        <ul>
-          {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="https://github.com/Frolic-chat/Frolic/releases/tag/{{ site.latest_release }}">Latest Release</a></li>
-            <li class="download"><a class="buttons" href="{{ site.all_releases }}">All Releases</a></li>
-          {% endif %}
-          <li class="github"><a class="buttons" href="{{ site.github.repository_url }}">View On GitHub</a></li>
-          {% if site.side_nav.wiki %}
-            <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}">Wiki</a></li>
-          {% endif %}
-          {% if site.side_nav.issues %}
-            <li class="site_nav"><a class="buttons" href="{{ site.side_nav.issues }}">Issue Tracker</a></li>
-          {% endif %}
-        </ul>
-
-        {% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+    <ul>
+        {% if site.show_downloads %}
+        <li class="download"><a class="buttons" href="https://github.com/Frolic-chat/Frolic/releases/tag/{{ site.latest_release }}">Latest Release</a></li>
+        <li class="download"><a class="buttons" href="{{ site.all_releases }}">All Releases</a></li>
         {% endif %}
 
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
-      </header>
+        <li class="github"><a class="buttons" href="{{ site.github.repository_url }}">View On GitHub</a></li>
 
-      <section>
-        {{ content }}
-        <hr>
-        {% if page.url contains '/wiki/' %}
-          {% include wiki-footer.html %}
+        {% if site.side_nav.wiki %}
+        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}">Wiki</a></li>
         {% endif %}
-      </section>
 
-      <footer><p><small>
-        <a href="/wiki/LICENSE.html">License</a><br/>
-        <a href="/wiki/PRIVACY.html">Privacy</a>
-      </small></p></footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+        {% if site.side_nav.issues %}
+        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.issues }}">Issue Tracker</a></li>
+        {% endif %}
+    </ul>
+
+    {% if site.github.is_project_page %}
+    <p class="header">This project is maintained by <a class="name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+    {% endif %}
+
+    {% if site.github.is_user_page %}
+    <ul>
+        <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
+    </ul>
+    {% endif %}
+    </header>
+
+    <section>
+    {% if page.url contains '/wiki/' %}
+    {% include toc.html html=content sanitize=true class="inline_toc" id="toc" h_min=1 h_max=3 item_class="toc-%level%" %}
+    {% endif %}
+    <hr>
+    {{ content }}
+    <hr>
+    {% if page.url contains '/wiki/' %}
+    {% include wiki-footer.html %}
+    {% endif %}
+    </section>
+
+    <footer><p><small>
+    <a href="/wiki/LICENSE.html">License</a><br/>
+    <a href="/wiki/PRIVACY.html">Privacy</a>
+    </small></p></footer>
+</div>
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+</body>
 </html>

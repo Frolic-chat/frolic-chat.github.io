@@ -3,6 +3,7 @@ title: Scratchpad
 layout: default
 excerpt: A scratchpad of notes from the lead dev
 ---
+# Scratchpad
 
 ## About
 This is a periodically-updated scratchpad for the primary developer. It's not automatically updated, it's just here to give an idea of concepts that were thought of and may need to be looked into further to decide if they're a good fit for Frolic.
