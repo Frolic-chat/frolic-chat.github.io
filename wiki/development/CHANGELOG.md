@@ -6,13 +6,22 @@ excerpt: All release notes in one easy to find place.
 # Changelog
 
 ## Next?
-* Sensible UI adjustment to reduce sensory overload and let you focus on your friends and their terrible memes.
-* Eidols. . .
+* Teal . . .
+* Eidols . . .
+* Home . . .
 
-## Release 0.7.1
-* Internal debug tool set.
-* Remove broadcasts from private messages as a deault, with an option to add it back.
-* Bugfix: Don't play broadcast noise for all open PMs!!!!! I'm serious!!!!!!!!!!
+## Release 0.7.2
+* Bugfix: Don't play broadcast noise for every open tab!!!!! I'm serious!!!!!!!!!!
+* Broadcasts are only logged in the console.
+* Broadcasts won't play in private messages. Added an option to enable that if you want it.
+* Profile Helper now checks for inappropriate color tags, including the incorrect gray/grey... uh, which one was it?
+* The "open conversation" dialog will now hijack your text input so you can start typing into it immediately.
+* Additionally, you can use the Enter key to submit your query instead of having to hit the button.
+* Internal debug tool set to speed up testing
+* Default EIcon adjustments
+* Species refinements and "divinitys" plural fix.
+* Bugfix: Profile helper only recommended adding more images to characters with exactly 2 images. Now it also recommends it to characters who have only a single image as well.
+* Speed-ups to URL handling and other under-the-hood fixes
 
 ## Release 0.7.0
 * Orientation matching improvements for nonbinary genders, with further experimental improvements locked behind a toggle in the options
