@@ -144,8 +144,8 @@ $color-light-neutral: oklch(95.6% 0.0177 250.21);
 /* Base text styles */
 
 body {
-  padding:10px 50px 0 0;
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding:10px 50px 0 0;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: text-color-contrasting($color-light-neutral);
 	background-color: $color-light-neutral;
@@ -155,97 +155,97 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin:36px 0 10px;
-  font-weight: normal;
+    margin:36px 0 10px;
+    font-weight: normal;
 }
 
 h1 {
-  font-family: 'Kalam', Arvo, Monaco, serif;
+    font-family: 'Kalam', Arvo, Monaco, serif;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Winky Sans", Arvo, Monaco, serif;
+    font-family: "Winky Sans", Arvo, Monaco, serif;
 }
 
 p, ul, ol, table, dl {
-  margin:0 0 22px;
+    margin:0 0 22px;
 }
 
 h1, h2, h3 {
 	display: block;
-  line-height:1.3;
+    line-height:1.3;
 	border-bottom: 2px solid;
 	padding-bottom: 5px;
 }
 
 h1 {
-  font-size: 30px;
-  color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-  border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    font-size: 30px;
+    color: next-in-sequence($primary-colors);
+    text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h2 {
-  font-size: 24px;
-  padding: 0 1rem;
-  color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-  border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    font-size: 24px;
+    padding: 0 1rem;
+    color: next-in-sequence($primary-colors);
+    text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h3 {
-  font-size: 18px;
-  padding: 0 2rem;
-  color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-  border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    font-size: 18px;
+    padding: 0 2rem;
+    color: next-in-sequence($primary-colors);
+    text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h4 {
-  padding: 0 3rem;
-  color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-  border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    padding: 0 3rem;
+    color: next-in-sequence($primary-colors);
+    text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h5 {
-  padding: 0 4rem;
-  color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-  border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    padding: 0 4rem;
+    color: next-in-sequence($primary-colors);
+    text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 h6 {
-  padding: 0 5rem;
-  color: next-in-sequence($primary-colors);
-  text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-  border-color: next-in-sequence($primary-colors);
-  box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    padding: 0 5rem;
+    color: next-in-sequence($primary-colors);
+    text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
 $text-shadow: next-in-sequence($primary-colors);
 $text-color: color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 section a {
-  color: $text-color;
-  text-decoration: underline $text-shadow;
-  font-weight: 700;
+    color: $text-color;
+    text-decoration: underline $text-shadow;
+    font-weight: 700;
 
-  &:hover {
-    text-decoration: underline;
-  }
+    &:hover {
+        text-decoration: underline;
+    }
 
-  &:visited {
-    color: color.adjust(color.change($text-color, $lightness: 40%, $space: oklch), $hue: 4, $space: oklch);
-  }
+    &:visited {
+        color: color.adjust(color.change($text-color, $lightness: 40%, $space: oklch), $hue: 4, $space: oklch);
+    }
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a small {
@@ -257,25 +257,25 @@ em {
 }
 
 strong {
-  font-weight:700;
+    font-weight:700;
 }
 
 ul {
-  list-style-position: inside;
-  list-style: disc;
-  padding-left: 25px;
+    list-style-position: inside;
+    list-style: disc;
+    padding-left: 25px;
 }
 
 ol {
-  list-style-position: inside;
-  list-style: decimal;
-  padding-left: 25px;
+    list-style-position: inside;
+    list-style: decimal;
+    padding-left: 25px;
 }
 
 blockquote {
-  margin: 0;
-  padding: 0 0 0 20px;
-  font-style: italic;
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-style: italic;
 }
 
 dl, dt, dd, dl p {
@@ -283,45 +283,46 @@ dl, dt, dd, dl p {
 }
 
 dl dt {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 dl dd {
-  padding-left: 20px;
-  font-style: italic;
+    padding-left: 20px;
+    font-style: italic;
 }
 
 dl p {
-  padding-left: 20px;
-  font-style: italic;
+    padding-left: 20px;
+    font-style: italic;
 }
 
 hr {
-  border: 0;
-  background-color: next-in-sequence($primary-colors);
-  height: 1px;
-  margin: 0 0 24px;
+    border: 0;
+    background-color: next-in-sequence($primary-colors);
+    height: 1px;
+    margin: 0 0 24px;
 }
 
 /* Images */
 
 img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 650px;
-  padding:  5px;
-  margin:  10px 0 32px 0;
-  border: 1px solid;
-  border-color: next-in-sequence($primary-colors);
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    padding:  5px;
+    margin:  10px 0 32px 0;
+    border: 1px solid;
+    border-color: next-in-sequence($primary-colors);
 }
 
-p img, .emoji {
-  display: inline;
-  margin:  0;
-  padding: 0;
-  vertical-align: middle;
-  text-align:     center;
-  border: none;
+p img,
+.emoji {
+    display: inline;
+    margin:  0;
+    padding: 0;
+    vertical-align: middle;
+    text-align:     center;
+    border: none;
 }
 
 /* Code blocks */
@@ -330,20 +331,20 @@ $code-color:    color.adjust(random-color-from($primary-colors), $lightness: -30
 $code-bg-color: color.adjust($random-opposite, $lightness: 50%, $chroma: -50%, $space: oklch);
 code, pre {
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $code-color;
-  background-color: $code-bg-color;
-  font-size: 14px;
-  padding-top:   0.3em;
-  padding-left:  0.5em;
-  padding-right: 0.5em;
+    color: $code-color;
+    background-color: $code-bg-color;
+    font-size: 14px;
+    padding-top:   0.3em;
+    padding-left:  0.5em;
+    padding-right: 0.5em;
 }
 
 pre {
 	padding: 4px 12px;
-  border-radius: 4px;
-  border: 1px solid random-color-from($primary-colors);
-  overflow: auto;
-  overflow-y: hidden;
+    border-radius: 4px;
+    border: 1px solid random-color-from($primary-colors);
+    overflow: auto;
+    overflow-y: hidden;
 	margin-bottom: 32px;
 }
 
@@ -351,42 +352,43 @@ pre {
 /* Tables */
 
 table {
-  width:100%;
-  border: 1px solid next-in-sequence($primary-colors);
-  margin-bottom: 32px;
-  text-align: left;
- }
+    width:100%;
+    border: 1px solid next-in-sequence($primary-colors);
+    margin-bottom: 32px;
+    text-align: left;
+}
 
 th {
-  font-family: 'Arvo', Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-  padding: 10px;
-  color: random-color-from($primary-colors);
-  background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
- }
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+    color: random-color-from($primary-colors);
+    background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
+}
 
 td {
-  padding: 10px;
-  color: random-color-from($primary-colors);
+    padding: 10px;
+    color: random-color-from($primary-colors);
 	background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
 }
 
 $text-color: color.adjust(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
- table.wikilinks {
-  td {
-    a {
-      display: block;
-      color: $text-color;
+table.wikilinks {
+    td {
+        a {
+            display: block;
+            color: $text-color;
+        }
+
+        color: $text-color;
+        background-color: color.adjust($random-opposite, $lightness: 30%, $space: oklch);
     }
-    color: $text-color;
-    background-color: color.adjust($random-opposite, $lightness: 30%, $space: oklch);
-  }
 }
 
 /* Wrapper */
 .wrapper {
-  width:960px;
+    width:960px;
 }
 
 
@@ -426,9 +428,9 @@ $nav-button-color-grad-hover: color.adjust($nav-button-color-grad, $lightness: 8
 header {
 	background-color: $header-bg-color;
 	color: $header-text-color;
-  width:170px;
-  float:left;
-  position:fixed;
+    width:170px;
+    float:left;
+    position:fixed;
 	border: 1px solid opposite-hue($header-text-color);
 	-webkit-border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
@@ -465,236 +467,237 @@ header {
 }
 
 header li {
-  list-style-type: none;
-  max-width: 200px;
+    list-style-type: none;
+    max-width: 200px;
 	margin-bottom: 12px;
 	line-height: 1em;
 
 	background: $button-color;
 	background: -moz-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-  background: -webkit-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
-  background: -o-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
-  background: -ms-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
-  background: linear-gradient(to top, $button-color 0%, $button-color-grad 100%);
-
-	border-radius:4px;
-  border:1px solid $button-text-shadow-color;
-
-	-webkit-box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
-	box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
-
-  &:hover {
-    background: $button-color-hover;
-    background: -moz-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-    background: -webkit-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-    background: -o-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-    background: -ms-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
-    background: linear-gradient(to top, $button-color-hover 0%, $button-color-grad-hover 100%);
-  }
+    background: -webkit-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
+    background: -o-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
+    background: -ms-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
+    background: linear-gradient(to top, $button-color 0%, $button-color-grad 100%);
 
-  &.download {
-    background: $dl-button-color;
-    background: -moz-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-    background: -webkit-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-    background: -o-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-    background: -ms-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
-    background: linear-gradient(to top, $dl-button-color 0%, $dl-button-color-grad 100%);
+    border-radius:4px;
+    border:1px solid $button-text-shadow-color;
 
-    border-radius:5px;
-    border:1px solid $dl-button-text-shadow-color;
-
-    -webkit-box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
-    box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
+    -webkit-box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
+    box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
 
     &:hover {
-      background: $dl-button-color-hover;
-      background: -moz-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-      background: -webkit-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-      background: -o-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-      background: -ms-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-      background: linear-gradient(to top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
-    }
-  }
-
-  &.site_nav {
-    background: $nav-button-color;
-    background: -moz-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-    background: -webkit-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
-    background: -o-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
-    background: -ms-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
-    background: linear-gradient(to top, $nav-button-color 0%, $nav-button-color-grad 100%);
-
-    border-radius:5px;
-    border:1px solid $nav-button-text-shadow-color;
-
-    -webkit-box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
-    box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
-
-    &:hover {
-      background: $nav-button-color-hover;
-      background: -moz-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
-      background: -webkit-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
-      background: -o-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
-      background: -ms-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
-      background: linear-gradient(to top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
-    }
-  }
-
-  a {
-    display: block;
-
-    -webkit-font-smoothing: antialiased;
-    font-weight: normal;
-    padding: 8px 8px 8px 29px;
-
-    &.name {
-      white-space: nowrap;
+        background: $button-color-hover;
+        background: -moz-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+        background: -webkit-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+        background: -o-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+        background: -ms-linear-gradient(top, $button-color-hover 0%, $button-color-grad-hover 100%);
+        background: linear-gradient(to top, $button-color-hover 0%, $button-color-grad-hover 100%);
     }
 
-    &:hover {
-      text-decoration: none;
-    }
-  }
+    &.download {
+        background: $dl-button-color;
+        background: -moz-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+        background: -webkit-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+        background: -o-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+        background: -ms-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
+        background: linear-gradient(to top, $dl-button-color 0%, $dl-button-color-grad 100%);
 
-  &.download {
+        border-radius:5px;
+        border:1px solid $dl-button-text-shadow-color;
+
+        -webkit-box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
+        box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
+
+        &:hover {
+            background: $dl-button-color-hover;
+            background: -moz-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+            background: -webkit-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+            background: -o-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+            background: -ms-linear-gradient(top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+            background: linear-gradient(to top, $dl-button-color-hover 0%, $dl-button-color-grad-hover 100%);
+        }
+    }
+
+    &.site_nav {
+        background: $nav-button-color;
+        background: -moz-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+        background: -webkit-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+        background: -o-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+        background: -ms-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
+        background: linear-gradient(to top, $nav-button-color 0%, $nav-button-color-grad 100%);
+
+        border-radius:5px;
+        border:1px solid $nav-button-text-shadow-color;
+
+        -webkit-box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
+        box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
+
+        &:hover {
+            background: $nav-button-color-hover;
+            background: -moz-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+            background: -webkit-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+            background: -o-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+            background: -ms-linear-gradient(top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+            background: linear-gradient(to top, $nav-button-color-hover 0%, $nav-button-color-grad-hover 100%);
+        }
+    }
+
     a {
-      color: $dl-button-text-color;
-      text-shadow: 1px 0px 0 $dl-button-text-shadow-color;
-      background: url(../images/arrow-down.png) no-repeat 9px;
-    }
-  }
+        display: block;
 
-  &.github {
-    a {
-      color: $button-text-color;
-      text-shadow: 1px 0px 0 $button-text-shadow-color;
-      background: url(../images/octocat-small.png) no-repeat 8px;
-    }
-  }
+        -webkit-font-smoothing: antialiased;
+        font-weight: normal;
+        padding: 8px 8px 8px 29px;
 
-  &.site_nav {
-    a {
-      color: $nav-button-text-color;
-      text-shadow: 1px 0px 0 $nav-button-text-shadow-color;
-      background-image: none;
+        &.name {
+            white-space: nowrap;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
     }
-  }
+
+    &.download {
+        a {
+            color: $dl-button-text-color;
+            text-shadow: 1px 0px 0 $dl-button-text-shadow-color;
+            background: url(../images/arrow-down.png) no-repeat 9px;
+        }
+    }
+
+    &.github {
+        a {
+            color: $button-text-color;
+            text-shadow: 1px 0px 0 $button-text-shadow-color;
+            background: url(../images/octocat-small.png) no-repeat 8px;
+        }
+    }
+
+    &.site_nav {
+        a {
+            color: $nav-button-text-color;
+            text-shadow: 1px 0px 0 $nav-button-text-shadow-color;
+            background-image: none;
+        }
+    }
 }
 
 
 /* Section - for main page content */
 
 section {
-  width:650px;
-  float:right;
-  padding-bottom:50px;
+    width: 650px;
+    float: right;
+    padding-bottom: 50px;
 
-  .centered {
-    margin-left:auto;
-    margin-right:auto;
-  }
+    .centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
 /* Footer */
 
 footer {
-  width:170px;
-  float:left;
-  position:fixed;
-  bottom:10px;
+  width: 170px;
+  float: left;
+  position: fixed;
+  bottom: 10px;
 	padding-left: 50px;
 }
 
 @media print, screen and (max-width: 960px) {
+    div.wrapper {
+        width: auto;
+        margin: 0;
+    }
 
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
-  header, section, footer {
-    float:none;
-    position:static;
-    width:auto;
-  }
+    header, section, footer {
+        float: none;
+        position: static;
+        width: auto;
+    }
 
 	footer {
 		border-top: 1px solid #ccc;
-		margin:0 84px 0 50px;
-		padding:0;
+		margin: 0 84px 0 50px;
+		padding: 0;
 	}
 
-  header {
-    padding-right:320px;
-  }
+    header {
+        padding-right: 320px;
+    }
 
-  section {
-    padding:20px 84px 20px 50px;
-    margin:0 0 20px;
-  }
+    section {
+        padding: 20px 84px 20px 50px;
+        margin: 0 0 20px;
+    }
 
-  header a small {
-    display:inline;
-  }
+    header a small {
+        display: inline;
+    }
 
-  header ul {
-    position:absolute;
-    right:130px;
-    top:84px;
-  }
+
+    header ul {
+        position: absolute;
+        right: 130px;
+        top: 84px;
+    }
 }
 
 @media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
+    body {
+        word-wrap: break-word;
+    }
 
-  header {
-    padding:10px 20px 0;
-		margin-right: 0;
-  }
+    header {
+        padding: 10px 20px 0;
+        margin-right: 0;
+    }
 
 	section {
-    padding:10px 0 10px 20px;
-    margin:0 0 30px;
-  }
+        padding: 10px 0 10px 20px;
+        margin: 0 0 30px;
+    }
 
 	footer {
 		margin: 0 0 0 30px;
 	}
 
-  header ul, header p.view {
-    position:static;
-  }
+    header ul,
+    header p.view {
+        position: static;
+    }
 }
 
 @media print, screen and (max-width: 480px) {
 
-  header ul li.download {
-    display:none;
-  }
+    header ul li.download {
+        display: none;
+    }
 
 	footer {
 		margin: 0 0 0 20px;
 	}
 
-	footer a{
-		display:block;
+	footer a {
+		display: block;
 	}
 
 }
 
 @media print {
-  body {
-    padding:0.4in;
-    font-size:12pt;
-    color:#444;
-  }
+    body {
+        padding: 0.4in;
+        font-size: 12pt;
+        color: #444;
+    }
 }
