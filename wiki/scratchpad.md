@@ -23,16 +23,31 @@ Confront auto-ads
 
 StrangeStorage:
 	Send Love function (👍/👎)
+		For character
+		For attributes on the profile (images, paras, customs)
+		For messages during chat (IE "Love that post!")
 		How to manage sharing without storage server?
 	Trans F/M state
 	Femboy
 	Pronouns/perception for H/S?
 	HQ portrait
+	Duration
 	Safe Word feature from april 1 post
 		Enabled/Disabled state for each player
+	Other custom pings in PMs:
+		"Are you there?"
+		Sticker protocol - Random snippets?
 	Protocol exchange
+		singular user channel for people to initiate conversations?
+			would have to keep noise to a minimum
 		When someone starts typing at you you get a message, can we send something innocuous back to figure out if we should start protocol communication? Is there any other non-intrusive player-to-player communication to piggyback off of?
+		Encoded regular messages (a la OOC chat or Safeword)
 	Investigate storage options:
+		Profile
+			Markup: Can use TAGS in [i=], etc, to demonstrate places.
+				IE a [i=ads][/i] tag right before a collapse would show that collapse in a separate "ads" tab in the chat.
+				BUILT IN GENERATOR TO CRAFT YOUR [i=][/i]
+				Header for highly specific information? `x-hq-portrait=` for example?
 		EIcon???
 		[bbcode]?
 		Inline image data (steganography)
@@ -46,6 +61,15 @@ StrangeStorage:
 		groups
 		channels
 		can any of these be established from in chat?
+
+		TEAL protocol:
+		Text-Environment Augmentation Lexicon:
+			Chat name color:	teal://name-color=#090909
+			Rising Portrait:	teal://hq-portrait=https://...
+			Start ad section:	teal://ad=Title?
+			End ad section:		teal://ad=&&
+			Hidden ad:			teal://hidden-ad=You can put anything but an end bracket here!
+			Stackable:			teal://name-color=#090909&&hq-portrait=https://...&&hidden-ad=Hello!
 
 
 Better use for side bar in PM than showing profile?
@@ -241,11 +265,41 @@ TEST ICON DISAPPEARING RIGHT AFTER STARTUP ON WINDOWS
 read eicons and stuff from text file
 	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
 
+mounting imagepreview takes a while...
+
+hardcoded colors in chatview
+bad exotic creatures tooltip:
+	exotic
+
+has improper (!c)
+	calculateInterestScoreForQueueEntry
+
+Remove `Contact details/Sites` column if no details/sites
+	infotags.vue
+
+support for additional contact info links
+	ffxiv -> lodestone
+	xbox live -> xbox profile
+	WoW -> armory
+	telegram -> open new PM link
+	steam -> steam account page
+
+in-app notes
+	text-box autosave
+	draft editor?
+	easy access to memo on that person
+	history
+
+overflow charactername
+	ellipsis
+
+MANY F-CHATS
 
 
 ??? ? ??
-Add code to private messages to allow pinging for various things.
 	Allow unread for chats
+
+icon -> main.ts
 
 
 Big features:
@@ -258,17 +312,26 @@ Big features:
 	Settings groups:
 		Notifications
 		Serenity
-			- Broadcast in: Console | Console+CurrentConvo | Console+Current+Channels | Everywhere
-			- Sound from broadcast only once
-			- Do not log broadcasts
-**			-- Remove BROADCAST TYPE from LOGGING
-**			-- Do not play sound in normal chat msg if msg is BROADCAST TYPE
-**			-- User option to NOT SHOW BROADCASTS IN PMS
+			Sounds for specific events?
+			Way to see all channels with custom notification settings
+			DND for certain time (like to watch a movie or something)
+			Customize DND settings
+			TIME BASED sound/visual SETTINGS
+			Visual options???
+				high contrast
+				reduced colors
+				colorblind mode
+		Personality
+			Custom Chat Color
+				also display own custom color on name in sidebar
+			HQ Portrait
+			Other enhancements
+		Experiments
 	PROFILE RECOMMENDATIONS:
 		"use small/big instead of sub/sup in profiles"
 		"SHORTEN YOUR DESCRTIPTION!"/use collapses
 		keywords? A checklist a user can go through.
-		invalid [color=] tags. - silver, grey, capitals - anything not a normal color
+		use kinks appropriately ("all kinks are faves")
 
 Small features:
 	Warning on start if your log level is debug or worse
@@ -282,39 +345,13 @@ Small features:
 		Move undead into undead 556
 
 Bug fixes:
-	None gender kink is broken
 	allow disabling pinged by bbcode
-	de-duplicate recon messages
-	SettingsView exclamation mark errors
-	UserView silly type errors
-	"Open conversation" window text box should hijack the keyboard
 	Fix double gender recommendation (kink + orientation) in matchmaker display
-	Autofocus input box when opening "Open Conversation" modal
-
-Don't play noise for broadcast except in console
-Chat window just for broadcast?
+	Fix species+furry match recommendation?
+	FIX CHARACTER SEARCH
 
 Misc:
 	flower integration
 	website themeing
 
-eicon
-	soft			dogdoin
-	soft			dogewut
-	soft			catnapping
-	soft			blobfoxbongo
-	memes			nct1
-	memes			dogcited
-	memes			tap the sign
-	expressions		robotsmug
-	expressions		fsquint
-	expressions		howembarrassing
-	sexual			brainmelt
-
-	yappers 		-> expressions
-	bottomfingers 	-> expressions
-
-	remove -> collaredpet
-	remove -> wolfknot2
-	remove -> ballsworship3
 ```
