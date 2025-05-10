@@ -27,8 +27,8 @@ excerpt: All release notes in one easy to find place.
   Some back-end component updates were required to make all this possible.
 * Minor clean-ups to the arrangement of the left sidebar in preparation for future changes. No features have been removed. Additional improvements were made for users using very large or very small font sizes.
 * Bugfix: Prevent overwriting your local eicon cache with nothing when you can't connect to the eicon server. Saves downloading 20MB, infrequently.
-* Bugfix: TG characters should not be considered 'same sex' as each other.
-* Bugfix: An invalid list of fonts was fixed. If you notice a shift in font choice, this is why; it was always supposed to be this way..
+* Bugfix: Gay TG characters will no longer match each other automatically.
+* Bugfix: An invalid list of fonts was fixed. If you notice a shift in font choice, this is why; it was always supposed to be this way.
 
 ## Release 0.7.2
 * Bugfix: Don't play broadcast noise for every open tab!!!!! I'm serious!!!!!!!!!!
