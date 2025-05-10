@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 ## 💾 Downloads
-The latest release is **0.7.2**. Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic/releases). See each releases' new features on its release page, or [view the full Changelog](https://frolic-chat.github.io/wiki/development/CHANGELOG.html) to see all improvements.
+The latest release is **0.7.3**. Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic/releases). See each releases' new features on its release page, or [view the full Changelog](https://frolic-chat.github.io/wiki/development/CHANGELOG.html) to see all improvements.
 
 <small>While Frolic doesn't mess with your logs, it's always wise to backup important files before installing or upgrading software. Your logs from the vanilla F-Chat desktop client and from F-Chat Rising are located at `%appdata%\fchat\data` on Windows and in `~/.config/fchat/data` on Linux. Frolic continues to use this location so you can continue your conversations right where you left off.</small>
 
@@ -24,8 +24,8 @@ For help installing, refer to the [original installation instructions](https://w
 1. **Link previews** popup shows a preview of an image / video when you hover your mouse over a link.
 1. **Caching** speeds up profile loads and other actions.
 1. **Smart filters** let you choose what kind of ads and posts you see in the chat.
-* [Full list of legacy differences from vanilla](https://frolic-chat.github.io/wiki/features/features-legacy.html) (implemented by Rising)
 * [Full list of changes since Rising](https://frolic-chat.github.io/wiki/development/CHANGELOG.html)
+* [Full list of legacy differences from vanilla](https://frolic-chat.github.io/wiki/features/features-legacy.html) (implemented by Rising)
 
 To learn more about Frolic, here are some pages you might want to visit:
 * [How does character matching work?](https://frolic-chat.github.io/wiki/features/how-to-match.html)

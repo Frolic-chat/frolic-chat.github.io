@@ -4,7 +4,7 @@ layout: default
 excerpt: An explanation of post-length matching
 ---
 # Post Length
-In 0.7.3 the use of your "desired post length" setting to find partners was adjusted to restrict good results to a narrower range of post lengths. This was done to address a long-running debate about being recommended to people with vastly different post-length preferences.
+In 0.7.3 the use of your "desired post length" setting to find partners was adjusted to restrict good results to a narrower range of post lengths. This was done to address a long-running debate about recommending you play with people who cannot meet your post length desires.
 
 There was also an inconsistency where the matcher would suggest that you're compatible with vastly higher desired post-length, but when they looked at you they would see you as incompatible.
 

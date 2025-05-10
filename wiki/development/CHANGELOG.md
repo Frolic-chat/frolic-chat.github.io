@@ -10,6 +10,26 @@ excerpt: All release notes in one easy to find place.
 * Eidols . . .
 * Home . . .
 
+## Release 0.7.3
+* Post-length matching was very broad in past versions, making it less-than-useful. It has been reigned in, and you can expect the following:
+  * No Color/Unused if either you or they have No Preference or have their desired post-length unset.
+  * Bright Green if they desire identical post-length as you desire.
+  * Dim Green if their desired post-length is one-off yours.
+  * Yellow if their's is two-off yours.
+  * Red for everything else.
+
+  There is an option to broaden your results again if you had no issue with prior post-length matches.
+* In past versions, some errors would freeze the login screen forever. There are now explanatory error messages for the most typical cases. If you encounter a situation where you can't log in but no error message is presented to you, please file a bug report.
+
+  Additionally, there are warning messages at the log-in screen for situations that may indicate feature degradation - specifically, if you can't contact the Xariah eicon service. Additional warnings will be added as they come up.
+* Bugfix: The 'Recon' tab in someone's profile accidentally showed duplicate entries. This is no longer the case. Some minor performance improvements have resulted from the change that fixed this.
+
+  Some back-end component updates were required to make all this possible.
+* Minor clean-ups to the arrangement of the left sidebar in preparation for future changes. No features have been removed. Additional improvements were made for users using very large or very small font sizes.
+* Bugfix: Prevent overwriting your local eicon cache with nothing when you can't connect to the eicon server. Saves downloading 20MB, infrequently.
+* Bugfix: TG characters should not be considered 'same sex' as each other.
+* Bugfix: An invalid list of fonts was fixed. If you notice a shift in font choice, this is why; it was always supposed to be this way..
+
 ## Release 0.7.2
 * Bugfix: Don't play broadcast noise for every open tab!!!!! I'm serious!!!!!!!!!!
 * Broadcasts are only logged in the console.
