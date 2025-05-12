@@ -10,6 +10,15 @@ excerpt: All release notes in one easy to find place.
 * Eidols . . .
 * Home . . .
 
+## Release 0.7.4
+* Bugfix: Resolved missing match summary after a search due to event emitter accidentally removing username event
+* Bugfix: Resolved search ticker continuing to tick after all results were resolved, reducing responsiveness
+* Bugfix: Core properly stops when you call `stop()`
+* Begin the move to better debug logging
+* Update to electron 22
+* Bugfix: Minor editor warnings resolved
+* Minor formatting changes
+
 ## Release 0.7.3
 * Post-length matching was very broad in past versions, making it less-than-useful. It has been reigned in, and you can expect the following:
   * No Color/Unused if either you or they have No Preference or have their desired post-length unset.
