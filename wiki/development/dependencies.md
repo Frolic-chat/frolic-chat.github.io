@@ -29,3 +29,10 @@ These dependencies will never be going away; they're too ingrained in core funct
 * Nodejs
 * Vuejs
 * Webpack
+
+## Dependencies for Use Cases
+These deps were added with a specific purpose.
+
+* @types/webpack-env
+
+  This was added to resolve editor warnings using require.context in main.ts
