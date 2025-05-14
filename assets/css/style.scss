@@ -362,12 +362,12 @@ table {
 }
 
 th {
-    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-family: "Winky Sans", Arvo, Monaco, serif;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
     color: text-color-contrasting($table-bg-color);
-    background-color: color.adjust($table-bg-color, $lightness: -6%, $space: oklch);
+    background-color: color.adjust($table-bg-color, $lightness: -24%, $space: oklch);
 }
 
 td {
