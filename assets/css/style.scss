@@ -364,9 +364,9 @@ table {
 th {
     font-family: 'Arvo', Helvetica, Arial, sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     padding: 10px;
-    color: $table-title-color;
+    color: text-color-contrasting($table-bg-color);
     background-color: color.adjust($table-bg-color, $lightness: -6%, $space: oklch);
 }
 

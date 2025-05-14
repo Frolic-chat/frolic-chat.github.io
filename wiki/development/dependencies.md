@@ -35,4 +35,4 @@ These deps were added with a specific purpose.
 
 * @types/webpack-env
 
-  This was added to resolve editor warnings using require.context in main.ts
+  This was added to resolve editor warnings using require.context in main.ts - but it's no longer necessary due to refactoring.
