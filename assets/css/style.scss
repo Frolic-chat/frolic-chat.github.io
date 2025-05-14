@@ -372,21 +372,13 @@ th {
 
 td {
     padding: 10px;
-    color: $table-text-color;
+    color: text-color-contrasting($table-bg-color);
 	background-color: $table-bg-color;
 }
 
 $text-color: color.adjust(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
-table.wikilinks {
-    td {
-        a {
-            display: block;
-            color: $text-color;
-        }
-
-        color: $text-color;
-        background-color: color.adjust($random-opposite, $lightness: 30%, $space: oklch);
-    }
+table.wikilinks td a {
+    display: block;
 }
 
 /* Wrapper */
