@@ -363,14 +363,14 @@ th {
     font-size: 18px;
     font-weight: normal;
     padding: 10px;
-    color: random-color-from($primary-colors);
-    background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
+    color: $table-title-color;
+    background-color: color.adjust($table-bg-color, $lightness: -6%, $space: oklch);
 }
 
 td {
     padding: 10px;
-    color: random-color-from($primary-colors);
-	background-color: color.change($random-opposite, $lightness: 30%, $space: oklch);
+    color: $table-text-color;
+	background-color: $table-bg-color;
 }
 
 $text-color: color.adjust(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
@@ -397,6 +397,11 @@ $header-bg-color:       color.adjust(random-color-from($primary-colors), $lightn
 $header-border-color:   color.adjust($header-bg-color, $lightness: -7.4%, $space: oklch);
 $header-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
 $header-text-color:     text-color-contrasting($header-bg-color);
+
+/* tables */
+$table-bg-color:       color.adjust(random-color-from($primary-colors), $lightness: 50%, $chroma: -15%, $space: oklch);
+$table-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
+$table-text-color:     text-color-contrasting($header-bg-color);
 
 $button-color:            random-color-from($primary-colors);
 $button-color-grad:       color.adjust($button-color, $lightness: -20%, $space: oklch);
