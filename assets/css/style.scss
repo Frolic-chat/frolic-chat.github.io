@@ -350,6 +350,9 @@ pre {
 
 
 /* Tables */
+$table-bg-color:       color.adjust(random-color-from($primary-colors), $lightness: 50%, $chroma: -15%, $space: oklch);
+$table-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
+$table-text-color:     text-color-contrasting($header-bg-color);
 
 table {
     width:100%;
@@ -397,11 +400,6 @@ $header-bg-color:       color.adjust(random-color-from($primary-colors), $lightn
 $header-border-color:   color.adjust($header-bg-color, $lightness: -7.4%, $space: oklch);
 $header-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
 $header-text-color:     text-color-contrasting($header-bg-color);
-
-/* tables */
-$table-bg-color:       color.adjust(random-color-from($primary-colors), $lightness: 50%, $chroma: -15%, $space: oklch);
-$table-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
-$table-text-color:     text-color-contrasting($header-bg-color);
 
 $button-color:            random-color-from($primary-colors);
 $button-color-grad:       color.adjust($button-color, $lightness: -20%, $space: oklch);
