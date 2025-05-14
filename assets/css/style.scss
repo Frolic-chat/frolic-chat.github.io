@@ -351,8 +351,8 @@ pre {
 
 /* Tables */
 $table-bg-color:       color.adjust(random-color-from($primary-colors), $lightness: 50%, $chroma: -15%, $space: oklch);
-$table-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
-$table-text-color:     text-color-contrasting($header-bg-color);
+$table-title-color:    color.change(opposite-hue($table-bg-color), $lightness: 75%, $space: oklch);
+$table-text-color:     text-color-contrasting($table-bg-color);
 
 table {
     width:100%;
