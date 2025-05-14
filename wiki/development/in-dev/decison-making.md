@@ -36,19 +36,19 @@ But at point two, we're already at "Settings vs Options" levels of innocuous: as
 Every application is biased by necessity. It's not just the language of its words, but the language of its _design goals_, _feature set_, and the _UI_ that makes it all accessible.
 
 ### Features
-Applications let you _do_ things, and some apps make their statement in the features they offer. For example, a truly private chat application wouldn't offer a Report feature, because that would offer a direct violation of the privacy it's supposed to offer.
+Applications let you _do_ things, and some apps make their statement in the features they offer. For example, a truly private chat application wouldn't offer a Report feature, because that would offer a direct violation of the privacy it's supposed to endorse.
 
-The mere act of _offering_ to let you report people you're privately chatting with changes the statement the application is making, and by extension changes the way you think about it and use it. You knowledge that people can be reported (hopefully) makes them behave better, and also discourages them using the chat for any activities they wanted to be private.
+The mere act of _offering_ to let you report people you're privately chatting with changes the statement the application is making, and by extension changes the way you think about it and use it. The knowledge that people can be reported (hopefully) makes them behave better, and also discourages them using the chat for any activities they wanted to be private.
 
-Deciding which features to offer is not simply a matter of "which features are _good_" but "which features compile into the experience I want to offer".
+Deciding which features to offer is not simply a matter of "which features are _good_" but "which features build the experience I want to offer".
 
 ### UI
-The placement of UI elements on a free-form canvas can be done in a nearly infinite number of ways. There is no correct way to design a UI and debates about whether a UI is designed correctly or not tend to reflect the internal biases of the debaters. What makes a "good" UI is nebulous in even the most specific scenario.
+The placement of UI elements on a canvas can be done in an infinite number of ways. There is no correct way to design a UI and debates about whether a UI is designed correctly or not tend to reflect the internal biases of the debaters. What makes a "good" UI is nebulous in even the most specific scenario.
 
-If you try to "do your best" to try to find some commonly acceptable arrangement, you'll end up with UI that looks like it was designed in the early 2000s. Or Libreoffice (ugh). In this case, there's a better way to do things: Design towards your application's _purpose_.
+If you try to "do your best" to try to find some commonly acceptable arrangement, you'll end up with UI that looks like it was designed in the early 2000s. Or Libreoffice. In this case, there's a better way to do things: Design towards your application's _purpose_.
 
 By forcing your UI design to forward the goals of your app, you make it clear on the face what you're trying to accomplish. Users who align with your purpose will be more attracted to your app and feel at home using it, while users who don't will feel immediately put off and know this isn't the app for them.
 
-A user's attitude will be shifted by the way a UI is made and the way a user is escorted through it. For example, having lots of nested menus and lead a user to feeling directionless and lost and lose track of what they were trying to find, leading to frustration. Any app that actually _wants_ the user to change their settings will make it easy to locate one's desired change.
+A user's attitude will be shifted by the way a UI is made and the way a user is escorted through it. For example, having lots of nested menus will lead a user to feeling directionless and lost. They'll lose track of what they were trying to find and will give up, feeling frustrated. Any app that actually _wants_ the user to change their settings will make it easy to locate one's desired change.
 
 You should be careful, though: Trying to force together an interface that's a radical departure from the norm will put off everyone, everywhere.
