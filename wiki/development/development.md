@@ -10,7 +10,7 @@ This page describes how to set up a development environment to help with testing
 Read our [Code of Conduct](CODE_OF_CONDUCT.html) to see if your development goals align with Frolic's.
 
 ## Development
-Frolic uses NodeJS `16.x` and may not work on newer versions. Having a system node of a higher version probably won't hurt anything. The lead developer uses version 22. Use [`nvm`](https://github.com/nvm-sh/nvm) or [`nvm-windows`](https://github.com/coreybutler/nvm-windows) to simplify your life.
+The NodeJS version used by Frolic is locked to the Electron version and is currently `18.x`. Having a system node of a higher version probably won't hurt anything. The lead developer uses version 22. There are tools like `nvm` if you feel it might be an issue.
 
 ```bash
 # Windows only:

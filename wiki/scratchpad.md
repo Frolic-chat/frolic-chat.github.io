@@ -15,9 +15,6 @@ This is a periodically-updated scratchpad for the primary developer. It's not au
 ```text
 AUTOBUILD/CI
 
-update electron version to something that works with kwallet6
-*** update electron
-
 Confront auto-ads
 	investigate timer - is it broken?
 
@@ -127,6 +124,8 @@ Safe image hosts:
 	ImgPile
 	kek.gg
 
+"Browser settings" window is its own window!!!
+
 shorten list of options above chats,
 OR MOVE THE OPTIONS TO THE BOTTOM
 
@@ -140,12 +139,12 @@ Show neutral matches
 
 Eidolons: Basic character matches vs Roleplay matches vs Vibe matches
 
-extend friend/bm message notify to PMs; ie verify notify isn't singular controller of DMs.
+Manually tag players based on your interest in them
 
 Significantly redo notification settings for ✨ clarity ✨
 	move to own settings window (when settings redo)
 
-Manually tag players based on your interest in them
+extend friend/bm message notify to PMs; ie verify notify isn't singular controller of DMs.
 
 Reminders to add memos to players?
 
@@ -153,15 +152,7 @@ More prominent member logins (user icon?)
 
 "Send love" dropdown that hides friend request, bookmark, send love, send note, etc.
 
-Hide Search/Settings/Recent/Ad/PostAds/Helper behind dropdown menu.
-
-flower icon change automatically
-
-Icons except with checkbox - possible to change layout based on setting option?
-
-friends as icons, profile mods as icons.
-
-Single line PMs? First name only?
+friends as icons, profile mods as icons (strangestorage?).
 
 custom gender?
 
@@ -177,18 +168,9 @@ Expected behavior of species:
 	For multi-species detection:
 	Look for ^ or , and match species after that until $ or , or ' and '
 
-Remove "Status:" from ChatView
-
 You can set an empty memo...
 
-else if (this.profile.character.image_count > 1 && this.profile.character.image_count < 3)
-logic wrong.
-
 Stop filters from filtering chat or PM messages from room mods. - Temp exception list for each room?
-
-"Browser settings" window is its own window!!!
-
-move rising options out of their own submenu
 
 Show f/m pref in character popup.
 	This is in CharacterPreview.vue:376 but no obvious changes come to mind to fit the motif, "x-years-old bisexual male"
@@ -196,13 +178,10 @@ Show f/m pref in character popup.
 *** Theme capitalization -->> const name = `${speciesNames[speciesId].substring(0, 1).toUpperCase()}${speciesNames[speciesId].substring(1)}`;
 
 lighten(), darken(), saturate() adjust-color()
-
 can upgrade sass now
 
 three columns of pictures at wide screens
 	one column for narrow screens
-
-Check how iconification for rooms and PMs work when shrinking window.
 
 MORE SORTING METHODS for channel members
 
@@ -217,21 +196,12 @@ round top right and bottom left of members list.
 Move filtered members to the bottom of the member list
 	Move "hidden" users to bottom of member list
 
-@vue/runtime-dom
-
 When localizing bbcode bar, use os_modifier_key instead of hardcoding Ctrl.
 	https://github.com/Fchat-Horizon/Horizon/pull/62/commits/40b2ffe87536050cabe852f54d316dd02f66ffb0
 
 Functions shouldn't be in the structure, they should be outside.
 
 reconstruct EventBus to use -pre and -post
-
-Investigate electron events for window gaining focus
-Window.vue:404  -- window show - add event listener?
-window.addEventListener('focus', func);
-mainWindow.webContents.on( focus?
-
-new ffxiv species kink match
 
 "invalid ticket" means tooltip is stuck on loading forever.
 
@@ -260,16 +230,18 @@ close irrelevant chat messages
 queue fs read/writing so it can be made concurrent
 https://stackoverflow.com/questions/31978347/fs-writefile-in-a-promise-asynchronous-synchronous-stuff
 
-TEST ICON DISAPPEARING RIGHT AFTER STARTUP ON WINDOWS
-
 read eicons and stuff from text file
+	Right click eicon menu
 	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
 
 mounting imagepreview takes a while...
+check characterpreview @Hook('beforeDestroy') for memory leak - probably not
 
-hardcoded colors in chatview
 bad exotic creatures tooltip:
 	exotic
+new ffxiv species kink match
+
+hardcoded colors in chatview
 
 has improper (!c)
 	calculateInterestScoreForQueueEntry
@@ -293,17 +265,13 @@ in-app notes
 overflow charactername
 	ellipsis
 
-MANY F-CHATS
 
-
-??? ? ??
-	Allow unread for chats
-
-icon -> main.ts
+Allow unread mention status for chats
 
 
 Big features:
 	Custom theme for frolic
+		flower integration
 	// to mean OOC - provide a uniform output
 		grey text in double parenthesis??
 	move updating and external urls to a text file so people can edit it without updating
@@ -348,10 +316,11 @@ Bug fixes:
 	allow disabling pinged by bbcode
 	Fix double gender recommendation (kink + orientation) in matchmaker display
 	Fix species+furry match recommendation?
-	FIX CHARACTER SEARCH
+
+TEST ICON DISAPPEARING RIGHT AFTER STARTUP ON WINDOWS
 
 Misc:
-	flower integration
 	website themeing
-
+	Frolic icon - multiple flowers blending together? Like one petal from each color.
+		Like the old people holding hands ubuntu logo
 ```
