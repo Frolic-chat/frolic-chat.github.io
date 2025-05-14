@@ -13,7 +13,10 @@ Receive desktop notifications when friends or bookmarks log in.
 Receive desktop notifications when friends or bookmarks send a message in a channel (with per-channel customization).
 
 ### Broadcasts
-* Broadcasts no longer clog up all your PMs and logs, and they don't play a sound for every PM they show in. (F-Chat owes me new headphones.)
+Broadcasts no longer clog up all your PMs and logs, and they don't play a sound for every PM they show in. (F-Chat owes me new headphones.)
+
+### Eicons
+New eicon category for cute critters.
 
 ## Character Matching
 ### Kemonomimi - Furry or Human?
@@ -26,7 +29,7 @@ Normally Kemonomimi are perceived as animal+human, so the "Furry and/or Human" p
 Any one of the above will let you match favorably to someone with a "human only" or "human preferred" pairing preference.
 
 ### Room Sorting by Gender
-Did you know you could sort the room list? And now, when you sort by gender, it uses your character's gender preferences (orientation & kinks) to determine the order, so your prefered genders are first!
+Did you know you could sort the room list? And now, when you sort by gender, it uses your character's gender preferences (orientation & kinks) to determine the order, so your preferred genders are first!
 
 ## Misc.
 Legible error messages for errors that would prevent you from logging in.
