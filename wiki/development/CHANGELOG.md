@@ -5,22 +5,19 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Next?
+### Next?
 * Teal   . . .
 * Eidols . . .
 * Home   . . .
 
 ## Release 0.7.5
 * Bugfix: Conflict resolution between F-Chat Rising and Frolic. No longer should they battle for control of your pinned taskbar icon.
-
-  **Please uninstall prior versions of Frolic and F-Chat Rising before installing this version.**
+  * **Please uninstall prior versions of Frolic and F-Chat Rising before installing this version.**
 * Automatic update check
-
-  There is no automatic download, just a menu entry to download it for yourself. Configuration options will come once it proves to be working well.
+  * There is no automatic download, just a menu entry to download it for yourself. Configuration options will come once it proves to be working well.
 * First stage of new desktop icons - you can enjoy them while the app is running!
 * Bugfix: You can no longer save a blank memo.
-
-  Additionally, you can delete an accidentally blank memo by re-opening and saving it.
+  * Additionally, you can delete an accidentally blank memo by re-opening and saving it.
 * Better alignment on some sidebar icons
 * Lots of backend refactoring and simplification.
 * Password saving got a makeover to bring the codepaths up-to-date with modern coding standards.
@@ -44,11 +41,9 @@ excerpt: All release notes in one easy to find place.
 
   There is an option to broaden your results again if you had no issue with prior post-length matches.
 * In past versions, some errors would freeze the login screen forever. There are now explanatory error messages for the most typical cases. If you encounter a situation where you can't log in but no error message is presented to you, please file a bug report.
-
-  Additionally, there are warning messages at the log-in screen for situations that may indicate feature degradation - specifically, if you can't contact the Xariah eicon service. Additional warnings will be added as they come up.
+  * Additionally, there are warning messages at the log-in screen for situations that may indicate feature degradation - specifically, if you can't contact the Xariah eicon service. Additional warnings will be added as they come up.
 * Bugfix: The 'Recon' tab in someone's profile accidentally showed duplicate entries. This is no longer the case. Some minor performance improvements have resulted from the change that fixed this.
-
-  Some back-end component updates were required to make all this possible.
+  * Some back-end component updates were required to make all this possible.
 * Minor clean-ups to the arrangement of the left sidebar in preparation for future changes. No features have been removed. Additional improvements were made for users using very large or very small font sizes.
 * Bugfix: Prevent overwriting your local eicon cache with nothing when you can't connect to the eicon server. Saves downloading 20MB, infrequently.
 * Bugfix: Gay TG characters will no longer match each other automatically.
