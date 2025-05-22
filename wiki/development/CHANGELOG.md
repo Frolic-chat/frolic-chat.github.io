@@ -6,17 +6,20 @@ excerpt: All release notes in one easy to find place.
 # Changelog
 
 ## Next?
-* Teal . . .
+* Teal   . . .
 * Eidols . . .
-* Home . . .
+* Home   . . .
 
 ## Release 0.7.5
 * Bugfix: Conflict resolution between F-Chat Rising and Frolic. No longer should they battle for control of your pinned taskbar icon.
+
   **Please uninstall prior versions of Frolic and F-Chat Rising before installing this version.**
 * Automatic update check
+
   There is no automatic download, just a menu entry to download it for yourself. Configuration options will come once it proves to be working well.
 * First stage of new desktop icons - you can enjoy them while the app is running!
 * Bugfix: You can no longer save a blank memo.
+
   Additionally, you can delete an accidentally blank memo by re-opening and saving it.
 * Better alignment on some sidebar icons
 * Lots of backend refactoring and simplification.
