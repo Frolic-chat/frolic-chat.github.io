@@ -46,18 +46,20 @@ There is no hostility between these projects; We're happy Horizon exists, and we
 ### What makes Frolic different from Horizon?
 It's likely that Frolic and Horizon will maintain feature parity for an extended period of time.
 
-* In terms of end-user experience, there may never be much difference. Frolic seeks to establish sane, helpful, and unobtrusive defaults so you can run the application as-is. The intent of Frolic is to enhance the original client with features that stay out of the way and let the user control their own experience.
+* In terms of end-user experience, there may never be much difference! Frolic seeks to establish a more well-refined set of options, cleanly organized and explained for maximum usability even if you aren't a power-user. Meanwhile, Horizon's lead developer has expressed interest in having more options for a high amount of customization.
 
-    It's yet to be seen how Horizon will implement feature additions, but Horizon's lead developer has expressed interest in having more user-controllable options for a high amount of customization. In this way, we operate with different _primary_ goals, even though both projects desire an enjoyable experience for our users.
+  * Currently, both projects are keen to squash bugs to establish a cleaner foundation to work on, so many changes established in one end up in the other.
 
 * If you want to work with developers to improve the client, there's a few distinctions between the projects, but you shouldn't let these differences sway your decision in which you use.
 
-    Frolic focuses on feature-based branches which test changes and implement minor improvements over long periods of time - then merges the completed feature into the main branch so everyone can it can go live in the next release. Frolic makes only minimal changes necessary to offer improvement, preserving parts of the code that don't need to be tampered with.
+  * Frolic focuses on feature-based branches which test changes and implement minor improvements over time - then merges the completed feature into an RC branch for playing around with before going live as part of a release. Frolic makes only minimal changes necessary to offer improvement, preserving parts of the code that don't need to be tampered with.
 
-    When submitting code to Frolic, the only style test you'll have to pass is, "Can the lead developer understand what my code is trying to do just by reading it?" All submissions undergo review and discussion; code is never accepted immediately. You may be asked to make formatting or layout changes for clarity. We rely on good communication to keep things moving, but don't worry - the lead dev is a patient person and enjoys working with others to polish submissions to perfection. :) Frolic operates without enforcement of a particular coding standard, favoring pertinent in-line commentary and clarity of code so other contributors will be able to discern the intent far into the future.
+  * For differences in coding style, Horizon enforces a consistent code format using the self-proclaimed "opinionated" [Prettier](https://prettier.io/docs/) nodejs module.
 
-    Horizon uses a single development branch to merge multiple features together for a general testing period. For coding style, Horizon enforces a consistent code format using the self-proclaimed "opinionated" [Prettier](https://prettier.io/docs/) nodejs module.
+  * When submitting code to Frolic, you may be asked to make formatting or layout changes for clarity, but there's no particular style enforced. We believe true clarity comes from the macro-level decision making and arrangement. The only style test you'll have to pass is, "Can the lead developer understand what my code is trying to do just by reading it?"
 
-    Both projects accept issue reports, feature requests, and code contributions from the general public. It's yet to be seen how either project address low-quality code submissions, as nothing of note has happened this early in these project's lives.
+    All submissions undergo discussion with the review; code is never accepted immediately. We rely on good communication to keep things moving, but don't worry - the lead dev is a patient person and enjoys working with others to polish submissions to perfection. :)
+
+    Frolic favors pertinent in-line commentary so other contributors will be able to discern the intent far into the future.
 
 Ultimately, both projects operate with different standards and move towards different goals from the same starting point. If you need a concise way to think about it, consider them sister projects - similar but distinct.
