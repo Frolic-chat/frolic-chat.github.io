@@ -10,7 +10,7 @@ excerpt: All release notes in one easy to find place.
 * In-app note RP
 
 ## Release 0.7.6
-* Keep track of your public-room RPs better - There's a new option to match usernames with your highlight words to match usernames. You can find the checkbox to enable name-highlights in each tab's settings.
+* Keep track of your public-room RPs better - There's a new option to match usernames with your highlight words. You can find the checkbox to enable name-highlights in each tab's settings.
   * There is no global setting; this is a temporary (but fully working) solution until a larger notification revision can be made.
 * The character tooltip/preview has been cleaned up.
   * On bi characters, it now shows their gender-preference, if they have one.

@@ -243,8 +243,15 @@ new ffxiv species kink match
 
 hardcoded colors in chatview
 
+scrollbar on profile sidebar
+
+highly X on tab when mousing over
+
 has improper (!c)
 	calculateInterestScoreForQueueEntry
+
+top entry in PM list has rounded top corner, but icons aren't top aligned.
+	set overflow: hidden; on <a> block
 
 Remove `Contact details/Sites` column if no details/sites
 	infotags.vue
@@ -256,17 +263,40 @@ support for additional contact info links
 	telegram -> open new PM link
 	steam -> steam account page
 
+COMBINE FRIENDS AND CHANNEL LIST
+
 in-app notes
-	text-box autosave
-	draft editor?
+	text-box autosave/draft editor
 	easy access to memo on that person
-	history
+	make live -> note -> live easy
+	bluebird -> axios
+	can i use connection.queryApi ??????????
 
-overflow charactername
-	ellipsis
+ENABLE ROAMING IN LOGIN
 
+Frolic icon - multiple flowers blending together? Like one petal from each color.
+		Like the old people holding hands ubuntu logo
 
-Allow unread mention status for chats
+getCharacterUrl(): string {
+    return `flist-character://${this.character.name}`;
+}
+
+if ((<Error & {request?: object}>e).request !== undefined) {//catch axios network errors
+
+Allow unread+mention status for PMs
+
+Smart filter female, male, and intersex, via chat gender instead of character Gender.
+
+RobustReminders
+	A place where you can be reminded of things. Ie haven't changed password in 6 months. Person on personal-notify when you log in.
+Serenity
+
+DOCUMENT
+OVERALL DESIGN PHILOSOPHY
+	Friend focused
+	Communication focused
+	Powerful tools with simple interfaces
+	Err on the side of user control (complexity), but a simple user should always be able to do *something*
 
 
 Big features:
@@ -281,10 +311,12 @@ Big features:
 		Notifications
 		Serenity
 			Sounds for specific events?
+			Queue notifications (per channel?)
+				Cooldown on channels? Per person???
 			Way to see all channels with custom notification settings
 			DND for certain time (like to watch a movie or something)
 			Customize DND settings
-			TIME BASED sound/visual SETTINGS
+			ROUTINE BASED sound/visual SETTINGS (night mode, etc)
 			Visual options???
 				high contrast
 				reduced colors
@@ -314,13 +346,14 @@ Small features:
 
 Bug fixes:
 	allow disabling pinged by bbcode
-	Fix double gender recommendation (kink + orientation) in matchmaker display
-	Fix species+furry match recommendation?
-
-TEST ICON DISAPPEARING RIGHT AFTER STARTUP ON WINDOWS
 
 Misc:
-	website themeing
-	Frolic icon - multiple flowers blending together? Like one petal from each color.
-		Like the old people holding hands ubuntu logo
+	website theming
+
+Bring out personality, relationship, apparent age
+
+The question for where something goes really is, how do I DO the things I want to do. Wanting to DO similar things should go to the similar place and each place should make sense for itself. Accessing search and eidols (passive search) together makes sense. Accessing eidol customization and ad editor also makes sense. How does it make sense to start running ads? What other ad-like behaviors do you want to be able to toggle on or off?
+	What is the feeling I have? There should be the same way to satisfy it.
+		If the feeling is desire for your friends, all friends access should be in the same place.
+		If the feeling is desire for something new, all new-person hunting techniques should be in the same place.
 ```
