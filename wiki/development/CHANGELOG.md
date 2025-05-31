@@ -6,9 +6,26 @@ excerpt: All release notes in one easy to find place.
 # Changelog
 
 ### Next?
-* Teal   . . .
-* Eidols . . .
-* Home   . . .
+* Enhanced matching
+* In-app note RP
+
+## Release 0.7.6
+* Keep track of your public-room RPs better - There's a new option to match usernames with your highlight words to match usernames. You can find the checkbox to enable name-highlights in each tab's settings.
+  * There is no global setting; this is a temporary (but fully working) solution until a larger notification revision can be made.
+* The character tooltip/preview has been cleaned up.
+  * On bi characters, it now shows their gender-preference, if they have one.
+* Bugfix: After being bugged for literally forever, you can now view your logs from the login window, without having to log in first.
+* Bugfix: The "Furs and/or Humans" preference is only used for matchmaking if species matching is indeterminate. This effectively combines them into a single score, using the most well-defined factor available.
+  * Previously, a character's species could be effectively counted twice - once against Furry Preference and once against species kinks.
+* Bugfix: Orientation is only used for matchmaking if gender kink matching is indeterminate.
+  * Previously, a character's gender could play an overly-significant role in matchmaking.
+* With the above changes, the display of matchmaking no longer shows "likes [gender/species]" multiple times.
+* A short notice has been added to the smart filters settings to help you better understand the limitations of filtering.
+* Bugfix: The eicon selector no longer leaks memory from over-use.
+* Bugfix: The primary text box should be the correct size more frequently. This should resolve strange resizing and a scrollbar when there were no lines to scroll.
+* Bugfix: On linux, the minimize button was un-minimizing the window. We've given it a stern talking-to and this should no longer be an issue.
+* Bugfix: On a similar note, the chat should properly adjust to the new space when maximizing and unmaximizing the window.
+* Some other mild annoyances have been fixed.
 
 ## Release 0.7.5
 * Bugfix: Conflict resolution between F-Chat Rising and Frolic. No longer should they battle for control of your pinned taskbar icon.
