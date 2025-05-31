@@ -58,8 +58,8 @@ node pack.js
 #### Build Failure Troubleshooting
 Unusual behavior while building can be caused by artifacts from past build failures.
 Removing or renaming these directories is a good first-step to troubleshooting:
-* `frolic/electron/app` - This folder will be recreated by `yarn build:dist`
-* `frolic/electon/dist` - **Ensure** you've recovered any compiled builds you want to keep. This folder will be recreated by `node pack.js`
+* `frolic/electron/app` - This folder will be recreated by `yarn watch` or `yarn build:dist`
+* `frolic/electon/dist` - **Ensure** you've recovered any compiled builds you want to keep. This folder will be recreated by `node pack.js` or `yarn pack-all`
 
 ## Dependencies
 Note: Adding *and upgrading* dependencies should only be done with prior consideration and subsequent testing.
