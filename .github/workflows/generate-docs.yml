@@ -44,3 +44,8 @@ jobs:
         git add ./dev-doc/tsdoc
         git commit -m "Update tsdoc documentation"
         git push
+
+    - name: Trigger repository_dispatch event in doc repo
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        event-type: tsdoc-gen-finished
