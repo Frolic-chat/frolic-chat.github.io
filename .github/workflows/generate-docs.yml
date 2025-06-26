@@ -1,0 +1,46 @@
+name: Generate TypeScript Docs
+
+on:
+  repository_dispatch:
+    types: [generate-docs]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout main repo
+      uses: actions/checkout@v4
+      with:
+        repository: Frolic-chat/frolic
+        ref: master
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.x'
+        check-latest: true
+
+    - name: Install dependencies
+      run: |
+        yarn install
+        yarn add typedoc typedoc2md
+
+    - name: Generate docs
+      run: |
+        yarn typedoc --out ./docs ./electron/main.ts ./electron/chat.ts ./electron/window.ts ./electron/browser_option.ts ./learn/store/worker/store.worker.endpoints.ts
+        yarn typedoc2md --out ./dev-doc/tsdoc ./docs
+
+    - name: Checkout doc repo
+      uses: actions/checkout@v4
+      with:
+        repository: Frolic-chat/frolic-chat.github.io
+        ref: main
+
+    - name: Commit and push generated docs
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git add ./dev-doc/tsdoc
+        git commit -m "Update tsdoc documentation"
+        git push
