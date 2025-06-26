@@ -25,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         yarn install
-        yarn add typedoc typedoc2md
+        yarn add -D typedoc typedoc-plugin-markdown
 
     - name: Generate docs
       run: |
@@ -46,10 +46,6 @@ jobs:
         git commit -m "Update tsdoc documentation"
         git push
 
-  dispatch-to-jekyll:
-    runs-on: ubuntu-latest
-
-    steps:
     - name: Trigger repository_dispatch event in doc repo
       uses: peter-evans/repository-dispatch@v3
       with:
