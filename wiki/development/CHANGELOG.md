@@ -9,6 +9,14 @@ excerpt: All release notes in one easy to find place.
 * Enhanced matching
 * In-app note RP
 
+## Release 0.7.7
+* Reduced memory usage
+* Eicon selector overhaul. Searching is much faster. Almost *too* fast...
+  There have been a few UI tweaks, but nothing major.
+
+* Significant updates to many backend components
+* Adblocker for image preview and dictionary updated
+
 ## Release 0.7.6
 * Keep track of your public-room RPs better - There's a new option to match usernames with your highlight words. You can find the checkbox to enable name-highlights in each tab's settings.
   * There is no global setting; this is a temporary (but fully working) solution until a larger notification revision can be made.
