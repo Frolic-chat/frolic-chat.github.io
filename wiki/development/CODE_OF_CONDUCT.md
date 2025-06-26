@@ -9,19 +9,16 @@ excerpt: Rules, Goals, and Code of Conduct
 ### The project exists for the people who use it.
 1. All things that improve the experience of the end user should be considered.
 2. The developers are also users, so they should not discount themselves.
-3. The purpose of the app is to assist. Taking action is reserved for the user.
-   >Yes: Suggesting topics for starters based on profile information; pointing out commonality between users; highlighting messages the user may want to see
+3. The purpose of the app is to assist. Leave the decision-making and taking action to the user.
+   >**Yes**: Suggesting topics for starters based on profile information; pointing out commonality between users; highlighting messages the user may want to see; dimming users who you are unlikely to want to pair with
 
-   >No: Silently blocking messages or users; botting (sending messages, etc) on behalf of the user
-4. Along the same line of thinking: Leave the decision-making to the user. To have the app cast harsh judgment is forbidden.
-   >Yes: Tagging search results with colors based on preferences; Dimming users who you are unlikely to want to pair with; sorting search results by some criteria
+   >**No**: Silently blocking messages or users; botting (sending messages, etc) on behalf of the user
 
-   >No: Hiding characters from search results entirely;
-5. Aspects that improve the user's life should be amplified and focused upon. The user should feel uplifted for using the work (in comparison to its alternatives).
-6. Aspects of the work that insult or demean people should be diminished or compensated for.
-   >Yes: highlighting desired criteria of characters; pointing out misalignments with other characters in neutral, informative ways
+4. Aspects that improve the user's life should be amplified and focused upon. The user should feel uplifted for using the work (in comparison to its alternatives).
+5. Aspects of the work that insult or demean people should be diminished or compensated for.
+   >**Yes**: highlighting desired criteria of characters; pointing out misalignments with other characters in neutral, informative ways
 
-   >No: Big, scary "No" tags on users based on general, immalleable criteria. "No" tags have long been a point of contention of other F-Chat clients, since they frequently result in no contact initiated, and thus prevent real, human judgment from ever taking place.
+   >**No**: Big, scary "No" tags on users based on general, immalleable criteria. "No" tags have long been a point of contention of other F-Chat clients, since they frequently result in no contact initiated, and thus prevent real, human judgment from ever taking place.
 
 ## Development Style
 ### Everyone is allowed to help.

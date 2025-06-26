@@ -12,7 +12,7 @@ Did you know you can sort the member list of a channel by clicking the dual-tria
 
 
 ## Improved Functionality
-Prior to Frolic 0.7, member list sorting used a list of genders with a fixed order. Frolic improves this to account for the gender preferences of your character. It draws upon your character's kinks and orientation to re-sort the list with your prefered genders at the top.
+Prior to Frolic 0.7.0, member list sorting used a list of genders with a fixed order. Frolic improves this to account for the gender preferences of your character. It draws upon your character's kinks and orientation to re-sort the list with your prefered genders at the top.
 
 Additionally, the icon has been changed to one that makes more sense for its functionality. Hopefully, more people will realize you can sort the member list.
 
