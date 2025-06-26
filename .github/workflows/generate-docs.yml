@@ -3,9 +3,10 @@ name: Generate TypeScript Docs
 on:
   repository_dispatch:
     types: [generate-docs]
+  workflow_dispatch:
 
 jobs:
-  build:
+  setup-tsdoc:
     runs-on: ubuntu-latest
 
     steps:
@@ -45,6 +46,10 @@ jobs:
         git commit -m "Update tsdoc documentation"
         git push
 
+  dispatch-to-jekyll:
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Trigger repository_dispatch event in doc repo
       uses: peter-evans/repository-dispatch@v3
       with:
