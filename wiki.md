@@ -14,8 +14,12 @@ permalink: wiki
   </tr>
 
   {% assign wiki_pages = site.html_pages | where_exp: "page", "page.url | slice: 0, 6 == '/wiki/'" %}
+  {% assign blank_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/'" %}
+  {% assign feature_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/features'" %}
+  {% assign dev_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/development/'" %}
+  {% assign indev_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/development/in-dev'" %}
 
-  {% for file in wiki_pages | where: "page", "page.dir == '/wiki/'" %}
+  {% for file in blank_pgs %}
     <tr>
       <td>&nbsp;</td>
       <td><a href="{{ file.url | relative_url }}">
@@ -25,7 +29,8 @@ permalink: wiki
     </tr>
   {% endfor %}
   <tr></tr>
-  {% for file in wiki_pages | where: "page", "page.dir == '/wiki/features/'" %}
+
+  {% for file in feature_pgs %}
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
     <tr>
@@ -37,7 +42,8 @@ permalink: wiki
     </tr>
   {% endfor %}
   <tr></tr>
-  {% for file in wiki_pages | where: "page", "page.dir == '/wiki/development/'" %}
+
+  {% for file in dev_pgs %}
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
     <tr>
@@ -49,7 +55,8 @@ permalink: wiki
     </tr>
   {% endfor %}
   <tr></tr>
-  {% for file in wiki_pages | where: "page", "page.dir == '/wiki/development/in-dev'" %}
+
+  {% for file in indev_pgs %}
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
     <tr>
