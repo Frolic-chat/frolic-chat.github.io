@@ -19,9 +19,11 @@ permalink: wiki
   {% assign dev_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/development/'" %}
   {% assign indev_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/development/in-dev/'" %}
 
-  {% for file in blank_pgs %}
+  {% for file in feature_pgs %}
+    {% assign folder = file.dir | remove_first: '/wiki/' %}
+    {% assign length = folder | size | minus: 1 %}
     <tr>
-      <td>&nbsp;</td>
+      <td>{{ folder | slice: 0, length | capitalize }}</td>
       <td><a href="{{ file.url | relative_url }}">
         {{ file.title }}
       </a></td>
@@ -30,11 +32,9 @@ permalink: wiki
   {% endfor %}
   <tr></tr>
 
-  {% for file in feature_pgs %}
-    {% assign folder = file.dir | remove_first: '/wiki/' %}
-    {% assign length = folder | size | minus: 1 %}
+  {% for file in blank_pgs %}
     <tr>
-      <td>{{ folder | slice: 0, length | capitalize }}</td>
+      <td>&nbsp;</td>
       <td><a href="{{ file.url | relative_url }}">
         {{ file.title }}
       </a></td>
