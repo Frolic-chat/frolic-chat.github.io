@@ -15,34 +15,34 @@ permalink: wiki
   {% for file in site.html_pages %}
     {% if file.url contains '/wiki/' %}
       <tr>{% assign folder = file.dir | remove: '/wiki/' %}{% assign length = folder | size | minus: 1 %}
-        {% if folder.blank? or folder.empty? %}
+      {% for folder %}{% if folder.blank? or folder.empty? %}
           <td>&nbsp;</td>
           <td><a href="{{ file.url | relative_url }}">
             {{ file.title }}
           </a></td>
           <td>{{ file.excerpt }}</td>
-        {% endif %}
-        {% if folder == 'features/' %}
+        {% endif %}{% endfor %}
+        {% for folder %}{% if folder == 'features/' %}
           <td>{{ folder | slice: 0, length | capitalize }}</td>
           <td><a href="{{ file.url | relative_url }}">
             {{ file.title }}
           </a></td>
           <td>{{ file.excerpt }}</td>
-        {% endif %}
-        {% if folder == 'development/' %}
+        {% endif %}{% endfor %}
+        {% for folder %}{% if folder == 'development/' %}
           <td>{{ folder | slice: 0, length | capitalize }}</td>
           <td><a href="{{ file.url | relative_url }}">
             {{ file.title }}
           </a></td>
           <td>{{ file.excerpt }}</td>
-        {% endif %}
-        {% if folder == 'development/in-dev/' %}
+        {% endif %}{% endfor %}
+        {% for folder %}{% if folder == 'development/in-dev/' %}
           <td>{{ folder | slice: 0, length | capitalize }}</td>
           <td><a href="{{ file.url | relative_url }}">
             {{ file.title }}
           </a></td>
           <td>{{ file.excerpt }}</td>
-        {% endif %}
+        {% endif %}{% endfor %}
       </tr>
     {% endif %}
   {% endfor %}
