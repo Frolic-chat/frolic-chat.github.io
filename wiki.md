@@ -13,11 +13,11 @@ permalink: wiki
     <th>About</th>
   </tr>
 
-  {% assign wiki_pages = site.html_pages | where_exp: "page", "page.url contains '/wiki/'" %}
-  {% assign blank_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/'" %}
-  {% assign feature_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/features'" %}
-  {% assign dev_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/development/'" %}
-  {% assign indev_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/development/in-dev'" %}
+  {% assign wiki_pages = site.html_pages | where_exp: "page", "page.dir contains '/wiki/'" %}
+  {% assign blank_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/'" %}
+  {% assign feature_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/features/'" %}
+  {% assign dev_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/development/'" %}
+  {% assign indev_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/development/in-dev/'" %}
 
   {% for file in blank_pgs %}
     <tr>
