@@ -3,7 +3,7 @@ title: Member List Sorting
 layout: default
 excerpt: Sorting the member list by gender accounts for your character's preferences.
 ---
-{% include development-feature-warning.md %}
+{% include development-feature-warning.html %}
 
 # Member List Sorting
 Did you know you can sort the member list of a channel by clicking the dual-triangles next to the member count? I didn't either!

@@ -3,7 +3,7 @@ title: Note Notifications
 layout: default
 excerpt: Website notifications now appear on the sidebar.
 ---
-{% include development-feature-warning.md %}
+{% include development-feature-warning.html %}
 
 # Note Display
 F-Chat Rising introduced a feature that checks the website for new notes and messages every 15 minutes. Frolic moves this notice from a popup that covers the typing box into the right sidebar, beneath the member list, friend list, or profile view.

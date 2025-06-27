@@ -3,7 +3,7 @@ title: Orientation Matchmaking Update
 layout: default
 excerpt: The Rising match-maker only used character orientation for cis-gendered characters.
 ---
-{% include development-feature-warning.md %}
+{% include development-feature-warning.html %}
 
 # Use of "Orientation" in Matchmaking
 Prior to Frolic 0.7.0, the Rising-based matchmaker would only use your orientation to find gender-based matches if you were male or female. We have provided some improvements to matching for other situations for which an obvious conclusion can be reached.

@@ -3,7 +3,7 @@ title: Slim Design
 layout: default
 excerpt: Improvements to the narrow design include...
 ---
-{% include development-feature-warning.md %}
+{% include development-feature-warning.html %}
 
 # Narrow Design
 Frolic features improvements to the default slim-style design. To use the slim design, simply shrink the width of the application and the sidebars will collapse, letting you focus on your conversation.
