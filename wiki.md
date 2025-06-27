@@ -13,7 +13,7 @@ permalink: wiki
     <th>About</th>
   </tr>
 
-  {% assign wiki_pages = site.html_pages | where_exp: "page", "page.url[0, 6] == '/wiki/'" %}
+  {% assign wiki_pages = site.html_pages | where_exp: "page", "page.url contains '/wiki/'" %}
   {% assign blank_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/'" %}
   {% assign feature_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/features'" %}
   {% assign dev_pgs = wiki_pages | where_exp: "page", "page.url == '/wiki/development/'" %}
