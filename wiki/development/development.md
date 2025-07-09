@@ -27,46 +27,48 @@ git clone https://github.com/Frolic-chat/Frolic.git
 cd Frolic
 yarn
 
-# Optional; make sure your commits are anonymous
+# Optional: make your commits anonymous
 git config --local user.name "SOME NAME"
 git config --local user.email "some@email.com"
 ```
 
-### Dev Mode
-Run two processes simultaneously:
+### Development Mode
+While making changes, you can have your changes tested in real time by running two processes simultaneously:
 
+##### #1: yarn watch
 ```bash
-# Process 1 -- watch
-cd electron
 yarn watch
 ```
+This will start real-time monitoring of file changes and rebuild changed codepaths, allowing you to check for many common code errors in real time.
 
+##### #2 yarn start
 ```bash
-# Process 2 -- app
-cd electron
 yarn start
-# Use `Ctrl+Shift+I` to open the Chromium debugger.
+# Use `Ctrl+Shift+I` to open the Chromium developer tools.
 ```
+This will launch the version of the app compiled by `yarn watch`, allowing you to log in and verify that everything is working correctly. It accepts common electron launch parameters like `--pasword-store=...` as well as the custom `--devtools` to launch the Chromium developer tools in their own windows.
 
 ### Build
 ```bash
 cd electron
+
 yarn build:dist
 node pack.js
 ```
 
 #### Build Failure Troubleshooting
 Unusual behavior while building can be caused by artifacts from past build failures.
+
 Removing or renaming these directories is a good first-step to troubleshooting:
 * `frolic/electron/app` - This folder will be recreated by `yarn watch` or `yarn build:dist`
 * `frolic/electon/dist` - **Ensure** you've recovered any compiled builds you want to keep. This folder will be recreated by `node pack.js` or `yarn pack-all`
 
-## Dependencies
-Note: Adding *and upgrading* dependencies should only be done with prior consideration and subsequent testing.
+If you encounter error 'Could not detect abi for version X.X.X and runtime electron', try running:
+```bash
+npx uuaw node-abi
+```
 
-That's why `yarn.lock` exists and is version controlled.
+## Dependencies
+Note: Do not add or upgrade dependencies. If you feel there's necessary upgrade, file an issue report and a discussion on the merits will ensue. Frequently, module upgrades cause undocumented behavior changes that can disturb the app and have to be tested at length. That's why `yarn.lock` exists and is version controlled.
 
 To upgrade NPM dependencies, run `yarn upgrade` locally. Run `yarn outdated` to see pending upgrades.
-
-If you encounter error 'Could not detect abi for version X.X.X and runtime electron', try running
-`npx uuaw node-abi`
