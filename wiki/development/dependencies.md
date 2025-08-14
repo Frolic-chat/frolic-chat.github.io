@@ -4,7 +4,7 @@ layout: default
 excerpt: What is each dependency there for?
 ---
 # Abstract
-Dependencies add addtional layers of complexity for little benefit.
+Dependencies add additional layers of complexity for little benefit.
 
 Their undocumented use can lead to a build up of dependencies with little to no actual benefit to the project.
 
@@ -29,10 +29,12 @@ These dependencies will never be going away; they're too ingrained in core funct
 * Nodejs
 * Vuejs
 * Webpack
+* electron-log
 
 ## Dependencies for Use Cases
 These deps were added with a specific purpose.
 
-* @types/webpack-env
+### `semver`
+Semver enables Frolic to perform version-dependent upgrades. You can create a routine in `./electron/version-upgrade.ts` named as a version and it will be executed when upgrading to that version or higher. This could not be done without semantic version comparisons and sorting from `semver`.
 
-  This was added to resolve editor warnings using require.context in main.ts - but it's no longer necessary due to refactoring.
+Being able to execute code only on upgrade is particularly useful for shepherding users through structural changes.

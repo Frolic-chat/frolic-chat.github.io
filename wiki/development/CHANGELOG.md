@@ -9,6 +9,121 @@ excerpt: All release notes in one easy to find place.
 * Enhanced matching
 * In-app note RP
 
+## Release 0.7.8
+* You can now disable channel logging while still logging private messages
+
+* Eat accidental clicks on links and buttons when clicking anywhere to close the right-click menu or color picker
+
+* Added an option to require a *second* Enter press to send a message, for those with fast or clumsy fingers (*guilty as charged...*)
+
+  A visual effect around the entry box will appear to let you know you can send your message. It will expire after 3 seconds.
+
+* Improved age matching against emojis to help you avoid bad matches
+
+* **Custom browser:**
+
+  * "Default browser" settings are now "custom browser" settings
+
+  * Fixed a variety of bugs related to opening external links and the custom browser settings
+
+* **Incognito Mode:**
+
+  * A custom browser must be chosen to use "Open in Incognito mode" in the right-click context menu
+
+  * "Open in Incognito mode" is now available on linux
+
+  * Added a section in the custom browser settings to customize arguments for incognito mode
+
+* **Profile Images:**
+
+  * Adjusted the images tab on profiles to fit more thumbnails
+
+  * Clicking an image will open a full-screen version of that image. Click anywhere to close.
+
+  * Images now have a right-click context menu allowing you to: copy image url; open in browser; open in browser with incognito mode.
+
+* **Smart Filters:**
+
+  * Previously, the settings were bugged and applied whether or not you saved them, now they only save when you confirm
+
+  * Can no longer hide the owner and moderators from the channel member list
+
+  * Can no longer hide channel messages from the owner and moderators
+
+    *(Global moderators have have always been exempt from filters.)*
+
+  * A kemomimi's human/furry leaning will be used when determining whether they're hidden by the "hide furries" and "hide humans" options. Therefore, human-leaning kemomimi will still appear if you have furries hidden and vice versa.
+
+  * Smartfilters should do a much better job of blocking new private messages
+
+  * New users won't have message autoreply enabled by default anymore
+
+  * "Intersex" is now "Nonbinary" in the settings; functionality is unchanged
+
+* **Channel ads:**
+
+  Channel ads have been unsupported for a *very* long time. This update implements changes to minimize their impact and prepare them for removal.
+
+  Automatic ad posting is supported via the sidebar above your channels and PMs.
+
+  * Disabled creating new channel ads
+
+  * Disabled posting channel ads
+
+    *Migrating channel ads to the global ad system is still supported. Please use this feature while it's available.*
+
+  * Collapsed the UI buttons for channel ads into a single button
+
+  * Hide options that aren't relevant
+
+    (For example, users that don't have channel ads to migrate won't be able to open the channel ads menu)
+
+* **Channels:**
+
+  * Switching channels is much smoother
+
+  * Characters in the channel list update much more responsively when they change (such as changing status, being matched by a filter, or being promoted or demoted)
+
+  * There's a new option to enable loading matcher/filter data for every character in a channel. You can find it in the General section of settings.
+
+    *Warning:* Because this option loads many more characters than usual, it carries a label advising that your system have adequate system memory.
+
+    Characters are only loaded from the on-disk cache, so this won't burn through your bandwidth or overload the server - but it also means characters you've never seen before won't have matcher/filter data displayed.
+
+    Currently this must be enabled on a per-character basis. Next update, it will be part of the app-wide settings.
+
+  * A horizontal scrollbar should no longer appear on member lists with long user names
+
+* The image preview should no longer show you a download dialog when presented with files
+
+* Using Ctrl+Tab and Shift+Ctrl+Tab to switch between your characters no longer randomly stops working
+
+* Open conversations no longer show a close button when they're pinned; you must first un-pin the conversation to close it
+
+* Fewer text boxes should have random scroll bars when using a custom font size
+
+* Limited the memo to one line in the character preview to fit more information
+
+* Character search no longer sometimes provides a mysterious source of lag by running in the background forever
+
+* Added description to the "Import" settings tab
+
+* Backend updates to make upgrades easier
+
+* **Experimental:** We're testing a new method of the "high-quality portraits" feature. This method will let you hide your custom avatar url so your profile flow goes undisturbed.
+
+  By using the hidden text trick (`[i=hqp://iili.io/FL9Uolt.png][/i]`) in your profile, you can replace your character avatar with a high-quality image of your choice. Replace the "https://" in your image url with "hqp://" to turn it into a high-quality portrait url.
+
+  To make it very simple, visit the settings! There's a new tab that will help you format your link.
+
+  This new approach only supports the urls that the Rising Portrait feature already supports:
+  * static.f-list.net (images in your character gallery)
+  * freeimage.host (and iili.io)
+  * redgifs.com
+  * e621.net
+
+  Because this is a test, **please report your usage and experience** to the issue tracker or privately via Note/PM to the "Frolic Chat" user on f-list!
+
 ## Release 0.7.7
 * Reduced memory usage
 * Eicon selector overhaul. Searching is much faster. Almost *too* fast...
