@@ -26,6 +26,8 @@ excerpt: All release notes in one easy to find place.
 
   * Fixed a variety of bugs related to opening external links and the custom browser settings
 
+  * To understand how to configure your own custom settings, visit the [Custom Browser Settings feature page](https://frolic-chat.github.io/wiki/features/browser-settings.html)
+
 * **Incognito Mode:**
 
   * A custom browser must be chosen to use "Open in Incognito mode" in the right-click context menu
@@ -33,6 +35,8 @@ excerpt: All release notes in one easy to find place.
   * "Open in Incognito mode" is now available on linux
 
   * Added a section in the custom browser settings to customize arguments for incognito mode
+
+  * You can do some very interesting things if you're willing to get technical - see the [Custom Browser Settings feature page](https://frolic-chat.github.io/wiki/features/browser-settings.html)
 
 * **Profile Images:**
 
@@ -100,6 +104,8 @@ excerpt: All release notes in one easy to find place.
 
 * Open conversations no longer show a close button when they're pinned; you must first un-pin the conversation to close it
 
+* Scroll to the bottom of a conversation by hitting Escape
+
 * Fewer text boxes should have random scroll bars when using a custom font size
 
 * Limited the memo to one line in the character preview to fit more information
@@ -121,6 +127,8 @@ excerpt: All release notes in one easy to find place.
   * freeimage.host (and iili.io)
   * redgifs.com
   * e621.net
+
+  For more details, please see the [HQP feature page](https://frolic-chat.github.io/wiki/features/high-quality-portraits.html)
 
   Because this is a test, **please report your usage and experience** to the issue tracker or privately via Note/PM to the "Frolic Chat" user on f-list!
 

@@ -10,6 +10,7 @@ In 0.7.8 the "Default browser" settings were renamed into "Custom browser" setti
 You can select the path to your browser of choice using a normal file selection dialog. Explicitly selecting the executable file is the best way to ensure it's correct. However, if you manually type in the name of a browser, such as "firefox" or "librewolf" then Frolic will try to guess what you mean.
 
 Frolic will take the following action to try to find your browser of choice:
+
 On Windows:
 * Add `.exe` to the end if you didn't provide it.
 * Search in your `Program Files` directoy for that file name using this command:
@@ -17,7 +18,7 @@ On Windows:
 where /r "c:\Program Files" "filename"
 ```
 
-On Linux
+On Linux:
 * Search for your provided filename using this command:
 ```bash
 which filename
