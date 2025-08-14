@@ -7,10 +7,10 @@ excerpt: How to get a higher resolution avatar
 This feature continues to be under development. Please provide feedback to the issue tracker if you experience any unusual behavior.
 
 # High Quality Portraits
-A feature called "high quality portraits" has existed in Frolic without much documentation. This features allows you substitute your avatar with a higher resolution image from an external hosting service. This is useful because F-List avatars can only be 100x100 pixels, which does not meet today's standards.
+A feature called "high quality portraits" has existed in Frolic without much documentation. This features allows you substitute your avatar with a higher resolution image from an external hosting service. This is useful because F-List avatars can only be 100x100 pixels, which look blurry and stretched on today's large screens.
 
 ## Modern
-Starting in Frolic 0.7.8, a modern revision of this feature blossomed into being. The modern way of using a high quality portrait is to hide a text block in your profile that contains your image link. The text will be completely hidden, but Frolic will still be able to read it and render it.
+Starting in Frolic 0.7.8, a modern revision of this feature blossomed into being. The modern way of using a high quality portrait is to hide a text block in your profile that contains your image link. The text will be completely hidden from view, but Frolic will still be able to read it.
 
 To make it easy, there's a tab in the settings that will take your link and give you some ready-to-use text you can paste into your profile.
 
