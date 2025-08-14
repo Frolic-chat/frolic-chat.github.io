@@ -23,13 +23,13 @@ Only Frolic users (and other custom clients that support this protocol) will det
 
 Only a select number of image hosting services are supported. Some websites can host malicious files, therefore we only  allow hosting services when we can vet them. Thankfully, f-list images (like those publicly visible in your gallery) are supported, so you can put your high quality image in your gallery and it will work.
 
-Only links that resolve into images can be used, so make sure you're using a link that ends in `.png` or another image extension.
-
 These are the hosting services that can host your high-quality portrait:
   * static.f-list.net (images in your character gallery)
   * freeimage.host (and iili.io)
   * redgifs.com
   * e621.net
+
+Only links that resolve into images can be used, so make sure you're using a link that ends in `.png` or another image extension.
 
 ## Legacy
 Previously, the way to gain a high quality portrait required marking your profile with visible text. You would add `[url=https://iili.io/FL9Uolt.png]Rising Portrait[/url]` and thus, everyone would see that you use a custom chat client. This is highly undesirable as it turns you into a walking advertisement and in doing so, breaks the voice and narrative of your profile.
