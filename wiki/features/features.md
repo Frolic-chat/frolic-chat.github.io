@@ -4,7 +4,7 @@ layout: default
 excerpt: A quick list of major features introduced in Frolic
 ---
 # New Features
-These are major features, for all changes, see the [changelog](development/in-dev/CHANGELOG.md)
+These are major features, for all changes, see the [changelog](../development/CHANGELOG.md)
 
 ## Interaction
 ### Desktop notifications
