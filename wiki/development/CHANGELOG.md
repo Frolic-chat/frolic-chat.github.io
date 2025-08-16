@@ -10,11 +10,7 @@ excerpt: All release notes in one easy to find place.
 * In-app note RP
 
 ## Release 0.7.8
-* You can now disable channel logging while still logging private messages
-
 * Accidental clicks on links and buttons when trying to close the right-click menu will be eaten
-
-
 
 * Improved age matching against emojis to help you avoid *bad matches*
 
@@ -22,9 +18,7 @@ excerpt: All release notes in one easy to find place.
 
 * Using Ctrl+Tab and Shift+Ctrl+Tab to switch between your characters no longer randomly stops working
 
-
-
-* Fewer text boxes should have random scroll bars when using a custom font size
+* Fewer text boxes should have completely unnecessary scroll bars when using a custom font size
 
 * Limited the memo to one line in the character preview to fit more information
 
@@ -104,6 +98,8 @@ excerpt: All release notes in one easy to find place.
 
 * **Channels:**
 
+  * You can now disable channel logging while still logging private messages
+
   * Switching channels is much smoother
 
   * Characters in the channel list update much more responsively when they change (such as changing status, being matched by a filter, or being promoted or demoted)
@@ -120,9 +116,9 @@ excerpt: All release notes in one easy to find place.
 
 * **Experimental:** We're testing a new method of the "high-quality portraits" feature. This method will let you hide your custom avatar url so your profile flow goes undisturbed.
 
-  By using the hidden text trick (`[i=hqp://iili.io/FL9Uolt.png][/i]`) in your profile, you can replace your character avatar with a high-quality image of your choice. Replace the "https://" in your image url with "hqp://" to turn it into a high-quality portrait url.
-
   To make it very simple, visit the settings! There's a new tab that will help you format your link.
+
+  For best results, use an image between 400x400 pixels and 800x800 pixels - images larger than that are rarely beneficial.
 
   This new approach only supports the urls that the Rising Portrait feature already supports:
   * static.f-list.net (images in your character gallery)
