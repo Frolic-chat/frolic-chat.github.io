@@ -7,7 +7,7 @@ excerpt: How to get a higher resolution avatar
 This feature continues to be under development. Please provide feedback to the issue tracker if you experience any unusual behavior.
 
 # High Quality Portraits
-A feature called "high quality portraits" has existed in Frolic without much documentation. This features allows you substitute your avatar with a higher resolution image from an external hosting service. This is useful because F-List avatars can only be 100x100 pixels, which look blurry and stretched on today's large screens.
+A feature called "high quality portraits" has existed in Frolic without much documentation. This features allows you substitute your avatar with a higher resolution image from an external hosting service. This is useful because F-List avatars can only be 100x100 pixels, which look blurry and stretched on large screens.
 
 ## Modern
 Starting in Frolic 0.7.8, a modern revision of this feature blossomed into being. The modern way of using a high quality portrait is to hide a text block in your profile that contains your image link. The text will be completely hidden from view, but Frolic will still be able to read it.
@@ -29,7 +29,11 @@ These are the hosting services that can host your high-quality portrait:
   * redgifs.com
   * e621.net
 
-Only links that resolve into images can be used, so make sure you're using a link that ends in `.png` or another image extension.
+Only links that resolve into images can be used, so make sure you're using a link that ends in `.png`, `.gif`, `.webp` or another image extension.
+
+A resolution between 400x400 pixels and 600x600 pixels will look good on most screens.
+
+Your image should be square, as it will be show everywhere your F-List avatar already is.
 
 ## Legacy
 Previously, the way to gain a high quality portrait required marking your profile with visible text. You would add `[url=https://iili.io/FL9Uolt.png]Rising Portrait[/url]` and thus, everyone would see that you use a custom chat client. This is highly undesirable as it turns you into a walking advertisement and in doing so, breaks the voice and narrative of your profile.

@@ -12,13 +12,27 @@ excerpt: All release notes in one easy to find place.
 ## Release 0.7.8
 * You can now disable channel logging while still logging private messages
 
-* Eat accidental clicks on links and buttons when clicking anywhere to close the right-click menu or color picker
+* Accidental clicks on links and buttons when trying to close the right-click menu will be eaten
 
-* Added an option to require a *second* Enter press to send a message, for those with fast or clumsy fingers (*guilty as charged...*)
 
-  A visual effect around the entry box will appear to let you know you can send your message. It will expire after 3 seconds.
 
-* Improved age matching against emojis to help you avoid bad matches
+* Improved age matching against emojis to help you avoid *bad matches*
+
+* The image preview should no longer show you a download dialog when presented with files
+
+* Using Ctrl+Tab and Shift+Ctrl+Tab to switch between your characters no longer randomly stops working
+
+
+
+* Fewer text boxes should have random scroll bars when using a custom font size
+
+* Limited the memo to one line in the character preview to fit more information
+
+* Character search no longer sometimes provides a mysterious source of lag by running in the background forever
+
+* Added description to the "Import" settings tab
+
+* Backend updates to make upgrades easier
 
 * **Custom browser:**
 
@@ -26,17 +40,15 @@ excerpt: All release notes in one easy to find place.
 
   * Fixed a variety of bugs related to opening external links and the custom browser settings
 
-  * To understand how to configure your own custom settings, visit the [Custom Browser Settings feature page](https://frolic-chat.github.io/wiki/features/browser-settings.html)
+  * You can do some very interesting things if you're willing to get technical! To understand how to configure your own custom browser settings, visit the [Custom Browser Settings feature page](https://frolic-chat.github.io/wiki/features/browser-settings.html)
 
-* **Incognito Mode:**
+  * **Incognito Mode:**
 
-  * A custom browser must be chosen to use "Open in Incognito mode" in the right-click context menu
+    * A custom browser must be chosen to use "Open in Incognito mode" in the right-click context menu
 
-  * "Open in Incognito mode" is now available on linux
+    * "Open in Incognito mode" is now available on linux
 
-  * Added a section in the custom browser settings to customize arguments for incognito mode
-
-  * You can do some very interesting things if you're willing to get technical - see the [Custom Browser Settings feature page](https://frolic-chat.github.io/wiki/features/browser-settings.html)
+    * Added a section in the custom browser settings to customize arguments for incognito mode
 
 * **Profile Images:**
 
@@ -48,27 +60,35 @@ excerpt: All release notes in one easy to find place.
 
 * **Smart Filters:**
 
-  * Previously, the settings were bugged and applied whether or not you saved them, now they only save when you confirm
+  * Previously, the settings were bugged and applied whether or not you saved them, now they only save when you confirm.
 
   * Can no longer hide the owner and moderators from the channel member list
 
-  * Can no longer hide channel messages from the owner and moderators
-
-    *(Global moderators have have always been exempt from filters.)*
+  * Can no longer hide channel messages and member list visibility of the owner and moderators *(Global moderators have always been exempt from filters.)*
 
   * A kemomimi's human/furry leaning will be used when determining whether they're hidden by the "hide furries" and "hide humans" options. Therefore, human-leaning kemomimi will still appear if you have furries hidden and vice versa.
 
   * Smartfilters should do a much better job of blocking new private messages
 
-  * New users won't have message autoreply enabled by default anymore
+  * New players won't have autoreply enabled by default anymore
 
   * "Intersex" is now "Nonbinary" in the settings; functionality is unchanged
 
+* **Conversations:**
+
+  * New setting to require a *second* Enter press to send a message, for those with fast or clumsy fingers (*guilty as charged...*)
+
+    A visual effect around the chat input box will appear to let you know you can send your message. It will expire after 3 seconds.
+
+  * Open conversations no longer show a close button when they're pinned; you must first un-pin the conversation to close it
+
+  * Scroll to the bottom of a conversation by hitting Escape
+
 * **Channel ads:**
 
-  Channel ads have been unsupported for a *very* long time. This update implements changes to minimize their impact and prepare them for removal.
+  Channel ads have been unsupported for a *very* long time. Automatic ad posting is supported via the sidebar above your channels and PMs.
 
-  Automatic ad posting is supported via the sidebar above your channels and PMs.
+  This update implements changes to minimize the old system's impact and prepare for its removal.
 
   * Disabled creating new channel ads
 
@@ -80,7 +100,7 @@ excerpt: All release notes in one easy to find place.
 
   * Hide options that aren't relevant
 
-    (For example, users that don't have channel ads to migrate won't be able to open the channel ads menu)
+    (For example, characters that don't have channel ads to migrate won't be able to open the channel ads menu)
 
 * **Channels:**
 
@@ -88,33 +108,15 @@ excerpt: All release notes in one easy to find place.
 
   * Characters in the channel list update much more responsively when they change (such as changing status, being matched by a filter, or being promoted or demoted)
 
+  * A horizontal scrollbar should no longer appear on member lists with long character names
+
   * There's a new option to enable loading matcher/filter data for every character in a channel. You can find it in the General section of settings.
 
     *Warning:* Because this option loads many more characters than usual, it carries a label advising that your system have adequate system memory.
 
-    Characters are only loaded from the on-disk cache, so this won't burn through your bandwidth or overload the server - but it also means characters you've never seen before won't have matcher/filter data displayed.
+    Characters are only loaded from the on-disk cache, so this won't burn through your bandwidth or overload the server - but it also means characters you've never seen before won't have matcher/filter data displayed until you interact with them.
 
     Currently this must be enabled on a per-character basis. Next update, it will be part of the app-wide settings.
-
-  * A horizontal scrollbar should no longer appear on member lists with long user names
-
-* The image preview should no longer show you a download dialog when presented with files
-
-* Using Ctrl+Tab and Shift+Ctrl+Tab to switch between your characters no longer randomly stops working
-
-* Open conversations no longer show a close button when they're pinned; you must first un-pin the conversation to close it
-
-* Scroll to the bottom of a conversation by hitting Escape
-
-* Fewer text boxes should have random scroll bars when using a custom font size
-
-* Limited the memo to one line in the character preview to fit more information
-
-* Character search no longer sometimes provides a mysterious source of lag by running in the background forever
-
-* Added description to the "Import" settings tab
-
-* Backend updates to make upgrades easier
 
 * **Experimental:** We're testing a new method of the "high-quality portraits" feature. This method will let you hide your custom avatar url so your profile flow goes undisturbed.
 
@@ -130,7 +132,7 @@ excerpt: All release notes in one easy to find place.
 
   For more details, please see the [HQP feature page](https://frolic-chat.github.io/wiki/features/high-quality-portraits.html)
 
-  Because this is a test, **please report your usage and experience** to the issue tracker or privately via Note/PM to the "Frolic Chat" user on f-list!
+  Because this is a test, **please report your usage and experience** to the issue tracker or privately via Note/PM to the "Frolic Chat" character on f-list!
 
 ## Release 0.7.7
 * Reduced memory usage
@@ -141,7 +143,7 @@ excerpt: All release notes in one easy to find place.
 * Adblocker for image preview and dictionary updated
 
 ## Release 0.7.6
-* Keep track of your public-room RPs better - There's a new option to match usernames with your highlight words. You can find the checkbox to enable name-highlights in each tab's settings.
+* Keep track of your public-room RPs better - There's a new option to match character names with your highlight words. You can find the checkbox to enable name-highlights in each tab's settings.
   * There is no global setting; this is a temporary (but fully working) solution until a larger notification revision can be made.
 * The character tooltip/preview has been cleaned up.
   * On bi characters, it now shows their gender-preference, if they have one.
@@ -171,7 +173,7 @@ excerpt: All release notes in one easy to find place.
 * Password saving got a makeover to bring the codepaths up-to-date with modern coding standards.
 
 ## Release 0.7.4
-* Bugfix: Resolved missing match summary after a search due to event emitter accidentally removing username event
+* Bugfix: Resolved missing match summary after a search due to event emitter accidentally removing character data event
 * Bugfix: Resolved search ticker continuing to tick after all results were resolved, reducing responsiveness
 * Bugfix: Core properly stops when you call `stop()`
 * Begin the move to better debug logging
@@ -192,7 +194,7 @@ excerpt: All release notes in one easy to find place.
   * Additionally, there are warning messages at the log-in screen for situations that may indicate feature degradation - specifically, if you can't contact the Xariah eicon service. Additional warnings will be added as they come up.
 * Bugfix: The 'Recon' tab in someone's profile accidentally showed duplicate entries. This is no longer the case. Some minor performance improvements have resulted from the change that fixed this.
   * Some back-end component updates were required to make all this possible.
-* Minor clean-ups to the arrangement of the left sidebar in preparation for future changes. No features have been removed. Additional improvements were made for users using very large or very small font sizes.
+* Minor clean-ups to the arrangement of the left sidebar in preparation for future changes. No features have been removed. Additional improvements were made for players using very large or very small font sizes.
 * Bugfix: Prevent overwriting your local eicon cache with nothing when you can't connect to the eicon server. Saves downloading 20MB, infrequently.
 * Bugfix: Gay TG characters will no longer match each other automatically.
 * Bugfix: An invalid list of fonts was fixed. If you notice a shift in font choice, this is why; it was always supposed to be this way.
