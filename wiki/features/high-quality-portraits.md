@@ -31,9 +31,9 @@ These are the hosting services that can host your high-quality portrait:
 
 Only links that resolve into images can be used, so make sure you're using a link that ends in `.png`, `.gif`, `.webp` or another image extension.
 
-A resolution between 400x400 pixels and 600x600 pixels will look good on most screens.
+An image as small as 200x200 pixels will still show considerable clarity improvement. Up to 400x400 pixels is ideal; the benefit is greatly reduced over that size.
 
-Your image should be square, as it will be show everywhere your F-List avatar already is.
+Your image should be square, as it will be show everywhere your F-List avatar is already displayed.
 
 ## Legacy
 Previously, the way to gain a high quality portrait required marking your profile with visible text. You would add `[url=https://iili.io/FL9Uolt.png]Rising Portrait[/url]` and thus, everyone would see that you use a custom chat client. This is highly undesirable as it turns you into a walking advertisement and in doing so, breaks the voice and narrative of your profile.
