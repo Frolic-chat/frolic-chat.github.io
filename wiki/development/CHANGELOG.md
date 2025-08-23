@@ -9,6 +9,25 @@ excerpt: All release notes in one easy to find place.
 * Enhanced matching
 * In-app note RP
 
+## Release 0.7.9
+This is a minor bug-fix patch. Please see the 0.7.8 patch notes for recent features.
+
+* Channel logging is now on by default
+
+  **If you logged into a character during 0.7.8,** it may be off for that character. Please check the characters you've played to make sure channel logging is set to the setting you want. Characters you haven't logged into yet will default to `on`.
+
+  This won't be an issue going forward as there will be as logging settings will apply account wide.
+
+* Phrasing change on the login screen: "Username" -> "Account" for clarity
+
+* Bugfix: "Close to tray" actually closes to the tray instead of exiting
+
+* Bugfix: Filterable menu can actually be filtered instead of closing when you tried to click on the filter input
+
+* Bugfix: Invisible error on the log viewer from the login screen
+
+* Behind the scenes fixes for stability
+
 ## Release 0.7.8
 * Accidental clicks on links and buttons when trying to close the right-click menu will be eaten
 

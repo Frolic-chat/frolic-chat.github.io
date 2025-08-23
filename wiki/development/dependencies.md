@@ -28,6 +28,10 @@ These dependencies will never be going away; they're too ingrained in core funct
 * Webpack
 * electron-log
 
+## Peer dependencies of core
+These deps are peers of the installed core frameworks and can't be removed without reducing functionality.
+* Popper.js
+
 ## Dependencies for Use Cases
 These deps were added with a specific purpose.
 

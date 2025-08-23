@@ -10,7 +10,7 @@ This page describes how to set up a development environment to help with testing
 Read our [Code of Conduct](CODE_OF_CONDUCT.html) to see if your development goals align with Frolic's.
 
 ## Development
-The NodeJS version used by Frolic is locked to the Electron version and is currently `18.x`. Having a system node of a higher version probably won't hurt anything. The lead developer uses version 22. There are tools like `nvm` if you feel it might be an issue.
+The NodeJS version used by Frolic is locked to the Electron version and is currently `22.x`. Having a system node of a higher version probably won't hurt anything. There are tools like `nvm` to manage your node version if you feel it might be an issue.
 
 ```bash
 # Windows only:
