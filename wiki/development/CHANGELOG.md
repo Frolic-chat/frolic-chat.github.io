@@ -137,7 +137,7 @@ This is a minor bug-fix patch. Please see the 0.7.8 patch notes for recent featu
 
   To make it very simple, visit the settings! There's a new tab that will help you format your link.
 
-  For best results, use an image between 400x400 pixels and 800x800 pixels - images larger than that are rarely beneficial.
+  For best results, use an image between 200x200 and 400x400 pixels - images larger than 600x600 are rarely beneficial.
 
   This new approach only supports the urls that the Rising Portrait feature already supports:
   * static.f-list.net (images in your character gallery)
