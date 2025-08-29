@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 ## 💾 Downloads
-The latest release is **{{ site.latest_release }}**. Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic/releases). See each releases' new features on its release page, or [view the full Changelog](https://frolic-chat.github.io/wiki/development/CHANGELOG.html) to see all improvements. Our sub-1.0 release number indicates that some features may be in a state of flux as they are continuously iterated upon.
+The latest release is **{{ site.latest_release }}**. Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic/releases). See each releases' new features on its release page, or [view the full Changelog](/wiki/development/CHANGELOG.html) to see all improvements. Our sub-1.0 release number indicates that some features may be in a state of flux as they are continuously iterated upon.
 
 <small>While Frolic doesn't mess with your logs, it's always wise to backup important files before installing or upgrading software. Your logs from the vanilla F-Chat desktop client and from F-Chat Rising are located at `%appdata%\fchat\data` on Windows and in `~/.config/fchat/data` on Linux. Frolic continues to use this location so you can continue your conversations right where you left off.</small>
 
@@ -22,18 +22,21 @@ For help installing, refer to the [original installation instructions](https://w
 1. **Link previews** popup shows a preview of an image / video when you hover your mouse over a link.
 1. **Caching** speeds up profile loads and other actions.
 1. **Smart filters** let you choose what kind of ads and posts you see in the chat.
-* [Full list of legacy differences from vanilla](https://frolic-chat.github.io/wiki/features/features-legacy.html) (implemented by Rising)
-* [Full list of changes since Rising](https://frolic-chat.github.io/wiki/development/CHANGELOG.html)
+* [Full list of legacy differences from vanilla](/wiki/features/features-legacy.html) (implemented by Rising)
+* [Full list of changes since Rising](/wiki/development/CHANGELOG.html)
 
 To learn more about Frolic, here are some pages you might want to visit:
-* [How does character matching work?](https://frolic-chat.github.io/wiki/features/how-to-match.html)
-* [How to set up ads](https://frolic-chat.github.io/wiki/features/how-to-ads.html)
-* The details of [species matching](https://frolic-chat.github.io/wiki/features/species-matching.html)
-* Improvements to [orientation/gender matching](https://frolic-chat.github.io/wiki/features/orientation.html)
-* Take a gander at [how to frustrate yourself](https://frolic-chat.github.io/wiki/features/how-to-not-match.html) if you're not getting good matches and want to know why
-* [General FAQ](https://frolic-chat.github.io/wiki/FAQ.html)
+* [How does character matching work?](/wiki/features/how-to-match.html)
+* [How to set up ads](/wiki/features/how-to-ads.html)
+* The details of [species matching](/wiki/features/species-matching.html)
+* Improvements to [orientation/gender matching](/wiki/features/orientation.html)
+* Take a gander at [how to frustrate yourself](/wiki/features/how-to-not-match.html) if you're not getting good matches and want to know why
+* [General FAQ](/wiki/FAQ.html)
 
-In depth documentation about Frolic can be found on the [Frolic wiki](https://frolic-chat.github.io/wiki.html).
+In depth documentation about Frolic can be found on the [Frolic wiki](/wiki.html).
+
+## License
+Frolic is free software! That means you may copy, modify, and distribute it under the terms of the GNU Affero General Public License. Please see [the license](/wiki/LICENSE.html) for details.
 
 ## If you're interested in working with Frolic's code
-[Development details](https://frolic-chat.github.io/wiki/development/development.html) and the [Project Goals/Code of Conduct](https://frolic-chat.github.io/wiki/development/CODE_OF_CONDUCT.html) are what you should read.
+[Development details](/wiki/development/development.html) and the [Project Goals/Code of Conduct](/wiki/development/CODE_OF_CONDUCT.html) are what you should read.

@@ -24,7 +24,7 @@ Your IP address will be exposed to all of these services.
 ## Link Previews
 When the 'Link Preview' feature is used, Frolic will connect to the URL being previewed and any other hosts that are linked from the page being previewed.
 
-* Frolic uses [@ghostery/adblocker](https://github.com/ghostery/adblocker) to block as many ads and trackers as possible.
+* Frolic uses [ghostery adblocker](https://github.com/ghostery/adblocker) to block as many ads and trackers as possible.
 * Using the Link Preview feature will expose you to similar risks that opening a link in your web browser does.
 * If you are concerned about your security or privacy, consider disabling the link preview feature in Frolic settings.
 * In some cases Frolic uses 'proxy services' that help formatting Link Previews. For example:
@@ -48,8 +48,8 @@ information such as custom dictionary words. By default, the data is stored in:
 | **Operating System** | **Data Path**                         |
 |:---------------------|:--------------------------------------|
 | Windows              | `%AppData%\fchat`                     |
-| MacOS                | `~/Library/Application Support/fchat` |
 | Linux                | `~/.config/fchat`                     |
+| MacOS                | `~/Library/Application Support/fchat` |
 
 F-List account usernames and passwords are stored in a secure datastore provided by your operating system or secret service.
 For more information, see [electron safeStorage](https://www.electronjs.org/docs/latest/api/safe-storage).

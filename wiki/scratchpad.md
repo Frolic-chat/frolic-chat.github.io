@@ -235,7 +235,6 @@ read eicons and stuff from text file
 	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
 
 mounting imagepreview takes a while...
-check characterpreview @Hook('beforeDestroy') for memory leak - probably not
 
 bad exotic creatures tooltip:
 	exotic
@@ -285,7 +284,7 @@ if ((<Error & {request?: object}>e).request !== undefined) {//catch axios networ
 
 Allow unread+mention status for PMs
 
-Smart filter female, male, and intersex, via chat gender instead of character Gender.
+Smart filter female, male, and nonbinary, via chat gender instead of character Gender.
 
 RobustReminders
 	A place where you can be reminded of things. Ie haven't changed password in 6 months. Person on personal-notify when you log in.
