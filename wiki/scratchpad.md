@@ -268,7 +268,6 @@ in-app notes
 	text-box autosave/draft editor
 	easy access to memo on that person
 	make live -> note -> live easy
-	bluebird -> axios
 	can i use connection.queryApi ??????????
 
 ENABLE ROAMING IN LOGIN

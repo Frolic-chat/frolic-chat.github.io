@@ -6,7 +6,7 @@
 @use 'sass:math';
 @use 'sass:map';
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 $color-scheme: "frolic-pastel";
@@ -39,28 +39,43 @@ time, mark, audio, video {
 // $color-orange:  #FFAF61;
 // $color-red:     #FF70AB;
 
-$color-yellow: oklch(89.88% 0.1484 93.3);
-$color-blue:   oklch(73.83% 0.14 250.79);
-$color-purple: oklch(65.5% 0.227 303.4);
-$color-red:    oklch(71.74% 0.2057 352.92);
-$color-orange: oklch(81.62% 0.1328 63.33);
-$color-green:  oklch(91.75% 0.2045 132.06);
-$color-teal:   oklch(89.66% 0.1743 157.65);
-$color-pink:   oklch(73.39% 0.1832 356.76);
-$color-brown:  oklch(50.64% 0.1009 56.17);
+// $color-yellow: oklch(89.88% 0.1484 93.3);
+// $color-blue:   oklch(73.83% 0.14 250.79);
+// $color-purple: oklch(65.5% 0.227 303.4);
+// $color-red:    oklch(71.74% 0.2057 352.92);
+// $color-orange: oklch(81.62% 0.1328 63.33);
+// $color-green:  oklch(91.75% 0.2045 132.06);
+// $color-teal:   oklch(89.66% 0.1743 157.65);
+// $color-pink:   oklch(73.39% 0.1832 356.76);
+
+// $color-brown:  oklch(50.64% 0.1009 56.17);
+
+$color-blue:   oklab(0.9 -0.05 -0.13);
+$color-purple: oklab(0.9 0.13 -0.19);
+$color-red:    oklab(0.9 0.2 -0.03);
+$color-orange: oklab(0.9 0.06 0.12);
+$color-green:  oklab(0.9 -0.14 0.15); // Customized
+$color-teal:   oklab(0.9 -0.16 0.07);
 
 $primary-colors: ( $color-yellow, $color-blue, $color-pink, $color-purple, $color-red, $color-orange, $color-green, $color-teal );
 
-$color-link-yellow: oklch(30% 0.1503 93.81);
-$color-link-blue:   oklch(30% 0.1393 248.96);
-$color-link-purple: oklch(30% 0.2302 304.38);
-$color-link-red:    oklch(30% 0.2022 351.47);
-$color-link-orange: oklch(30% 0.1342 63.43);
-$color-link-green:  oklch(30% 0.2052 133.03);
-$color-link-teal:   oklch(30% 0.1746 156.37);
-$color-link-pink:   oklch(30% 0.1803 356.82);
+// $color-link-yellow: oklch(30% 0.1503 93.81);
+// $color-link-blue:   oklch(30% 0.1393 248.96);
+// $color-link-purple: oklch(30% 0.2302 304.38);
+// $color-link-red:    oklch(30% 0.2022 351.47);
+// $color-link-orange: oklch(30% 0.1342 63.43);
+// $color-link-green:  oklch(30% 0.2052 133.03);
+// $color-link-teal:   oklch(30% 0.1746 156.37);
+// $color-link-pink:   oklch(30% 0.1803 356.82);
 
-$color-link-brown:  oklch(30% 0.1 53.13);
+// $color-link-brown:  oklch(30% 0.1 53.13);
+
+$color-link-blue:   oklab(0.25 -0.05 -0.13);
+$color-link-purple: oklab(0.25 0.13 -0.19);
+$color-link-red:    oklab(0.25 0.2 -0.03);
+$color-link-orange: oklab(0.25 0.06 0.12);
+$color-link-green:  oklab(0.25 -0.14 0.15); // Customized
+$color-link-teal:   oklab(0.25 -0.16 0.07);
 
 // Based on primary-colors at fixed 30% brightness
 $link-colors: ( $color-link-yellow, $color-link-blue, $color-link-purple, $color-link-red, $color-link-orange, $color-link-green, $color-link-teal );
@@ -68,8 +83,8 @@ $link-colors: ( $color-link-yellow, $color-link-blue, $color-link-purple, $color
 //$color-bg-std:   #DFDFDF;
 //$color-bg-blue:  #e6f2ff;
 
-$color-shadow-dark:  #905424;
-$color-shadow-light: #FFDB5C;
+$color-shadow-dark:  oklch(30% 0.1 53.13);
+$color-shadow-light: oklch(90% 0.1 53.13);
 
 $color-text: #232323;
 $color-text-code: #000;
