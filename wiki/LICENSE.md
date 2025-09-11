@@ -69,7 +69,7 @@ The following users made contributions to Frolic or its predecessors subject to 
 * Maya Wolf <maya@f-list.net>
 
 ## Last Permissive Version
-For a version of the client you can use purely under the Expat license, checkout the last commit prior to the licensing change: [ee5e76db71d422803fffdf473e1cb6451ffa8b49](https://github.com/Frolic-chat/Frolic/tree/ee5e76db71d422803fffdf473e1cb6451ffa8b49) and remove any files with headers explicitly labeling them as GNU GPLv3. There should only be files in the `devtools/` folder; They are unnecessary development tools and are never used by production builds, so you can remove them without negative impact.
+For a version of the client you can use purely under the Expat license, checkout the last commit prior to the licensing change: [94d1a5321def8011c2b955b3506cf5298a9f2a9e](https://github.com/Frolic-chat/Frolic/tree/94d1a5321def8011c2b955b3506cf5298a9f2a9e)
 
 # Acknowledgements
 
