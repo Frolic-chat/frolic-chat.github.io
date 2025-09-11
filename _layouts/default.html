@@ -22,27 +22,29 @@
     <ul>
         {% if site.show_downloads %}
         <li class="download"><a class="buttons" href="https://github.com/Frolic-chat/Frolic/releases/tag/{{ site.latest_release }}">
-            <span class="pepicons-pop--stars-circle-filled"></span>Latest Release
+            <span class="pepicons-pop stars-circle-filled"></span>Latest Release
         </a></li>
 
         <li class="download"><a class="buttons" href="{{ site.all_releases }}">
-            <span class="pepicons-pop--list-circle-filled"></span>All Releases
+            <span class="pepicons-pop list-circle-filled"></span>All Releases
         </a></li>
         {% endif %}
 
         {% if site.github.repository_url %}
         <li class="github"><a class="buttons" href="{{ site.github.repository_url }}">
-            View On GitHub
+            <span class="pepicons-pop code-circle-filled"></span>View On GitHub
         </a></li>
         {% endif %}
 
         {% if site.side_nav.wiki %}
-        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}"><span class="pepicons-pop--book-circle-filled"></span>Wiki</a></li>
+        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}">
+            <span class="pepicons-pop book-circle-filled"></span>Wiki
+        </a></li>
         {% endif %}
 
         {% if site.side_nav.issues %}
         <li class="site_nav"><a class="buttons" href="{{ site.side_nav.issues }}">
-            <span class="pepicons-pop--clipboard-check-circle-filled"></span>Issue Tracker
+            <span class="pepicons-pop clipboard-check-circle-filled"></span>Issue Tracker
         </a></li>
         {% endif %}
     </ul>

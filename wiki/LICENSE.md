@@ -74,7 +74,10 @@ For a version of the client you can use purely under the Expat license, checkout
 # Acknowledgements
 
 ## Extra Emoji
-Some emojis designed by [OpenMoji](https://openmoji.org/) – the open-source emoji and icon project. License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#)
+Emoji on some operating systems designed by [OpenMoji](https://openmoji.org/) – the open-source emoji and icon project. License: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#)
+
+## Website Icons
+CyCraft provides the playful [Pepicons](https://github.com/CyCraft/pepicons) on this site, licensed under Creative Commons ["CC-BY-4.0" license](https://github.com/CyCraft/pepicons?tab=CC-BY-4.0-1-ov-file). Thank you!
 
 ## Dinky by Github
 The [Dinky jekyll theme](https://github.com/pages-themes/dinky) is used under the Creative Commons ["CC0" license](https://creativecommons.org/publicdomain/zero/1.0/). Thank you Diana Mounter and Github for providing a clean, simple theme for the masses.
