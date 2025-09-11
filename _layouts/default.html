@@ -21,30 +21,31 @@
 
     <ul>
         {% if site.show_downloads %}
-        <li class="download"><a class="buttons" href="https://github.com/Frolic-chat/Frolic/releases/tag/{{ site.latest_release }}">Latest Release</a></li>
-        <li class="download"><a class="buttons" href="{{ site.all_releases }}">All Releases</a></li>
+        <li class="download"><a class="buttons" href="https://github.com/Frolic-chat/Frolic/releases/tag/{{ site.latest_release }}">
+            <span class="pepicons-pop--stars-circle-filled"></span>Latest Release
+        </a></li>
+
+        <li class="download"><a class="buttons" href="{{ site.all_releases }}">
+            <span class="pepicons-pop--list-circle-filled"></span>All Releases
+        </a></li>
         {% endif %}
 
-        <li class="github"><a class="buttons" href="{{ site.github.repository_url }}">View On GitHub</a></li>
+        {% if site.github.repository_url %}
+        <li class="github"><a class="buttons" href="{{ site.github.repository_url }}">
+            View On GitHub
+        </a></li>
+        {% endif %}
 
         {% if site.side_nav.wiki %}
-        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}">Wiki</a></li>
+        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.wiki }}"><span class="pepicons-pop--book-circle-filled"></span>Wiki</a></li>
         {% endif %}
 
         {% if site.side_nav.issues %}
-        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.issues }}">Issue Tracker</a></li>
+        <li class="site_nav"><a class="buttons" href="{{ site.side_nav.issues }}">
+            <span class="pepicons-pop--clipboard-check-circle-filled"></span>Issue Tracker
+        </a></li>
         {% endif %}
     </ul>
-
-    {% if site.github.is_project_page %}
-    <p class="header">This project is maintained by <a class="name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-    {% endif %}
-
-    {% if site.github.is_user_page %}
-    <ul>
-        <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-    </ul>
-    {% endif %}
 </header>
 
 <section>
