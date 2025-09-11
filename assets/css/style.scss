@@ -159,11 +159,11 @@ $color-light-neutral: oklch(95.6% 0.0177 250.21);
 }
 
 .pepicons-pop {
-    margin-right: 0.1em;
+    margin-right: 0.3em;
     display: inline-block;
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: "bottom";
 }
 
 .pepicons-pop.stars-circle-filled::before {
@@ -595,7 +595,7 @@ header li {
 
         -webkit-font-smoothing: antialiased;
         font-weight: normal;
-        padding: 8px 8px 8px 29px;
+        padding: 8px 1.3em 8px 1.3em;
 
         &.name {
             white-space: nowrap;
