@@ -31,6 +31,10 @@ An independent work is a work which is not derived from or based on this Program
 
 If you modify this Program, you may extend this exception to your version of the Program, but you are not obliged to do so. If you do not wish to do so, delete this exception statement from your version.
 
+[Full GNU AGPL 3.0 license text](./COPYING-AGPL.md)
+
+Please note that the GNU **Affero** GPL has additional terms over the standard GNU GPL when you operate it with network infrastructure.
+
 --
 
 **Why add a permission instead of using pure AGPL?**
@@ -46,10 +50,10 @@ Among other scenarios, this added provision:
 
 > Want to contribute? Please [continue here](https://frolic-chat.github.io/wiki/development/development.html).
 
-The following users made contributions to Frolic subject to the terms of the GNU Affero General Public License version 3 or later (plus additional permissions), which is included in this repo as `COPYING.AGPL`. Please note that the GNU **Affero** GPL has additional terms over the standard GNU GPL when you operate it over network infrastructure.
+The following users made contributions to Frolic subject to the terms of the GNU Affero General Public License version 3 or later (plus the additional permissions listed above).
 * [Fire Under the Mountain](https://github.com/FireUnderTheMountain)
 
-The following users made contributions to Frolic or its predecessors subject to the terms of The Expat License, which is included in this repo as `COPYING.MIT`:
+The following users made contributions to Frolic or its predecessors subject to the terms of the [Expat License](./COPYING-MIT.md):
 #### Frolic contributors:
 * [Fire Under the Mountain](https://github.com/FireUnderTheMountain)
 * [FatCatClient](https://github.com/FatCatClient)
