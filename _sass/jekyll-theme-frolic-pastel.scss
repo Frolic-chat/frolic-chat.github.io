@@ -10,24 +10,63 @@ $color-scheme: "frolic-pastel";
 // $color-red:     #FF70AB;
 
 $primary-colors: ( // Chosen by hand.
-  $color-yellow:  #FFDB5C,
-  $color-blue:    #61afff,
-  $color-purple:  #af61ff,
-  $color-red:     #ff61af,
-  $color-orange:  #ffaf61,
-  $color-green:   #afff61,
-  $color-teal:    #61ffaf,
-  $color-pink:    #FF70AB,
+  // $color-yellow:  #FFDB5C,
+  // $color-blue:    #61afff,
+  // $color-purple:  #af61ff,
+  // $color-red:     #ff61af,
+  // $color-orange:  #ffaf61,
+  // $color-green:   #afff61,
+  // $color-teal:    #61ffaf,
+  // $color-pink:    #FF70AB,
+  // $color-yellow: oklab(89.9%, -2.25%, 37%),
+  // $color-blue:   oklab(73.8%, -11.5%, -33%),
+  // $color-purple: oklab(65.5%, 31.25%, -47.25%),
+  // $color-red:    oklab(71.7%, 51%, -6.25%),
+  // $color-orange: oklab(81.6%, 15%, 29.75%),
+  // $color-green:  oklab(91.7%, -34.25%, 38%),
+  // $color-teal:   oklab(89.7%, -40.25%, 16.5%),
+  // $color-pink:   oklab(73.4%, 45.75%, -2.5%),
+
+  // $color-yellow: oklab(0.9 -0.01 0.15),
+  // $color-blue:   oklab(0.74 -0.05 -0.13),
+  // $color-purple: oklab(0.66 0.13 -0.19),
+  // $color-red:    oklab(0.72 0.2 -0.03),
+  // $color-orange: oklab(0.82 0.06 0.12),
+  // $color-green:  oklab(0.9 -0.14 0.15), // Customized
+  // $color-teal:   oklab(0.9 -0.16 0.07),
+  // $color-pink:   oklab(0.73 0.18 -0.01),
+
+  $color-blue:   oklab(0.9 -0.05 -0.13),
+  $color-purple: oklab(0.9 0.13 -0.19),
+  $color-red:    oklab(0.9 0.2 -0.03),
+  $color-orange: oklab(0.9 0.06 0.12),
+  $color-green:  oklab(0.9 -0.14 0.15), // Customized
+  $color-teal:   oklab(0.9 -0.16 0.07),
 );
 
 $link-colors: ( // Based on above at 30% brightness.
-  $color-link-yellow: oklch(30% 0.1503 93.81),
-  $color-link-blue:   oklch(30% 0.1393 248.96),
-  $color-link-purple: oklch(30% 0.2302 304.38),
-  $color-link-red:    oklch(30% 0.2022 351.47),
-  $color-link-orange: oklch(30% 0.1342 63.43),
-  $color-link-green:  oklch(30% 0.2052 133.03),
-  $color-link-yeal:   oklch(30% 0.1746 156.37),
+  // $color-link-yellow: oklch(30% 0.1503 93.81),
+  // $color-link-blue:   oklch(30% 0.1393 248.96),
+  // $color-link-purple: oklch(30% 0.2302 304.38),
+  // $color-link-red:    oklch(30% 0.2022 351.47),
+  // $color-link-orange: oklch(30% 0.1342 63.43),
+  // $color-link-green:  oklch(30% 0.2052 133.03),
+  // $color-link-teal:   oklch(30% 0.1746 156.37),
+  $color-blue:   oklab(0.3 -0.05 -0.13),
+  $color-purple: oklab(0.3 0.13 -0.19),
+  $color-red:    oklab(0.3 0.2 -0.03),
+  $color-orange: oklab(0.3 0.06 0.12),
+  $color-green:  oklab(0.3 -0.14 0.15), // Customized
+  $color-teal:   oklab(0.3 -0.16 0.07),
+
+  // $color-yellow: oklab(73.8%, -2.25%, 37%),
+  // $color-blue:   oklab(73.8%, -11.5%, -33%),
+  // $color-purple: oklab(73.8%, 31.25%, -47.25%),
+  // $color-red:    oklab(73.8%, 51%, -6.25%),
+  // $color-orange: oklab(73.8%, 15%, 29.75%),
+  // $color-green:  oklab(73.8%, -34.25%, 38%),
+  // $color-teal:   oklab(73.8%, -40.25%, 16.5%),
+  // $color-pink:   oklab(73.8%, 45.75%, -2.5%),
 );
 
 @mixin random-header-underline-color {

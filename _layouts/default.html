@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
+<header>
     <h1 class="header"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
     <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -45,24 +45,23 @@
         <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
     </ul>
     {% endif %}
-    </header>
+</header>
 
-    <section>
+<section>
     {% if page.url contains '/wiki/' %}
-    {% include toc.html html=content sanitize=true class="inline_toc" id="toc" h_min=1 h_max=3 item_class="toc-%level%" %}
-    <hr>
+        {% include wiki-header.html %}
     {% endif %}
     {{ content }}
     <hr>
     {% if page.url contains '/wiki/' %}
-    {% include wiki-footer.html %}
+        {% include wiki-footer.html %}
     {% endif %}
-    </section>
+</section>
 
-    <footer><p><small>
-    <a href="/wiki/LICENSE.html">License</a><br/>
-    <a href="/wiki/PRIVACY.html">Privacy</a>
-    </small></p></footer>
+<footer><p><small>
+<a href="/wiki/LICENSE.html">License</a><br/>
+<a href="/wiki/PRIVACY.html">Privacy</a>
+</small></p></footer>
 </div>
 <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 </body>
