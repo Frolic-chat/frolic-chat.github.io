@@ -47,7 +47,13 @@ The following users made contributions to Frolic or its predecessors subject to 
 For a version of the client you can use purely under the Expat license, checkout the last commit prior to the licensing change: [94d1a5321def8011c2b955b3506cf5298a9f2a9e](https://github.com/Frolic-chat/Frolic/tree/94d1a5321def8011c2b955b3506cf5298a9f2a9e)
 
 
-# Acknowledgements
+# Additional Copyright Acknowledgements
+
+## Logos and Iconography
+The Frolic logos and icons are copyrighted works distributed with Frolic. When you distribute modified versions of Frolic, you must do so without these artworks.
+
+## Naming
+Under the terms of the AGPLv3, if you redistribute modified version of Frolic you must make it clear that they are modified. In addition to an explicit message in the user interface or accompanying documentation, you should remove versions of the name "Frolic" from the user interface.
 
 ## Extra Emoji
 Emoji on some operating systems designed by [OpenMoji](https://openmoji.org/) – the open-source emoji and icon project. License: [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/#)
