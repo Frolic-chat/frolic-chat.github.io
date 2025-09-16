@@ -449,7 +449,7 @@ $button-text-color-hover: color.adjust($button-text-color, $lightness: 8%, $spac
 $button-color-hover:      color.adjust($button-color, $lightness: 8%, $space: oklch);
 $button-color-grad-hover: color.adjust($button-color-grad, $lightness: 8%, $space: oklch);
 
-$dl-button-color:           random-color-from($primary-colors);
+$dl-button-color:           next-in-sequence($primary-colors);
 $dl-button-color-grad:      color.adjust($dl-button-color, $lightness: -20%, $space: oklch);
 $dl-button-text-color:      text-color-contrasting($dl-button-color);
 $dl-button-text-shadow-color: color.adjust($dl-button-color, $lightness: -22%, $space: oklch);
@@ -458,7 +458,7 @@ $dl-button-text-color-hover: color.adjust($dl-button-text-color, $lightness: 8%,
 $dl-button-color-hover:     color.adjust($dl-button-color, $lightness: 8%, $space: oklch);
 $dl-button-color-grad-hover: color.adjust($dl-button-color-grad, $lightness: 8%, $space: oklch);
 
-$nav-button-color:           random-color-from($primary-colors);
+$nav-button-color:           next-in-sequence($primary-colors);
 $nav-button-color-grad:      color.adjust($nav-button-color, $lightness: -20%, $space: oklch);
 $nav-button-text-color:      text-color-contrasting($nav-button-color);
 $nav-button-text-shadow-color: color.adjust($nav-button-color, $lightness: -22%, $space: oklch);

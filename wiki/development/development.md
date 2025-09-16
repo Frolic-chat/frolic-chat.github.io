@@ -50,18 +50,19 @@ This will launch the version of the app compiled by `yarn watch`, allowing you t
 
 ### Build
 ```bash
-cd electron
-
-yarn build:dist
-node pack.js
+yarn build
+## or a combination of architectures and platforms:
+yarn build win32 arm64 x64
 ```
+
+With no platforms or architectures specified, the build script attempts to use your current operating system as a default.
 
 #### Build Failure Troubleshooting
 Unusual behavior while building can be caused by artifacts from past build failures.
 
 Removing or renaming these directories is a good first-step to troubleshooting:
-* `frolic/electron/app` - This folder will be recreated by `yarn watch` or `yarn build:dist`
-* `frolic/electon/dist` - **Ensure** you've recovered any compiled builds you want to keep. This folder will be recreated by `node pack.js` or `yarn pack-all`
+* `frolic/electron/app` - This folder will be recreated by `yarn watch` or `yarn build`
+* `frolic/electon/dist` - **Ensure** you've recovered any compiled builds you want to keep. This folder will be recreated by `yarn build`
 
 If you encounter error 'Could not detect abi for version X.X.X and runtime electron', try running:
 ```bash

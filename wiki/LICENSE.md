@@ -12,39 +12,10 @@ Frolic is distributed in the hope that it will be useful, but WITHOUT ANY WARRAN
 
 You should receive a copy of the GNU Affero General Public License along with Frolic; if not, see <https://www.gnu.org/licenses>.
 
-Additional permission under GNU AGPL version 3 section 7:
-
-Linking or combining this Program with any other work is making a combined work based on this Program. Thus, the terms and conditions of the GNU Affero General Public License cover the whole combination.
-
-As a special exception, the copyright holders of this Program give you permission to link this Program with independent works to produce a combined work, and to copy and distribute that combined work so long as all of the following three requirements are met:
-
-1. No Additional Restrictions:
-The independent work is licensed under terms not more restrictive than the terms of this license, and those terms do not impose restrictions on the Program or the combined work exceeding the restrictions of this license (including this additional permission).
-
-2. The Source is Available:
-The independent work has source code that, at the time of making the combined work, has been broadly distributed to the general public or was readily available to the general public.
-
-3. Ease of Identification:
-This Program or accompanying documentation provides any of: the source code of the independent work; a link to an archive of that source code; or conspicuous and unambiguous identification of the work. It is satisfactory to provide a combination of factors to create an unambiguous identity such as: work name, version number, author name, applicable license, copyright year, URL of official author or work homepage, or other factors.
-
-An independent work is a work which is not derived from or based on this Program. When distributing a combined work, the part of the combined work which is the covered work will be governed by this license, and the part which is the independent work will remain governed by its own license.
-
-If you modify this Program, you may extend this exception to your version of the Program, but you are not obliged to do so. If you do not wish to do so, delete this exception statement from your version.
-
 [Full GNU AGPL 3.0 license text](./COPYING-AGPL.md)
 
 Please note that the GNU **Affero** GPL has additional terms over the standard GNU GPL when you operate it with network infrastructure.
 
---
-
-**Why add a permission instead of using pure AGPL?**
-
-Among other scenarios, this added provision:
-* Recognizes this project is maintained by a limited number of staff with limited time and resources, who aren't always going to have the time to help you compile each of the components.
-* Allows using unmodified permissive-licensed modules without the need to offer their source code as AGPL.
-* Prevents us from needing to expend time maintaining module source code, when the natural tooling (yarn, npm, etc) already make the source code available.
-* Maintains that the source code that contributes to this project is available in terms of both licensing and general availability, even if we're not responsible for handing it out.
-* Can be removed by anyone willing to guarantee satisfactory fulfillment of the AGPL's requirement of providing complete Corresponding Source for the covered work.
 
 # Contributors
 
@@ -74,6 +45,7 @@ The following users made contributions to Frolic or its predecessors subject to 
 
 ## Last Permissive Version
 For a version of the client you can use purely under the Expat license, checkout the last commit prior to the licensing change: [94d1a5321def8011c2b955b3506cf5298a9f2a9e](https://github.com/Frolic-chat/Frolic/tree/94d1a5321def8011c2b955b3506cf5298a9f2a9e)
+
 
 # Acknowledgements
 
