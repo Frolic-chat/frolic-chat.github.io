@@ -440,7 +440,7 @@ $header-border-color:   color.adjust($header-bg-color, $lightness: -7.4%, $space
 $header-title-color:    color.change(opposite-hue($header-bg-color), $lightness: 75%, $space: oklch);
 $header-text-color:     text-color-contrasting($header-bg-color);
 
-$button-color:            random-color-from($primary-colors);
+$button-color:            next-in-sequence($primary-colors);
 $button-color-grad:       color.adjust($button-color, $lightness: -20%, $space: oklch);
 $button-text-color:       text-color-contrasting($button-color);
 $button-text-shadow-color: color.adjust($button-color, $lightness: -22%, $space: oklch);
@@ -514,16 +514,18 @@ header li {
 	margin-bottom: 12px;
 	line-height: 1em;
 
-	background: $button-color;
-	background: -moz-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
+    border-radius: 4px;
+
+	/* Core behavior: */
+    background: $button-color;
+    background: -moz-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
     background: -webkit-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
     background: -o-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
     background: -ms-linear-gradient(top, $button-color 0%, $button-color-grad 100%);
     background: linear-gradient(to top, $button-color 0%, $button-color-grad 100%);
 
-    border-radius:4px;
-    border:1px solid $button-text-shadow-color;
+    border: 1px solid $button-text-shadow-color;
 
     -webkit-box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
     box-shadow: inset 0px 1px 2px 0 $button-boxshadow-color;
@@ -547,8 +549,7 @@ header li {
         background: -ms-linear-gradient(top, $dl-button-color 0%, $dl-button-color-grad 100%);
         background: linear-gradient(to top, $dl-button-color 0%, $dl-button-color-grad 100%);
 
-        border-radius:5px;
-        border:1px solid $dl-button-text-shadow-color;
+        border: 1px solid $dl-button-text-shadow-color;
 
         -webkit-box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
         box-shadow: inset 0px 1px 2px 0 $dl-button-boxshadow-color;
@@ -573,8 +574,7 @@ header li {
         background: -ms-linear-gradient(top, $nav-button-color 0%, $nav-button-color-grad 100%);
         background: linear-gradient(to top, $nav-button-color 0%, $nav-button-color-grad 100%);
 
-        border-radius:5px;
-        border:1px solid $nav-button-text-shadow-color;
+        border: 1px solid $nav-button-text-shadow-color;
 
         -webkit-box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;
         box-shadow: inset 0px 1px 2px 0 $nav-button-boxshadow-color;

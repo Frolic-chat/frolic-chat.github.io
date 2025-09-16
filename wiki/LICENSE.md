@@ -21,7 +21,7 @@ Please note that the GNU **Affero** GPL has additional terms over the standard G
 
 > Want to contribute? Please [continue here](https://frolic-chat.github.io/wiki/development/development.html).
 
-The following users made contributions to Frolic subject to the terms of the GNU Affero General Public License version 3 or later (plus the additional permissions listed above).
+The following users made contributions to Frolic subject to the terms of the GNU Affero General Public License version 3 or later.
 * [Fire Under the Mountain](https://github.com/FireUnderTheMountain)
 
 The following users made contributions to Frolic or its predecessors subject to the terms of the [Expat License](./COPYING-MIT.md):
