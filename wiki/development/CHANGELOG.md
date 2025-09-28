@@ -9,6 +9,49 @@ excerpt: All release notes in one easy to find place.
 * Enhanced matching
 * In-app note RP
 
+## Release 0.8.0 (in development)
+This update sets the stage for improvements to the home screen.
+
+* Can no longer open multiple windows
+
+  There is a lot of complication in the app regarding managing multiple windows. Since there's already tabs for your characters, it doesn't make sense to continue allowing multi-window mode to frustrate future development.
+
+* Can no longer spawn strange tray icons
+
+  There is now only a single tray icon, with a menu to access your different characters through it.
+
+* There's a new homescreen!
+
+  Many of the settings from the side bar are available from the home page:
+  Settings
+  Ad Editor
+  Character Search
+  Profile Helper
+
+  Eicon folder customizer
+  Eidols
+
+* Notification volume is adjustable
+
+* The image preview can be unmuted
+
+  Sound is muted by default. You can adjust the volume for it in the settings.
+
+* Bugfix: Stopped the profile page from sometimes showing guestbook posts or gallery pictures from the wrong character
+
+  This bug has always existed but grew increasingly frequent as the demands of the app grew. It took en entire breakdown of the profile window, but this bug is squashed.
+
+* Bugfix: You can now close the character context menu while a character's profile is open
+
+* Bugfix: The log zipper will actually wait to bundle up your logs before exporting a zip file, preventing an empty zip file from being generated
+
+* Bugfix: The log zipper won't make corrupted zips when you have strange characters in your logs
+
+  This bug has been around since the original F-Chat 3.0 client. Oof.
+
+* Tooling updates to make working with the code easier
+
+
 ## Release 0.7.9
 This is a minor bug-fix patch. Please see the 0.7.8 patch notes for recent features.
 
