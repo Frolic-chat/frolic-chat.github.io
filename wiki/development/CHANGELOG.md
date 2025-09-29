@@ -5,10 +5,6 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-### Next?
-* Enhanced matching
-* In-app note RP
-
 ## Release 0.8.0 (in development)
 This update sets the stage for improvements to the home screen.
 
@@ -23,13 +19,17 @@ This update sets the stage for improvements to the home screen.
 * There's a new homescreen!
 
   Many of the settings from the side bar are available from the home page:
+
   Settings
+
   Ad Editor
+
   Character Search
+
   Profile Helper
 
   Eicon folder customizer
-  Eidols
+
 
 * Notification volume is adjustable
 
