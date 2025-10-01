@@ -17,10 +17,9 @@ permalink: wiki
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
     <div>
-      <h6>{{ folder | slice: 0, length | capitalize }}</h6>
-      <h3><a href="{{ file.url | relative_url }}">
-        {{ file.title }}
-      </a></h3>
+      <a href="{{ file.url | relative_url }}"><h3>
+        {{ file.title }} <small>{{ folder | slice: 0, length | capitalize }}</small>
+      </h3></a>
       <div>{{ file.excerpt }}</div>
     </div>
   {% endfor %}
@@ -28,10 +27,9 @@ permalink: wiki
 
   {% for file in blank_pgs %}
     <div>
-      <h6>&nbsp;</h6>
-      <h3><a href="{{ file.url | relative_url }}">
-        {{ file.title }}
-      </a></h3>
+      <a href="{{ file.url | relative_url }}"><h3>
+        {{ file.title }} <small>&nbsp;</small>
+      </h3></a>
       <div>{{ file.excerpt }}</div>
     </div>
   {% endfor %}
@@ -41,10 +39,9 @@ permalink: wiki
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
     <div>
-      <h6>{{ folder | slice: 0, length | capitalize }}</h6>
-      <h3><a href="{{ file.url | relative_url }}">
-        {{ file.title }}
-      </a></h3>
+      <a href="{{ file.url | relative_url }}"><h3>
+        {{ file.title }} <small>{{ folder | slice: 0, length | capitalize }}</small>
+      </h3></a>
       <div>{{ file.excerpt }}</div>
     </div>
   {% endfor %}
@@ -54,10 +51,9 @@ permalink: wiki
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
     <div>
-      <h6>{{ folder | slice: 0, length | capitalize }}</h6>
-      <h3><a href="{{ file.url | relative_url }}">
-        {{ file.title }}
-      </a></h3>
+      <a href="{{ file.url | relative_url }}"><h3>
+        {{ file.title }} <small>{{ folder | slice: 0, length | capitalize }}</small>
+      </h3></a>
       <div>{{ file.excerpt }}</div>
     </div>
   {% endfor %}

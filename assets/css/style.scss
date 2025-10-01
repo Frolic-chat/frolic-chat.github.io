@@ -85,8 +85,8 @@ $link-colors: ( $color-link-blue, $color-link-purple, $color-link-red, $color-li
 //$color-bg-std:   #DFDFDF;
 //$color-bg-blue:  #e6f2ff;
 
-$color-shadow-dark:  oklch(30% 0.1 53.13);
-$color-shadow-light: oklch(90% 0.1 53.13);
+$color-shadow-dark:  oklch(9% 0.1 53.13);
+$color-shadow-light: oklch(92% 0.03 53.13);
 
 $color-text: #232323;
 $color-text-code: #000;
@@ -141,7 +141,7 @@ $sequence-opposite: opposite-hue($sequence-color);
 }
 
 $color-dark-neutral:  oklch(25.62% 0 1);
-$color-light-neutral: oklch(95.6% 0.0177 250.21);
+$color-light-neutral: oklch(87% 0.01 270.21);
 @function text-color-contrasting($color) {
   @if (color.channel($color, 'lightness', $space: oklch) > 50) {
     @return $color-dark-neutral;
