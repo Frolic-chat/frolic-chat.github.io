@@ -6,13 +6,7 @@ permalink: wiki
 
 # Wiki
 
-<table class="wikilinks">
-  <tr>
-    <th>Category</th>
-    <th>Page</th>
-    <th>About</th>
-  </tr>
-
+<div class="wikilinks">
   {% assign wiki_pages = site.html_pages | where_exp: "page", "page.dir contains '/wiki/'" %}
   {% assign blank_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/'" %}
   {% assign feature_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/features/'" %}
@@ -22,49 +16,49 @@ permalink: wiki
   {% for file in feature_pgs %}
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
-    <tr>
-      <td>{{ folder | slice: 0, length | capitalize }}</td>
-      <td><a href="{{ file.url | relative_url }}">
+    <div>
+      <h6>{{ folder | slice: 0, length | capitalize }}</h6>
+      <h3><a href="{{ file.url | relative_url }}">
         {{ file.title }}
-      </a></td>
-      <td>{{ file.excerpt }}</td>
-    </tr>
+      </a></h3>
+      <div>{{ file.excerpt }}</div>
+    </div>
   {% endfor %}
-  <tr></tr>
+  <br />
 
   {% for file in blank_pgs %}
-    <tr>
-      <td>&nbsp;</td>
-      <td><a href="{{ file.url | relative_url }}">
+    <div>
+      <h6>&nbsp;</h6>
+      <h3><a href="{{ file.url | relative_url }}">
         {{ file.title }}
-      </a></td>
-      <td>{{ file.excerpt }}</td>
-    </tr>
+      </a></h3>
+      <div>{{ file.excerpt }}</div>
+    </div>
   {% endfor %}
-  <tr></tr>
+  <br />
 
   {% for file in dev_pgs %}
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
-    <tr>
-      <td>{{ folder | slice: 0, length | capitalize }}</td>
-      <td><a href="{{ file.url | relative_url }}">
+    <div>
+      <h6>{{ folder | slice: 0, length | capitalize }}</h6>
+      <h3><a href="{{ file.url | relative_url }}">
         {{ file.title }}
-      </a></td>
-      <td>{{ file.excerpt }}</td>
-    </tr>
+      </a></h3>
+      <div>{{ file.excerpt }}</div>
+    </div>
   {% endfor %}
-  <tr></tr>
+  <br />
 
   {% for file in indev_pgs %}
     {% assign folder = file.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
-    <tr>
-      <td>{{ folder | slice: 0, length | capitalize }}</td>
-      <td><a href="{{ file.url | relative_url }}">
+    <div>
+      <h6>{{ folder | slice: 0, length | capitalize }}</h6>
+      <h3><a href="{{ file.url | relative_url }}">
         {{ file.title }}
-      </a></td>
-      <td>{{ file.excerpt }}</td>
-    </tr>
+      </a></h3>
+      <div>{{ file.excerpt }}</div>
+    </div>
   {% endfor %}
-</table>
+</div>
