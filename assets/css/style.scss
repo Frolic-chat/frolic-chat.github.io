@@ -274,9 +274,11 @@ h3 {
 }
 
 .wiki-entry .header h3 {
+    padding-left: 2rem;
+    margin-left: 0;
     font-size: 30px;
 
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0));
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 66%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
 
