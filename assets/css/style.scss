@@ -233,11 +233,33 @@ h1 {
     box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
+.wiki-entry .header h1 {
+    font-size: 30px;
+
+    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    color: text-color-contrasting($sequence-color);
+    text-shadow: 1px 1px 1px $sequence-color;
+
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+}
+
 h2 {
     font-size: 24px;
     margin-left: 1rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+}
+
+.wiki-entry .header h2 {
+    font-size: 30px;
+
+    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    color: text-color-contrasting($sequence-color);
+    text-shadow: 1px 1px 1px $sequence-color;
+
     border-color: next-in-sequence($primary-colors);
     box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -251,10 +273,32 @@ h3 {
     box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
+.wiki-entry .header h3 {
+    font-size: 30px;
+
+    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    color: text-color-contrasting($sequence-color);
+    text-shadow: 1px 1px 1px $sequence-color;
+
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+}
+
 h4 {
     margin-left: 3rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+}
+
+.wiki-entry .header h4 {
+    font-size: 30px;
+
+    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    color: text-color-contrasting($sequence-color);
+    text-shadow: 1px 1px 1px $sequence-color;
+
     border-color: next-in-sequence($primary-colors);
     box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
@@ -267,10 +311,32 @@ h5 {
     box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
 
+.wiki-entry .header h5 {
+    font-size: 30px;
+
+    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    color: text-color-contrasting($sequence-color);
+    text-shadow: 1px 1px 1px $sequence-color;
+
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+}
+
 h6 {
     margin-left: 5rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    border-color: next-in-sequence($primary-colors);
+    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+}
+
+.wiki-entry .header h6 {
+    font-size: 30px;
+
+    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    color: text-color-contrasting($sequence-color);
+    text-shadow: 1px 1px 1px $sequence-color;
+
     border-color: next-in-sequence($primary-colors);
     box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
 }
