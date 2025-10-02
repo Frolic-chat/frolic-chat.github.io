@@ -22,8 +22,8 @@ permalink: wiki
         <div class="wiki-entry">
           <a class="header" href="{{ file.url | relative_url }}">
             <h3><span class="pepicons-chain"></span> {{ file.title }}</h3>
+            <div>{{ file.excerpt }}</div>
           </a>
-          <div>{{ file.excerpt }}</div>
         </div>
       {% endfor %}
     </div>
@@ -54,8 +54,8 @@ permalink: wiki
         <div class="wiki-entry">
           <a class="header" href="{{ file.url | relative_url }}">
             <h3><span class="pepicons-chain"></span> {{ file.title }}</h3>
+            <div>{{ file.excerpt }}</div>
           </a>
-          <div>{{ file.excerpt }}</div>
         </div>
       {% endfor %}
     </div>
@@ -71,8 +71,8 @@ permalink: wiki
         <div class="wiki-entry">
           <a class="header" href="{{ file.url | relative_url }}">
             <h3><span class="pepicons-chain"></span> {{ file.title }}</h3>
+            <div>{{ file.excerpt }}</div>
           </a>
-          <div>{{ file.excerpt }}</div>
         </div>
       {% endfor %}
     </div>
