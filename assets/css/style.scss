@@ -471,9 +471,30 @@ td {
 	background-color: $table-bg-color;
 }
 
-$text-color: color.adjust(random-color-from($primary-colors), $lightness: -30%, $space: oklch);
-table.wikilinks td a {
-    display: block;
+/* Wiki */
+.wiki-section {
+    padding: 1rem;
+
+    &.feature {
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+    }
+    &.blank {
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+    }
+    &.dev {
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+    }
+    &.indev {
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+    }
+    background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+
+    .wiki-entry {
+        padding: 0.5rem;
+        border: 2px solid transparent;
+        border-image: linear-gradient(to top, $color-dark-neutral, color.change($color-dark-neutral, $alpha: 0) 33%);
+        border-image-slice: 1;
+    }
 }
 
 /* Wrapper */
