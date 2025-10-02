@@ -485,32 +485,33 @@ td {
 
     &.feature {
         background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
-        .wiki-entry:hover {
-            background-color: color.change($sequence-color, $lightness: 85%, $chroma: 0.015, $space: oklch);
+        .wiki-entry a:hover {
+            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
         }
     }
     &.blank {
         background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
-        .wiki-entry:hover {
-            background-color: color.change($sequence-color, $lightness: 85%, $chroma: 0.015, $space: oklch);
+        .wiki-entry a:hover {
+            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
         }
     }
     &.dev {
         background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
-        .wiki-entry:hover {
-            background-color: color.change($sequence-color, $lightness: 85%, $chroma: 0.015, $space: oklch);
+        .wiki-entry a:hover {
+            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
         }
     }
     &.indev {
         background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
-        .wiki-entry:hover {
-            background-color: color.change($sequence-color, $lightness: 85%, $chroma: 0.015, $space: oklch);
+        .wiki-entry a:hover {
+            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
         }
     }
     background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
-    .wiki-entry:hover {
-        background-color: color.change($sequence-color, $lightness: 85%, $chroma: 0.015, $space: oklch);
-        transition: background-color 0.5s ease;
+    transition: background-color 0.35s ease;
+    .wiki-entry a:hover {
+        background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
+        transition: background-color 0.35s ease;
     }
 
     .wiki-entry {
