@@ -276,7 +276,7 @@ h3 {
 .wiki-entry .header h3 {
     font-size: 30px;
 
-    background: linear-gradient(135deg, next-in-sequence($primary-colors) 0%, $sequence-color 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0), next-in-sequence($primary-colors));
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
 
