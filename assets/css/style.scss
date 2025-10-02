@@ -482,18 +482,18 @@ td {
     padding: 1rem;
 
     &.feature {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 96%, $chroma: 0.015, $space: oklch);
     }
     &.blank {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 96%, $chroma: 0.015, $space: oklch);
     }
     &.dev {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 96%, $chroma: 0.015, $space: oklch);
     }
     &.indev {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors), $lightness: 96%, $chroma: 0.015, $space: oklch);
     }
-    background-color: color.change(next-in-sequence($primary-colors), $lightness: 98%, $chroma: 0.01, $space: oklch);
+    background-color: color.change(next-in-sequence($primary-colors), $lightness: 96%, $chroma: 0.015, $space: oklch);
 
     .wiki-entry {
         padding: 0.5rem;
