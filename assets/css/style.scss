@@ -277,7 +277,7 @@ h6 {
 
 $text-shadow: next-in-sequence($primary-colors);
 $text-color: color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
-section a {
+section a:not(.header) {
     color: $text-color;
     text-decoration: underline $text-shadow;
     font-weight: 700;

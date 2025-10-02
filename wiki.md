@@ -20,7 +20,7 @@ permalink: wiki
       <h2>{{ folder | slice: 0, length | capitalize }}</h2>
       {% for file in feature_pgs %}
         <div class="wiki-entry">
-          <a href="{{ file.url | relative_url }}">
+          <a class="header" href="{{ file.url | relative_url }}">
             <h3>{{ file.title }}</h3>
           </a>
           <div>{{ file.excerpt }}</div>
@@ -35,7 +35,7 @@ permalink: wiki
       <h2>General</h2>
       {% for file in blank_pgs %}
         <div class="wiki-entry">
-          <a href="{{ file.url | relative_url }}">
+          <a class="header" href="{{ file.url | relative_url }}">
             <h3>{{ file.title }}</h3>
           </a>
           <div>{{ file.excerpt }}</div>
@@ -52,7 +52,7 @@ permalink: wiki
       <h2>{{ folder | slice: 0, length | capitalize }}</h2>
       {% for file in dev_pgs %}
         <div class="wiki-entry">
-          <a href="{{ file.url | relative_url }}">
+          <a class="header" href="{{ file.url | relative_url }}">
             <h3>{{ file.title }}</h3>
           </a>
           <div>{{ file.excerpt }}</div>
@@ -69,7 +69,7 @@ permalink: wiki
       <h2>{{ folder | slice: 0, length | capitalize }}</h2>
       {% for file in indev_pgs %}
         <div class="wiki-entry">
-          <a href="{{ file.url | relative_url }}">
+          <a class="header" href="{{ file.url | relative_url }}">
             <h3>{{ file.title }}</h3>
           </a>
           <div>{{ file.excerpt }}</div>
