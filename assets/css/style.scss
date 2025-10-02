@@ -234,19 +234,16 @@ h1 {
 }
 
 .wiki-entry .header h1 {
-    font-size: 30px;
-
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0));
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 50%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
-
     border-color: next-in-sequence($primary-colors);
-    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    box-shadow: none;
 }
 
 h2 {
     font-size: 24px;
-    margin-left: 1rem;
+    padding-left: 1rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
     border-color: next-in-sequence($primary-colors);
@@ -254,19 +251,16 @@ h2 {
 }
 
 .wiki-entry .header h2 {
-    font-size: 30px;
-
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0));
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 50%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
-
     border-color: next-in-sequence($primary-colors);
-    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    box-shadow: none;
 }
 
 h3 {
     font-size: 18px;
-    margin-left: 2rem;
+    padding-left: 2rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
     border-color: next-in-sequence($primary-colors);
@@ -274,20 +268,15 @@ h3 {
 }
 
 .wiki-entry .header h3 {
-    padding-left: 2rem;
-    margin-left: 0;
-    font-size: 30px;
-
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 66%);
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 50%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
-
     border-color: next-in-sequence($primary-colors);
-    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    box-shadow: none;
 }
 
 h4 {
-    margin-left: 3rem;
+    padding-left: 3rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
     border-color: next-in-sequence($primary-colors);
@@ -295,18 +284,15 @@ h4 {
 }
 
 .wiki-entry .header h4 {
-    font-size: 30px;
-
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0));
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 50%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
-
     border-color: next-in-sequence($primary-colors);
-    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    box-shadow: none;
 }
 
 h5 {
-    margin-left: 4rem;
+    padding-left: 4rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
     border-color: next-in-sequence($primary-colors);
@@ -314,18 +300,15 @@ h5 {
 }
 
 .wiki-entry .header h5 {
-    font-size: 30px;
-
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0));
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 50%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
-
     border-color: next-in-sequence($primary-colors);
-    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    box-shadow: none;
 }
 
 h6 {
-    margin-left: 5rem;
+    padding-left: 5rem;
     color: next-in-sequence($primary-colors);
     text-shadow: 1px 1px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
     border-color: next-in-sequence($primary-colors);
@@ -333,14 +316,11 @@ h6 {
 }
 
 .wiki-entry .header h6 {
-    font-size: 30px;
-
-    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0));
+    background: linear-gradient(to top right, next-in-sequence($primary-colors), color.change($sequence-color, $alpha: 0) 50%);
     color: text-color-contrasting($sequence-color);
     text-shadow: 1px 1px 1px $sequence-color;
-
     border-color: next-in-sequence($primary-colors);
-    box-shadow: 0px 1px color.adjust($sequence-opposite, $lightness: -40%, $space: oklch);
+    box-shadow: none;
 }
 
 $text-shadow: next-in-sequence($primary-colors);
