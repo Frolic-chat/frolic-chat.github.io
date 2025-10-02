@@ -480,38 +480,78 @@ td {
 }
 
 /* Wiki */
+$default-lightness: 95%;
+$hover-lightness:   93%;
+
+$default-chroma: 0.013;
+$hover-chroma:   0.018;
+
 .wiki-section {
     padding: 1rem;
 
     &.feature {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors),
+                                       $lightness: $default-lightness,
+                                       $chroma: $default-chroma,
+                                       $space: oklch);
         .wiki-entry a:hover {
-            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
+            background-color: color.change($sequence-color,
+                                           $lightness: $hover-lightness,
+                                           $chroma: $hover-chroma,
+                                           $space: oklch);
         }
     }
     &.blank {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors),
+                                       $lightness: $default-lightness,
+                                       $chroma: $default-chroma,
+                                       $space: oklch);
         .wiki-entry a:hover {
-            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
+            background-color: color.change($sequence-color,
+                                           $lightness: $hover-lightness,
+                                           $chroma: $hover-chroma,
+                                           $space: oklch);
         }
     }
     &.dev {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors),
+                                       $lightness: $default-lightness,
+                                       $chroma: $default-chroma,
+                                       $space: oklch);
         .wiki-entry a:hover {
-            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
+            background-color: color.change($sequence-color,
+                                           $lightness: $hover-lightness,
+                                           $chroma: $hover-chroma,
+                                           $space: oklch);
         }
     }
     &.indev {
-        background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
+        background-color: color.change(next-in-sequence($primary-colors),
+                                       $lightness: $default-lightness,
+                                       $chroma: $default-chroma,
+                                       $space: oklch);
         .wiki-entry a:hover {
-            background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
+            background-color: color.change($sequence-color,
+                                           $lightness: $hover-lightness,
+                                           $chroma: $hover-chroma,
+                                           $space: oklch);
         }
     }
-    background-color: color.change(next-in-sequence($primary-colors), $lightness: 95%, $chroma: 0.015, $space: oklch);
-    transition: background-color 0.35s ease;
-    .wiki-entry a:hover {
-        background-color: color.change($sequence-color, $lightness: 90%, $chroma: 0.03, $space: oklch);
-        transition: background-color 0.35s ease;
+    background-color: color.change(next-in-sequence($primary-colors),
+                                   $lightness: $default-lightness,
+                                   $chroma: $default-chroma,
+                                   $space: oklch);
+    .wiki-entry a {
+        background-color: transparent;
+        transition: background-color 0.35s ease-in;
+
+        &:hover {
+            background-color: color.change($sequence-color,
+                                           $lightness: $hover-lightness,
+                                           $chroma: $hover-chroma,
+                                           $space: oklch);
+            transition: background-color 0.35s ease-out;
+        }
     }
 
     .wiki-entry {
