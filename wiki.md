@@ -13,48 +13,68 @@ permalink: wiki
   {% assign dev_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/development/'" %}
   {% assign indev_pgs = wiki_pages | where_exp: "page", "page.dir == '/wiki/development/in-dev/'" %}
 
-  {% for file in feature_pgs %}
-    {% assign folder = file.dir | remove_first: '/wiki/' %}
+  {% if feature_pgs.size > 0 %}
+    {% assign folder = feature_pgs.first.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
-    <div>
-      <a href="{{ file.url | relative_url }}"><h3>
-        {{ file.title }} <small>{{ folder | slice: 0, length | capitalize }}</small>
-      </h3></a>
-      <div>{{ file.excerpt }}</div>
+    <div class="wiki-section feature">
+      <h2>{{ folder | slice: 0, length | capitalize }}</h2>
+      {% for file in feature_pgs %}
+        <div class="wiki-entry">
+          <a href="{{ file.url | relative_url }}">
+            <h3>{{ file.title }}</h3>
+          </a>
+          <div>{{ file.excerpt }}</div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  {% endif %}
   <br />
 
-  {% for file in blank_pgs %}
-    <div>
-      <a href="{{ file.url | relative_url }}"><h3>
-        {{ file.title }} <small>&nbsp;</small>
-      </h3></a>
-      <div>{{ file.excerpt }}</div>
+  {% if blank_pgs.size > 0 %}
+    <div class="wiki-section blank">
+      <h2>General</h2>
+      {% for file in blank_pgs %}
+        <div class="wiki-entry">
+          <a href="{{ file.url | relative_url }}">
+            <h3>{{ file.title }}</h3>
+          </a>
+          <div>{{ file.excerpt }}</div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  {% endif %}
   <br />
 
-  {% for file in dev_pgs %}
-    {% assign folder = file.dir | remove_first: '/wiki/' %}
+  {% if dev_pgs.size > 0 %}
+    {% assign folder = dev_pgs.first.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
-    <div>
-      <a href="{{ file.url | relative_url }}"><h3>
-        {{ file.title }} <small>{{ folder | slice: 0, length | capitalize }}</small>
-      </h3></a>
-      <div>{{ file.excerpt }}</div>
+    <div class="wiki-section dev">
+      <h2>{{ folder | slice: 0, length | capitalize }}</h2>
+      {% for file in dev_pgs %}
+        <div class="wiki-entry">
+          <a href="{{ file.url | relative_url }}">
+            <h3>{{ file.title }}</h3>
+          </a>
+          <div>{{ file.excerpt }}</div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  {% endif %}
   <br />
 
-  {% for file in indev_pgs %}
-    {% assign folder = file.dir | remove_first: '/wiki/' %}
+  {% if indev_pgs.size > 0 %}
+    {% assign folder = indev_pgs.first.dir | remove_first: '/wiki/' %}
     {% assign length = folder | size | minus: 1 %}
-    <div>
-      <a href="{{ file.url | relative_url }}"><h3>
-        {{ file.title }} <small>{{ folder | slice: 0, length | capitalize }}</small>
-      </h3></a>
-      <div>{{ file.excerpt }}</div>
+    <div class="wiki-section indev">
+      <h2>{{ folder | slice: 0, length | capitalize }}</h2>
+      {% for file in indev_pgs %}
+        <div class="wiki-entry">
+          <a href="{{ file.url | relative_url }}">
+            <h3>{{ file.title }}</h3>
+          </a>
+          <div>{{ file.excerpt }}</div>
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+  {% endif %}
 </div>
