@@ -542,14 +542,14 @@ $hover-chroma:   0.018;
                                    $chroma: $default-chroma,
                                    $space: oklch);
     .wiki-entry a {
-        //background-color: transparent;
-        transition: background-color 0.35s ease-in;
+        background-color: transparent;
 
         &:hover {
             background-color: color.change($sequence-color,
                                            $lightness: $hover-lightness,
                                            $chroma: $hover-chroma,
                                            $space: oklch);
+            transition: background-color 0.35s ease-in;
         }
     }
 
