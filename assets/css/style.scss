@@ -480,10 +480,10 @@ td {
 }
 
 /* Wiki */
-$default-lightness: 95%;
+$default-lightness: 96%;
 $hover-lightness:   93%;
 
-$default-chroma: 0.013;
+$default-chroma: 0.011;
 $hover-chroma:   0.018;
 
 .wiki-section {
@@ -542,7 +542,7 @@ $hover-chroma:   0.018;
                                    $chroma: $default-chroma,
                                    $space: oklch);
     .wiki-entry a {
-        background-color: transparent;
+        //background-color: transparent;
         transition: background-color 0.35s ease-in;
 
         &:hover {
