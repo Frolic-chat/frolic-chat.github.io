@@ -480,13 +480,16 @@ td {
 }
 
 /* Wiki */
-$default-lightness: 96%;
-$hover-lightness:   93%;
+$default-lightness: 97%;
+$hover-lightness:   94%;
 
-$default-chroma: 0.011;
-$hover-chroma:   0.018;
+$default-chroma: 0.008;
+$hover-chroma:   0.016;
 
 .wiki-section {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 10px;
+    }
     padding: 1rem;
 
     &.feature {
@@ -542,7 +545,10 @@ $hover-chroma:   0.018;
                                    $chroma: $default-chroma,
                                    $space: oklch);
     .wiki-entry a {
+        display: block;
+        padding: 0.25rem;
         background-color: transparent;
+        transition: background-color 0.35s ease-in;
 
         &:hover {
             background-color: color.change($sequence-color,
