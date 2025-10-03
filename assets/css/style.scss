@@ -550,7 +550,6 @@ $hover-chroma:   0.018;
                                            $lightness: $hover-lightness,
                                            $chroma: $hover-chroma,
                                            $space: oklch);
-            transition: background-color 0.35s ease-out;
         }
     }
 
