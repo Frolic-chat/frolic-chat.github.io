@@ -141,7 +141,7 @@ $sequence-opposite: opposite-hue($sequence-color);
 }
 
 $color-dark-neutral:  oklch(25.62% 0 1);
-$color-light-neutral: oklch(87% 0.01 270.21);
+$color-light-neutral: oklch(94% 0 270);
 @function text-color-contrasting($color) {
   @if (color.channel($color, 'lightness', $space: oklch) > 50) {
     @return $color-dark-neutral;
@@ -481,10 +481,10 @@ td {
 
 /* Wiki */
 $default-lightness: 97%;
-$hover-lightness:   94%;
+$hover-lightness:   91%;
 
 $default-chroma: 0.008;
-$hover-chroma:   0.016;
+$hover-chroma:   0.024;
 
 .wiki-section {
     h1, h2, h3, h4, h5, h6 {
