@@ -30,7 +30,6 @@ This update sets the stage for improvements to the home screen.
 
   Eicon folder customizer
 
-
 * Notification volume is adjustable
 
 * The image preview can be unmuted
@@ -48,6 +47,12 @@ This update sets the stage for improvements to the home screen.
 * Bugfix: The log zipper won't make corrupted zips when you have strange characters in your logs
 
   This bug has been around since the original F-Chat 3.0 client. Oof.
+
+* Fixed image previewer functionality for bluesky and twitter
+
+* Restricted some functionality of the image preview
+
+  It's always been intended to be JUST an image (and video) preview, so features beyond that are going to be locked down. If there's a specific site you want supported, please open an issue report.
 
 * Tooling updates to make working with the code easier
 
