@@ -8,6 +8,10 @@ excerpt: All release notes in one easy to find place.
 ## Release 0.8.0 (in development)
 This update sets the stage for improvements to the home screen.
 
+* There's a new service monitor on the login screen to let you know what's stopping you from logging in
+
+  If you have ANY issues with the login button not working but there's no error message, please report it as a bug so I can figure out what's going on and add it.
+
 * Can no longer open multiple windows
 
   There is a lot of complication in the app regarding managing multiple windows. Since there's already tabs for your characters, it doesn't make sense to continue allowing multi-window mode to frustrate future development.
@@ -48,11 +52,15 @@ This update sets the stage for improvements to the home screen.
 
   This bug has been around since the original F-Chat 3.0 client. Oof.
 
-* Fixed image previewer functionality for bluesky and twitter
+* Fix image preview for bluesky and twitter
 
-* Restricted some functionality of the image preview
+* Some image preview functionality restrictions
 
   It's always been intended to be JUST an image (and video) preview, so features beyond that are going to be locked down. If there's a specific site you want supported, please open an issue report.
+
+* Bugfix: Consistency for Alt+Down hotkey
+
+* Bugfix: Mild memory waste fix
 
 * Tooling updates to make working with the code easier
 
