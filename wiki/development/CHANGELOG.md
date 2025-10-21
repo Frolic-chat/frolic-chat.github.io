@@ -26,13 +26,13 @@ This update sets the stage for improvements to the home screen.
 
   Settings
 
+  Character Customization & Recommendations (Including the profile helpder and eicon customizer)
+
   Ad Editor
 
   Character Search
 
-  Profile Helper
-
-  Eicon folder customizer
+* Receive alerts for specific users in chat (per-channel or globally) with the new username notifications setting.
 
 * Notification volume is adjustable
 
