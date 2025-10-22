@@ -10,7 +10,7 @@ This update sets the stage for improvements to the home screen.
 
 * There's a new service monitor on the login screen to let you know what's stopping you from logging in
 
-  If you have ANY issues with the login button not working but there's no error message, please report it as a bug so I can figure out what's going on and add it.
+  If you have ANY issues with the login button not working but there's no error message, please report it as a bug so I can figure out what's going on and track it.
 
 * Can no longer open multiple windows
 
@@ -60,9 +60,9 @@ This update sets the stage for improvements to the home screen.
 
 * Bugfix: Consistency for Alt+Down hotkey
 
-* Bugfix: Mild memory waste fix
+* Bugfix: Reduce memory waste by optimizing background process duties and pairing down waste
 
-* Tooling updates to make working with the code easier
+* In-code tooling updates to make working with the code easier
 
 
 ## Release 0.7.9
