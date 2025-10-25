@@ -32,9 +32,11 @@ This update sets the stage for improvements to the home screen.
 
   Character Search
 
-* Receive alerts for specific users in chat (per-channel or globally) with the new username notifications setting.
+* Keep track of RP partners with a new "Watch" entry in the character context menu. This will alert you in notifications and in the console of posts made by that user in the current channel.
 
-* Notification volume is adjustable
+  Global tracking is not a feature and never will be. That's what we called "stalking." If you want to keep track of your friends or bookmarks, there's already an option to receive alerts for them.
+
+* Notification volume is adjustable in the app settings
 
 * The image preview can be unmuted
 
