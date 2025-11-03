@@ -32,6 +32,8 @@ This update sets the stage for improvements to the home screen.
 
   Character Search
 
+  Widgets on the homepage can be toggled off if you find them irrelevant
+
 * Keep track of RP partners with a new "Watch" entry in the character context menu. This will alert you in notifications and in the console of posts made by that user in the current channel.
 
   Global tracking is not a feature and never will be. That's what we called "stalking." If you want to keep track of your friends or bookmarks, there's already an option to receive alerts for them.
@@ -54,11 +56,13 @@ This update sets the stage for improvements to the home screen.
 
   This bug has been around since the original F-Chat 3.0 client. Oof.
 
+* Language around the corrupted logs dialog has been changed to make it clearer when you should use it. (And by extension, when you should not use it.)
+
 * Fix image preview for bluesky and twitter
 
 * Some image preview functionality restrictions
 
-  It's always been intended to be JUST an image (and video) preview, so features beyond that are going to be locked down. If there's a specific site you want supported, please open an issue report.
+  It's always been intended to be JUST an image (and video) preview, so features beyond that are going to be locked down. If there's a specific site not displaying images correctly, please open an issue report.
 
 * Bugfix: Consistency for Alt+Down hotkey
 
