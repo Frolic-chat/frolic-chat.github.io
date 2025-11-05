@@ -48,6 +48,11 @@ This update sets the stage for improvements to the home screen.
 
   This bug has always existed but grew increasingly frequent as the demands of the app grew. It took en entire breakdown of the profile window, but this bug is squashed.
 
+* Using the escape key works much more reliably to do the following:
+  * Unfocus the current text input
+  * Close the current popup
+  * Scroll the chat to the bottom and focus the chat input box
+
 * Bugfix: You can now close the character context menu while a character's profile is open
 
 * Bugfix: The log zipper will actually wait to bundle up your logs before exporting a zip file, preventing an empty zip file from being generated
