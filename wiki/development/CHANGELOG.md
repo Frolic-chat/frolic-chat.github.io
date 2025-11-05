@@ -24,15 +24,13 @@ This update sets the stage for improvements to the home screen.
 
   Many of the settings from the side bar are available from the home page:
 
-  Settings
+  Settings (auto-save and the app-wide settings sync across characters automatically)
 
   Character Customization & Recommendations (Including the profile helpder and eicon customizer)
 
-  Ad Editor
-
-  Character Search
-
   Widgets on the homepage can be toggled off if you find them irrelevant
+
+  The Ad Editor and Character Search haven't moved yet.
 
 * Keep track of RP partners with a new "Watch" entry in the character context menu. This will alert you in notifications and in the console of posts made by that user in the current channel.
 
