@@ -10,7 +10,7 @@ This update sets the stage for improvements to the home screen.
 
 * There's a new service monitor on the login screen to let you know what's stopping you from logging in
 
-  If you have ANY issues with the login button not working but there's no error message, please report it as a bug so I can figure out what's going on and track it.
+  If you have ANY issues with the login button not working but there's no error message, please report it as a bug so I can figure out what's going on.
 
 * Can no longer open multiple windows
 
@@ -26,7 +26,16 @@ This update sets the stage for improvements to the home screen.
 
   Settings (auto-save and the app-wide settings sync across characters automatically)
 
-  Character Customization & Recommendations (Including the profile helpder and eicon customizer)
+  Character Customization & Recommendations (Including the profile helper and eicon customizer)
+  - Quickly create a custom gender + orientation-match for yourself & other Frolic users to see - This includes a custom string and a set of gender kinks that other characters can match against.
+
+    For example: If you set your custom gender string to "Transfemme" and assign yourself the genders: `match: "trans female, female, transgender"` (in that order) then the other person's preference for trans females is checked. If they don't have one, "female" is checked, then "transgender". If no match is match, you'll match neutral for gender/orientation compatibility.
+
+    Here's hoping this feature has a long and trouble-free future... :)
+
+  - Quickly set your high-quality avatar with a guided UI
+
+    High quality portraits don't have to be intrusive to your profile - Frolic uses a high-quality portrait method to keep them completely hidden from players browsing your profile using any chat client, or even the website.
 
   Widgets on the homepage can be toggled off if you find them irrelevant
 
@@ -50,6 +59,10 @@ This update sets the stage for improvements to the home screen.
   * Unfocus the current text input
   * Close the current popup
   * Scroll the chat to the bottom and focus the chat input box
+
+* Completely rewrote the character preview popup to eliminate how frequently it showed the wrong character's information
+
+* The character profile page now shows desired RP length, desired post length, and preferred language in the sidebar so you don't have to check the second tab for post length information
 
 * Bugfix: You can now close the character context menu while a character's profile is open
 
