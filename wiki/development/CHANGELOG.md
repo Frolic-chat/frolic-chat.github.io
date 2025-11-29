@@ -5,8 +5,8 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.0 (in development)
-This update sets the stage for improvements to the home screen.
+## Release 0.8.1 (in development)
+This update sets a stage for future improvements by introducing a home screen where miscellaneous utilities can be quickly referenced.
 
 * There's a new service monitor on the login screen to let you know what's stopping you from logging in
 
@@ -27,7 +27,7 @@ This update sets the stage for improvements to the home screen.
   Settings (auto-save and the app-wide settings sync across characters automatically)
 
   Character Customization & Recommendations (Including the profile helper and eicon customizer)
-  - Quickly create a custom gender + orientation-match for yourself & other Frolic users to see - This includes a custom string and a set of gender kinks that other characters can match against.
+  - Quickly create a custom gender + orientation-match for yourself - this includes a custom string that you and other Frolic users will see, and a set of gender kinks that other characters can match against.
 
     For example: If you set your custom gender string to "Transfemme" and assign yourself the genders: `match: "trans female, female, transgender"` (in that order) then the other person's preference for trans females is checked. If they don't have one, "female" is checked, then "transgender". If no match is match, you'll match neutral for gender/orientation compatibility.
 
@@ -35,7 +35,9 @@ This update sets the stage for improvements to the home screen.
 
   - Quickly set your high-quality avatar with a guided UI
 
-    High quality portraits don't have to be intrusive to your profile - Frolic uses a high-quality portrait method to keep them completely hidden from players browsing your profile using any chat client, or even the website.
+    High quality portraits don't have to be intrusive to your profile - Frolic uses a method that keeps them completely hidden from players browsing your profile using any chat client, and even on the website.
+
+  - The latest changelog is displayed when there's a new version available
 
   Widgets on the homepage can be toggled off if you find them irrelevant
 
@@ -54,6 +56,8 @@ This update sets the stage for improvements to the home screen.
 * Bugfix: Stopped the profile page from sometimes showing guestbook posts or gallery pictures from the wrong character
 
   This bug has always existed but grew increasingly frequent as the demands of the app grew. It took en entire breakdown of the profile window, but this bug is squashed.
+
+  * Rewrote the character preview popup to account to display custom genders and also fix a lot of the bugs that made it behave strangely.
 
 * Using the escape key works much more reliably to do the following:
   * Unfocus the current text input
@@ -74,6 +78,8 @@ This update sets the stage for improvements to the home screen.
 
 * Language around the corrupted logs dialog has been changed to make it clearer when you should use it. (And by extension, when you should not use it.)
 
+* Character preview won't become unusably tiny on smaller app sizes
+
 * Fix image preview for bluesky and twitter
 
 * Some image preview functionality restrictions
@@ -82,7 +88,9 @@ This update sets the stage for improvements to the home screen.
 
 * Bugfix: Consistency for Alt+Down hotkey
 
-* Bugfix: Reduce memory waste by optimizing background process duties and pairing down waste
+* Bugfix: Reduce memory use by optimizing background process duties and pairing down waste
+
+* Bugfix: Fixed guestbook pinging the server without good cause
 
 * In-code tooling updates to make working with the code easier
 
