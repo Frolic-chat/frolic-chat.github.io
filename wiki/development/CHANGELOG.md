@@ -5,7 +5,7 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.1 (in development)
+## Release 0.8.1 (0.8 prerelease 2)
 This update sets a stage for future improvements by introducing a home screen where miscellaneous utilities can be quickly referenced.
 
 * There's a new service monitor on the login screen to let you know what's stopping you from logging in

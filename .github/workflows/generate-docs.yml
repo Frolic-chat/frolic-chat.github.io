@@ -28,7 +28,7 @@ jobs:
         yarn add -D typedoc typedoc-plugin-markdown
 
     - name: Generate docs
-      run: yarn typedoc --plugin typedoc-plugin-markdown --out ./dev-doc/tsdoc ./electron/main.ts ./electron/chat.ts ./electron/window.ts ./electron/browser_option.ts ./learn/store/worker/store.worker.endpoints.ts
+      run: yarn typedoc --plugin typedoc-plugin-markdown --out ./dev-doc/tsdoc ./electron/main.ts ./electron/chat.ts ./electron/window.ts ./learn/store/worker/store.worker.endpoints.ts
 
     - name: Checkout doc repo
       uses: actions/checkout@v4
