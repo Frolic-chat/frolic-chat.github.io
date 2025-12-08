@@ -5,6 +5,28 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.2 (in progress)
+### UI
+* Added scratchpad widget to the home screen - this is a system-wide place to take personal notes
+
+* Moved the notes/site messages notice to the main page and side bar, elimating the popup.
+
+* Unified user status icons for the left sidebar with those on the right sidebar
+
+* Fixed highlighting for current chat window tab
+
+* Restored checkmark to the channel ads/chat/both dropdown selection
+
+* Ads from the deprecated channel ads can once again be recovered and moved to the modern ads manager
+
+### General
+* Eicon service won't block the login screen as long; It's non vital and will reconnect when available
+
+* Update notifier on home page works more reliably
+
+* Reduced disk activity from saving settings
+
+
 ## Release 0.8.1 (0.8 prerelease 2)
 This update sets a stage for future improvements by introducing a home screen where miscellaneous utilities can be quickly referenced.
 
@@ -27,7 +49,7 @@ This update sets a stage for future improvements by introducing a home screen wh
   Settings (auto-save and the app-wide settings sync across characters automatically)
 
   Character Customization & Recommendations (Including the profile helper and eicon customizer)
-  - Quickly create a custom gender + orientation-match for yourself - this includes a custom string that you and other Frolic users will see, and a set of gender kinks that other characters can match against.
+  - Quickly create a custom gender + orientation-match for yourself - this includes a custom string that you and other Frolic players will see, and a set of gender kinks that other characters can match against.
 
     For example: If you set your custom gender string to "Transfemme" and assign yourself the genders: `match: "trans female, female, transgender"` (in that order) then the other person's preference for trans females is checked. If they don't have one, "female" is checked, then "transgender". If no match is match, you'll match neutral for gender/orientation compatibility.
 
@@ -43,7 +65,7 @@ This update sets a stage for future improvements by introducing a home screen wh
 
   The Ad Editor and Character Search haven't moved yet.
 
-* Keep track of RP partners with a new "Watch" entry in the character context menu. This will alert you in notifications and in the console of posts made by that user in the current channel.
+* Keep track of RP partners with a new "Watch" entry in the character context menu. This will alert you in notifications and in the console of posts made by that player in the current channel.
 
   Global tracking is not a feature and never will be. That's what we called "stalking." If you want to keep track of your friends or bookmarks, there's already an option to receive alerts for them.
 
