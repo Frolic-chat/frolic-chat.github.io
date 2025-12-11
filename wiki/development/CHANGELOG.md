@@ -9,9 +9,13 @@ excerpt: All release notes in one easy to find place.
 ### UI
 * Added scratchpad widget to the home screen - this is a system-wide place to take personal notes
 
+* Tooltips will now tell you the names of conversation pages
+
 * Moved the notes/site messages notice to the main page and side bar, elimating the popup.
 
 * Unified user status icons for the left sidebar with those on the right sidebar
+
+* Adjusted the display of gender and species matching on profiles for accuracy
 
 * Fixed highlighting for current chat window tab
 
@@ -24,7 +28,7 @@ excerpt: All release notes in one easy to find place.
 
 * Update notifier on home page works more reliably
 
-* Reduced disk activity from saving settings
+* Reduced disk activity from saving settings (twice!)
 
 
 ## Release 0.8.1 (0.8 prerelease 2)
