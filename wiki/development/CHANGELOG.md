@@ -7,6 +7,8 @@ excerpt: All release notes in one easy to find place.
 
 ## Release 0.8.2 (in progress)
 ### UI
+* Settings menu has been redone to be easier to navigate
+
 * Added scratchpad widget to the home screen - this is a system-wide place to take personal notes
 
 * Tooltips will now tell you the names of conversation pages
@@ -26,9 +28,13 @@ excerpt: All release notes in one easy to find place.
 ### General
 * Eicon service won't block the login screen as long; It's non vital and will reconnect when available
 
+* Strange UI freeze at login screen should be gone; please keep reporting issues like these!
+
 * Update notifier on home page works more reliably
 
 * Reduced disk activity from saving settings (twice!)
+
+* Goblins - most commonly represented as creatures of intelligence - are humanoids and not monsters
 
 
 ## Release 0.8.1 (0.8 prerelease 2)
