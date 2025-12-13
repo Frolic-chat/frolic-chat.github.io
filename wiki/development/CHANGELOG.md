@@ -5,7 +5,9 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.2 (in progress)
+## Release 0.8.2 (prerelease 3)
+Next release will be a real release, so report any strange UI shenanigans in this version.
+
 ### UI
 * Settings menu has been redone to be easier to navigate
 
@@ -13,28 +15,36 @@ excerpt: All release notes in one easy to find place.
 
 * Tooltips will now tell you the names of conversation pages
 
-* Moved the notes/site messages notice to the main page and side bar, elimating the popup.
+* Moved the notes/site messages notice to the home page and sidebar, elimating the popup.
 
 * Unified user status icons for the left sidebar with those on the right sidebar
 
-* Adjusted the display of gender and species matching on profiles for accuracy
+* Adjusted the display of gender and species matching on profiles to improve accuracy
 
 * Fixed highlighting for current chat window tab
 
 * Restored checkmark to the channel ads/chat/both dropdown selection
 
-* Ads from the deprecated channel ads can once again be recovered and moved to the modern ads manager
+* Ads from the deprecated "channel ads" can once again be recovered and moved to the modern ads manager
+
+* Bugfix for a long-time bug where clicking a pin would open that channel
 
 ### General
 * Eicon service won't block the login screen as long; It's non vital and will reconnect when available
 
+  A total rework of the system is planned for the next release to reduce system resource use and login delay.
+
 * Strange UI freeze at login screen should be gone; please keep reporting issues like these!
+
+* Weird "new version..." update message won't persist forever
+
+* Some user settings wouldn't save but now do
 
 * Update notifier on home page works more reliably
 
-* Reduced disk activity from saving settings (twice!)
+* Reduced disk activity from saving settings (x2 bonus savings!)
 
-* Goblins - most commonly represented as creatures of intelligence - are humanoids and not monsters
+* Goblins - most commonly represented as creatures of (questionable) intelligence - are humanoids and not monsters
 
 
 ## Release 0.8.1 (0.8 prerelease 2)

@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 ## 💾 Downloads
-The latest release is **0.8 prerelease 2**.
+The latest release is **0.8 prerelease 3**.
 
 Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic/releases). See each releases' new features on its release page, or [view the full Changelog](/wiki/development/CHANGELOG.html) to see all improvements. Our sub-1.0 release number indicates that some features may be in a state of flux as they are continuously iterated upon. <small>Prereleases exist to test changes and gather feedback from a wider audience. If you use a prerelease, please report your experience on the issue tracker.</small>
 
