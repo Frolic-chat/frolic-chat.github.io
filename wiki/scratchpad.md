@@ -246,9 +246,6 @@ scrollbar on profile sidebar
 
 highly X on tab when mousing over
 
-has improper (!c)
-	calculateInterestScoreForQueueEntry
-
 top entry in PM list has rounded top corner, but icons aren't top aligned.
 	set overflow: hidden; on <a> block
 

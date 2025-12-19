@@ -8,6 +8,13 @@ excerpt: All release notes in one easy to find place.
 ## Release 0.8.2 (prerelease 3)
 Next release will be a real release, so report any strange UI shenanigans in this version.
 
+HOTFIX:
+* No longer missing many of your friends/BMs after a disconnect/reconnect
+
+* Resolved some of the strange multi-second freezes that occured randomly
+
+* Descreased time to wait before login; Eicon store is no longer a barrier
+
 ### UI
 * Settings menu has been redone to be easier to navigate
 
