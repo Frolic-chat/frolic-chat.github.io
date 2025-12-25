@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 ## 💾 Downloads
-The latest release is **0.8 prerelease 3**.
+The latest release is **0.8.3**.
 
 Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic/releases). See each releases' new features on its release page, or [view the full Changelog](/wiki/development/CHANGELOG.html) to see all improvements. Our sub-1.0 release number indicates that some features may be in a state of flux as they are continuously iterated upon. <small>Prereleases exist to test changes and gather feedback from a wider audience. If you use a prerelease, please report your experience on the issue tracker.</small>
 
@@ -13,7 +13,7 @@ Downloads are found [on the Releases page](https://github.com/Frolic-chat/Frolic
 # 🌺 Come Frolic!
 Frolic is an F-Chat client developed for simplicity and stability. It's based on the feature set of the legacy client Rising with a focus on smoothing down the rough edges and providing obvious, non-intrusive improvements to having a positive experience when chatting with others.
 
-I am a technically minded person, so the improvements will be focused on usability and performance, but guided by comfort. What I want most from my F-Chat experience is a homely and familiar place to settle into, chat with my friends, and make new ones. And that's what I'm making Folic to be - no shocks or surprises, no complicated UI - just a predicatable place that lets me have fun with my friends.
+I am a technical-minded person, so the improvements will be focused on usability and performance, but guided by comfort. What I want most from my F-Chat experience is a homely and familiar place to settle into, chat with my friends, and make new ones. And that's what I'm making Folic to be - no shocks or surprises, no complicated UI - just a predicatable place that lets me have fun with my friends.
 
 Frolic re-uses the default fchat settings and directory so it's easy to pick up where you left off - whether you're coming from the official app or updating from Rising. That level of reliability is important, and is a staple of Frolic's design ethos. Similiarly, there will be no grant UI overhaul - just simple tweaks here and there to make the application easier to manage.
 

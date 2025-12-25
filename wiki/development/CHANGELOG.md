@@ -5,6 +5,22 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.3
+
+This is the release verion of all of the changes since 0.7.9 as well as the following new changes:
+
+* The footer below the channel input box will now show characters you're watching in that channel
+
+* Many UI buttons that don't have text have had tooltips added
+
+* The comms page on each character conversation lets you edit your memo for that character, as well as show you the last time that character sent you a note and any channels you have in common
+
+* Reduced the memory use and improved the behavior of the eicon display
+
+* You can view your other character's favorite eicons using the eicon search
+
+  To accomodate this functionality, the search text box is easier to type in
+
 ## Release 0.8.2 (prerelease 3)
 Next release will be a real release, so report any strange UI shenanigans in this version.
 
@@ -13,7 +29,7 @@ HOTFIX:
 
 * Resolved some of the strange multi-second freezes that occured randomly
 
-* Descreased time to wait before login; Eicon store is no longer a barrier
+* Decreased time to wait before login; Eicon store is no longer a barrier
 
 ### UI
 * Settings menu has been redone to be easier to navigate
@@ -24,7 +40,7 @@ HOTFIX:
 
 * Moved the notes/site messages notice to the home page and sidebar, elimating the popup.
 
-* Unified user status icons for the left sidebar with those on the right sidebar
+* Unified status icons for the left sidebar with those on the right sidebar
 
 * Adjusted the display of gender and species matching on profiles to improve accuracy
 
@@ -45,7 +61,7 @@ HOTFIX:
 
 * Weird "new version..." update message won't persist forever
 
-* Some user settings wouldn't save but now do
+* Some character settings wouldn't save but now do
 
 * Update notifier on home page works more reliably
 
