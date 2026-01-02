@@ -5,6 +5,29 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.4
+
+Incremental update for UI adjustments:
+
+* Recent Activity now shows a card-style message instead of a chat message to indicate it's not a replacement for the console
+
+* Tooltip on left-sidebar Home/Console button to tell you about quick-access to the other page
+
+  Additional comment added to the home page widget settings
+
+* Home page settings button is at the top of the page since that's where every other channel button is
+
+* Current page of conversation is highlighted better
+
+  Further adjustments for clarity are under consideration
+
+* Release news will automatically collapse when you're running the latest version
+
+* Bugfix: Turning off messages will only hide the messages part of the note/messages UI
+
+  Description of the message notifier in settings is updated to better reveal its functionality
+
+
 ## Release 0.8.3
 
 This is the release verion of all of the changes since 0.7.9 as well as the following new changes:
