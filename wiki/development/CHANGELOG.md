@@ -5,6 +5,24 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.5
+
+* Bugfix: Expanding spoilers in the character context menu no longer closes the menu
+
+* "View conversation" now doubles-up as the "Open conversation" button that was removed in 0.8.3
+
+* Current status is shown on the user Comms page
+
+* Renamed Recent Activity to "Here & Now"
+
+* Adjusted margins in Here & Now to not crowd the status text
+
+* Here & Now has a help tooltip to better explain its point
+
+* Bugfix: Offline characters that go offline while you're trying to reconnect shouldn't persist forever in Here & Now
+
+* Revealed a few developer tools on the "data" page to gather debugging info in case it's relevant when filing a bug report
+
 ## Release 0.8.4
 
 Incremental update for UI adjustments:
