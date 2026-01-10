@@ -5,6 +5,10 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.6
+
+* Bugfix: Some services weren't restarting after you were reconnected or logged in as another character in the same tab
+
 ## Release 0.8.5
 
 * Bugfix: Expanding spoilers in the character context menu no longer closes the menu
