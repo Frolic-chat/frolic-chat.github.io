@@ -43,6 +43,8 @@ Being able to execute code only on upgrade is particularly useful for shepherdin
 ### `qs`
 "qs" - short for Query String - serializes data into a URL compatible query string. While this is useful for sending data to servers, this is also useful for any place where we can only rely on string-based communications. (Could be very useful for arbitrary data comm over F-Chat in particular.)
 
+An alternative to qs is the modern builtin URLSearchParams type.
+
 ### `nlf`
 Nlf is a tool to examine the licenses of the dependencies of your project. It's useful for the obvious reasons. :)
 
@@ -52,4 +54,3 @@ This tool automatically opens a view of your bundles after making production bui
 ## Should Be Removed
 Remove these dependencies if given the chance:
 * promise-request
-* node-fetch

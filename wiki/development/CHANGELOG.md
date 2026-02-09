@@ -5,6 +5,14 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.7 (In progress)
+
+* Reduced some partially-implemented features on the Comms page while they undergo extra maintenance
+
+* Rewrote legacy component parser to allow for significant upgrades to background components
+
+* Significant upgrades to background components
+
 ## Release 0.8.6
 
 * Bugfix: Some services weren't restarting after you were reconnected or logged in as another character in the same tab
