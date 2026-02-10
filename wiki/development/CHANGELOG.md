@@ -7,11 +7,11 @@ excerpt: All release notes in one easy to find place.
 
 ## Release 0.8.7 (In progress)
 
-* Reduced some partially-implemented features on the Comms page while they undergo extra maintenance
+* Removed the note display from the Comms page while it undergoes additional development
 
-* Rewrote legacy component parser to allow for significant upgrades to background components
+* Rewrote the entire component compiler that was blocking upgrades for everything else
 
-* Significant upgrades to background components
+* Significant upgrades to typescript, linting, webpack, electron, and other dependencies for speed and stability
 
 ## Release 0.8.6
 
