@@ -11,7 +11,7 @@ excerpt: All release notes in one easy to find place.
 
 * Rewrote the entire component compiler that was blocking upgrades for everything else
 
-* Significant upgrades to typescript, linting, webpack, electron, and other dependencies for speed and stability
+* Significant upgrades for speed and stability: vue class component compiler for TSv3 -> TSv5; typescript v3 -> v5; tslint -> eslint; webpack, electron, & other incremental dependency upgrades.
 
 ## Release 0.8.6
 
