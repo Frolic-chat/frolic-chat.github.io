@@ -5,7 +5,7 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.7 (In progress)
+## Release 0.8.7
 
 * Removed the note display from the Comms page while it undergoes additional development
 
