@@ -11,7 +11,9 @@ The notes built-in was supposed to release here but after a lot of tinkering I c
 
 * The chat input box code has been simplified.
 
-* Lots of behind the scenes code clean up, requiring a database upgrade. You will not be able to downgrade cleanly from this version.
+* Lots of behind the scenes code clean up, requiring a database upgrade.
+
+* Updated the database warning to let you know you shouldn't run older versions.
 
 ## Release 0.8.7
 
