@@ -5,6 +5,14 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.8 (In progress)
+
+The notes built-in was supposed to release here but after a lot of tinkering I can't get it to work in a satisfactory way. Technically, it works great. But the integration with the UI is bad and the caveats of using it are too great to make it a pleasant experience.
+
+* The chat input box code has been simplified.
+
+* Lots of behind the scenes code clean up, requiring a database upgrade. You will not be able to downgrade cleanly from this version.
+
 ## Release 0.8.7
 
 * Removed the note display from the Comms page while it undergoes additional development
