@@ -11,9 +11,11 @@ This release was supposed to include full access to your site notes, but after a
 
 * Restored the gear icon to mean General Settings or Channel Settings
 
+* Bugfix: The eicon selector will open in the Ad Center once again
+
 * Adding, deleting, and reorganizing ads should work more consistently after a disconnect
 
-* The chat input box code has been simplified
+* The chat input box has been refactored to increase responsiveness
 
 * Lots of behind the scenes code clean up, requiring a database upgrade
 
