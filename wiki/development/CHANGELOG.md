@@ -5,15 +5,19 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.8 (In progress)
+## Release 0.8.8
 
-The notes built-in was supposed to release here but after a lot of tinkering I can't get it to work in a satisfactory way. Technically, it works great. But the integration with the UI is bad and the caveats of using it are too great to make it a pleasant experience.
+This release was supposed to include full access to your site notes, but after a lot of tinkering it just isn't satisfactory. Technically, it works great. But it doesn't feel good, it doesn't offer benefits over just going the website, and the trying to integrate notes with the chat system feels like ducktaping ducktape on top of ducktape. It's not a pleasure to code, and there will always be some bugs that can't be resolved that would be annoying for people to work around.
 
-* The chat input box code has been simplified.
+* Restored the gear icon to mean General Settings or Channel Settings
 
-* Lots of behind the scenes code clean up, requiring a database upgrade.
+* Adding, deleting, and reorganizing ads should work more consistently after a disconnect
 
-* Updated the database warning to let you know you shouldn't run older versions.
+* The chat input box code has been simplified
+
+* Lots of behind the scenes code clean up, requiring a database upgrade
+
+* Updated the database warning to let you know you shouldn't run older versions
 
 ## Release 0.8.7
 
