@@ -5,6 +5,14 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.9 (In progress)
+
+* Bugfix: Gender matching occassionally went haywire for straight matches
+
+* The ad editor can no longer be closed by clicking the background, which caused it to lose unsaved information. You now have to click the Save or Cancel button explicitly.
+
+* Added a tooltip to the eicon selector search box explaining how to search your other characters' favorite eicons
+
 ## Release 0.8.8
 
 This release was supposed to include full access to your site notes, but after a lot of tinkering it just isn't satisfactory. Technically, it works great. But it doesn't feel good, it doesn't offer benefits over just going the website, and the trying to integrate notes with the chat system feels like ducktaping ducktape on top of ducktape. It's not a pleasure to code, and there will always be some bugs that can't be resolved that would be annoying for people to work around.
