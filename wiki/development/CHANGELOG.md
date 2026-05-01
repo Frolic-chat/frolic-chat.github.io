@@ -5,13 +5,17 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.9 (In progress)
+## Release 0.8.9
 
 * Bugfix: Gender matching occassionally went haywire for straight matches
 
-* The ad editor can no longer be closed by clicking the background, which caused it to lose unsaved information. You now have to click the Save or Cancel button explicitly.
+* Bugfix: You can send friend requests again!
 
 * Added a tooltip to the eicon selector search box explaining how to search your other characters' favorite eicons
+
+* High-quality portraits will update more responsively
+
+* The ad editor can no longer be closed by clicking the background, which caused it to lose unsaved information. You now have to click the Save or Cancel button explicitly.
 
 ## Release 0.8.8
 
