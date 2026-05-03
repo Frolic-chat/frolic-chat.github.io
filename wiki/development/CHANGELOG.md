@@ -5,6 +5,12 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.10 (In progress)
+
+* Eicon selector improvements to show locally cached eicons even if the service is down
+
+* Bugfix: Favorites are highlighted when comparing kinks
+
 ## Release 0.8.9
 
 * Bugfix: Gender matching occassionally went haywire for straight matches
