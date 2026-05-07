@@ -11,6 +11,8 @@ excerpt: All release notes in one easy to find place.
 
 * Bugfix: Favorites are highlighted when comparing kinks
 
+* Bugfix: Improper color for the username in "User is typing..." message in PMs
+
 ## Release 0.8.9
 
 * Bugfix: Gender matching occassionally went haywire for straight matches
