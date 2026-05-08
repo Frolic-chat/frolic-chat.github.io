@@ -5,7 +5,7 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
-## Release 0.8.10 (In progress)
+## Release 0.8.10
 
 * Eicon selector improvements to show locally cached eicons even if the service is down
 
