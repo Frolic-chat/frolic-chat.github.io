@@ -13,6 +13,8 @@ excerpt: All release notes in one easy to find place.
 
 * Bugfix: Improper color for the username in "User is typing..." message in PMs
 
+* Bugfix: Closing the last tab will now exit the application
+
 ## Release 0.8.9
 
 * Bugfix: Gender matching occassionally went haywire for straight matches
