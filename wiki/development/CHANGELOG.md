@@ -5,6 +5,20 @@ excerpt: All release notes in one easy to find place.
 ---
 # Changelog
 
+## Release 0.8.11 (In progress)
+
+* New feature: Search in settings! Enter a query in the search bar and it will highlight the sections and options that match the term you entered.
+
+* New option: Auto-pin new PMs - enable to automatically pin incoming PMs so you won't lose conversations if you unexpectedly go offline.
+
+* Reorganized the general settings, including adding more dividers to make it easier to read.
+
+* Removed the channel key from the channel footer
+
+* Watched characters in the channel footer won't display the filter icon anymore
+
+* Bugfix: Fix stuck preview popup in Wayland
+
 ## Release 0.8.10
 
 * Eicon selector improvements to show locally cached eicons even if the service is down
