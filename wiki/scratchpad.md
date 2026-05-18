@@ -15,9 +15,6 @@ This is a periodically-updated scratchpad for the primary developer. It's not au
 ```text
 AUTOBUILD/CI
 
-Confront auto-ads
-	investigate timer - is it broken?
-
 StrangeStorage:
 	Send Love function (👍/👎)
 		For character
@@ -102,18 +99,11 @@ https://github.com/LinusU/node-appdmg/issues/234
 research appimage metadata
 https://github.com/AppImage/appimagetool
 
-side bar on left has too many items, pushing my rooms and people down.
-
 meld/side-by-side editing for creative writing.
 shared editing page a la google docs
 
-notify people that they're visible on the front page when they have the note-checker on.
-
 disable save password and warn for no secret service available
 
-Investigate the site session
-
-autoupdater...
 modern packager? Electron-Forge?
 
 Safe image hosts:
@@ -124,25 +114,18 @@ Safe image hosts:
 	ImgPile
 	kek.gg
 
-"Browser settings" window is its own window!!!
-
-shorten list of options above chats,
-OR MOVE THE OPTIONS TO THE BOTTOM
+side bar on left has too many items, pushing my rooms and people down.
+shorten list of options above chats
 
 Recommendations on blank pm/button on pm
 	- things to talk about when msging people
 	- reminder to check their profile...?
-
-Build the "new notes" pop-up into the user list, since it's going to cover the bottom part of it anyways. Might as well allow users to scroll to the bottom of their user list without having to X the note pup-up.
 
 Show neutral matches
 
 Eidolons: Basic character matches vs Roleplay matches vs Vibe matches
 
 Manually tag players based on your interest in them
-
-Significantly redo notification settings for ✨ clarity ✨
-	move to own settings window (when settings redo)
 
 extend friend/bm message notify to PMs; ie verify notify isn't singular controller of DMs.
 
@@ -154,44 +137,26 @@ More prominent member logins (user icon?)
 
 friends as icons, profile mods as icons (strangestorage?).
 
-custom gender?
-
 use notes for more shit
 
 js for random colors
-
-Relevant settings locations - is it possible to open the general settings to the appropriate page and section?
-
-Character info popup sometimes uses wrong name. Needs to refresh when receiving character info.
 
 Expected behavior of species:
 	For multi-species detection:
 	Look for ^ or , and match species after that until $ or , or ' and '
 
-You can set an empty memo...
-
 Stop filters from filtering chat or PM messages from room mods. - Temp exception list for each room?
-
-Show f/m pref in character popup.
-	This is in CharacterPreview.vue:376 but no obvious changes come to mind to fit the motif, "x-years-old bisexual male"
 
 *** Theme capitalization -->> const name = `${speciesNames[speciesId].substring(0, 1).toUpperCase()}${speciesNames[speciesId].substring(1)}`;
 
 lighten(), darken(), saturate() adjust-color()
 can upgrade sass now
 
-three columns of pictures at wide screens
-	one column for narrow screens
-
 MORE SORTING METHODS for channel members
 
 hsl(231.4285714286, 14.8936170213%, 48.431372549%)
 rgb(105, 110, 142)
 #696E8E
-
-round top right and bottom left of members list.
-	border-radius-bottom-left: 3px;
-	border-radius-top-right: more;
 
 Move filtered members to the bottom of the member list
 	Move "hidden" users to bottom of member list
@@ -234,8 +199,6 @@ read eicons and stuff from text file
 	Right click eicon menu
 	Favorite eicons are saved somewhere, investigate how for eicon category loading from file.
 
-mounting imagepreview takes a while...
-
 bad exotic creatures tooltip:
 	exotic
 new ffxiv species kink match
@@ -244,10 +207,7 @@ hardcoded colors in chatview
 
 scrollbar on profile sidebar
 
-highly X on tab when mousing over
-
-top entry in PM list has rounded top corner, but icons aren't top aligned.
-	set overflow: hidden; on <a> block
+highlight X on tab when mousing over
 
 Remove `Contact details/Sites` column if no details/sites
 	infotags.vue
@@ -266,8 +226,6 @@ in-app notes
 	easy access to memo on that person
 	make live -> note -> live easy
 	can i use connection.queryApi ??????????
-
-ENABLE ROAMING IN LOGIN
 
 Frolic icon - multiple flowers blending together? Like one petal from each color.
 		Like the old people holding hands ubuntu logo

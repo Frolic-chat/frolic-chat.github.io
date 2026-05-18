@@ -9,15 +9,17 @@ excerpt: All release notes in one easy to find place.
 
 * New feature: Search in settings! Enter a query in the search bar and it will highlight the sections and options that match the term you entered.
 
-* New option: Auto-pin new PMs - enable to automatically pin incoming PMs so you won't lose conversations if you unexpectedly go offline.
+* New settings option: Auto-pin new PMs - enable to automatically pin incoming PMs so you won't lose conversations if you unexpectedly die
 
-* Reorganized the general settings, including adding more dividers to make it easier to read.
+* Reorganized the general settings to make it easier to read. There are a lot more descriptions, headers, and examples of what each setting changes
 
-* Removed the channel key from the channel footer
+* Bugfix: Fix stuck preview popup in Wayland (Linux)
+
+* Bugfix: Fixed a situation where ad settings weren't even attempting to save
+
+* Removed the channel key from the channel footer, as it was just noise
 
 * Watched characters in the channel footer won't display the filter icon anymore
-
-* Bugfix: Fix stuck preview popup in Wayland
 
 ## Release 0.8.10
 
