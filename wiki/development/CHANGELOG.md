@@ -9,6 +9,8 @@ excerpt: All release notes in one easy to find place.
 
 * Bugfix: The sorting of your conversations now saves correctly
 
+* Bugfix: The console conversation will now scroll to bottom when you return home from another conversation
+
 ## Release 0.8.11
 
 * New feature: Search in settings! Enter a query in the search bar and it will highlight the sections and options that match the term you entered.
